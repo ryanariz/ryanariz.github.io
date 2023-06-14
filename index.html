@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<title>Ryan Sky</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="sidebar">
+		<div class="main-menu">
+			<div class="ryansky"><a href="index.html">RYAN SKY</a></div>
+			<div class="sub-menu">
+				<div><a href="index.html">WORK</a></div>
+				<div><a onclick="pageFunc('resume')">ABOUT</a></div>
+				<div><a onclick="pageFunc('contact')">CONTACT</a></div>
+			</div>
+			<div class="hamburger" onclick="menuChange(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</div>
+		<div id="mobile-menu" class="mobile-menu">
+			<div class="mobile-items">
+				<div class="mobile-item"><a href="index.html">WORK</a></div>
+				<div class="mobile-item"><a onclick="pageFunc('resume');itemClicked()">ABOUT</a></div>
+				<div class="mobile-item"><a onclick="pageFunc('contact');itemClicked()">CONTACT</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="replace">
+		<section class="content page shown">
+			<div class="contentblock">
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/lewisCover.jpg" alt="LewisBlackTemp" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('lewis')" class="text"><p>Lewis Black</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/mnrkCover.jpg" alt="MNRKAnniTemplate" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('MNRK')" class="text"><p>MNRK Records</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/adidasCover.jpg" alt="adidasMockPromo" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('adidas')" class="text"><p>Adidas Mock Promo</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/corinneCover.png" alt="CorinnesPlace" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('corinne')" class="text"><p>Corinne's Place</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="contentblock">
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/streetsCover.jpg" alt="FashionShowFlyer" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('streets')" class="text"><p>Take It To The Streets</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/doorCover.jpg" alt="DoorColorPhoto" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('doors')" class="text"><p>Door Study</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/soapsCover.jpg" alt="UVSoapsTemp" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('unclevinnies')" class="text"><p>Uncle Vinnies Comedy Club</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/ThrowUps/ThrowUps.jpg" alt="ThrowUpsBooklet" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('throwups')" class="text"><p>Skatepark Photo Booklet</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="contentblock">
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/lightCover.jpg" alt="BWPhoto" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('light')" class="text"><p>Light Study</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/fresherAirCover.jpg" alt="FresherAir" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('activism')" class="text"><p>Activism Flyer</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/dragonetteSpotifyCover.jpg" alt="DragonetteSpotify" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('dragonette')" class="text"><p>Dragonette</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos	/greatDivideCover.png" alt="GreatDivide" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('greatdivide')" class="text"><p>The Great Divide</p></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div id="index">
+		<div class="content page hidden">
+			<!-- <div class="contentblock">
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/lewisCover.jpg" alt="LewisBlackTemp" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('lewis')" class="text"><p>Lewis Black</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/mnrkCover.jpg" alt="MNRKAnniTemplate" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('MNRK')" class="text"><p>MNRK Records</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/adidasCover.jpg" alt="adidasMockPromo" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('adidas')" class="text"><p>Adidas Mock Promo</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/corinneCover.png" alt="CorinnesPlace" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('corinne')" class="text"><p>Corinne's Place</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="contentblock">
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/streetsCover.jpg" alt="FashionShowFlyer" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('streets')" class="text"><p>Take It To The Streets</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/doorCover.jpg" alt="DoorColorPhoto" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('doors')" class="text"><p>Door Study</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/soapsCover.jpg" alt="UVSoapsTemp" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('unclevinnies')" class="text"><p>Uncle Vinnies Comedy Club</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/ThrowUps/ThrowUps.jpg" alt="ThrowUpsBooklet" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('throwups')" class="text"><p>Skatepark Photo Booklet</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="contentblock">
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/lightCover.jpg" alt="BWPhoto" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('light')" class="text"><p>Light Study</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/dragonetteSpotifyCover.jpg" alt="DragonetteSpotify" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('dragonette')" class="text"><p>Dragonette</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos/fresherAirCover.jpg" alt="FresherAir" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('activism')" class="text"><p>Activism Flyer</p></a>
+					</div>
+				</div>
+				<div class="project">
+					<img src="Portfolio-Content/index-photos	/greatDivideCover.png" alt="GreatDivide" class="image">
+					<div class="overlay">
+						<a onclick="pageFunc('greatdivide')" class="text"><p>The Great Divide</p></a>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<div id="lewis">
+		<section class="page hidden">
+			<div class="photos">
+				<img src="Portfolio-Content/Syn/LewisBlack/LewisBlack1.png" alt="LewisBlackTemp" class="image">
+			</div>
+			<div class="project-info">
+				<div class="title">Lewis Black</div>
+				<div class="info">Lewis Black is an American stand-up comic known for his comical frustrations and takes on "the absurdities of life." As an intern at the Syndicate, I was tasked with ideating possible YouTube cover templates for his rebranding. Lewis and his team requested pops of vibrant color, big and blocky text, and the inclusion of his signature middle finger.</div>
+			</div>
+			<div class="photos">
+				<img src="Portfolio-Content/Syn/LewisBlack/LewisBlack2.png" alt="LewisBlackTemp" class="image">
+			</div>
+			<div class="photos">
+				<img src="Portfolio-Content/Syn/LewisBlack/LewisBlack3.png" alt="LewisBlackTemp" class="image">
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"></div>
+				<div class="next"><a onclick="pageFunc('MNRK')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="MNRK">
+		<section class="page hidden">
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Syn/MNRK/anni1.jpg" alt="MNRK Anniversary Template"></div>
+				<div class="col-image"><img src="Portfolio-Content/Syn/MNRK/anni2.jpg" alt="MNRK Anniversary Template"></div>
+			</div>
+			<div class="project-info">
+				<div class="title">MNRK Heavy</div>
+				<div class="info">MNRK Heavy, the heavy side of MNRK Music Group, is a record label for hard rock and heavy metal music. They've worked with reknowned artists such as Black Label Society, Avatar, Noctem, and Zakk Wilde to produce music and promote a wide variety of merch and apparel. At the Syndicate, I was tasked with creating straightforward Instagram templates for their artists' albums and singles that had anniversaries approaching. </div>
+			</div>
+			<div class="photos">
+				<img src="Portfolio-Content/Syn/MNRK/1919
+				Eternal-Black.png" alt="MNRK Anniversary Template" class="image">
+			</div>
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Syn/MNRK/anni5.jpg" alt="MNRK Anniversary Template.png"></div>
+				<div class="col-image"><img src="Portfolio-Content/Syn/MNRK/1919Eternal-Red.png" alt="MNRK Anniversary Template"></div>
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"><a a onclick="pageFunc('lewis')">Previous Project</a></div>
+				<div class="next"><a onclick="pageFunc('adidas')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="adidas">
+		<section class="page hidden">
+			<div class="photos">
+				<video controls width="100%">
+					<source src="Portfolio-Content/adidasMock/adidasMockPromo.mp4" type="video/mp4" alt="Adidas Promotional Video Mock"> 
+					Your browser does not support this video.
+				</video>
+			</div>
+			<div class="project-info">
+				<div class="title">Adidas Mock Promotional Video</div>
+				<div class="info">Adidas is one of the most popular athletic apparel and footwear companies worldwide. As a personal project, I wanted to create a mock commercial that blends high-energy editing and a punchy tagline to show the brand's values of performance and success in both everyday life as well as in sports.</div>
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"><a onclick="pageFunc('MNRK')">Previous Project</a></div>
+				<div class="next"><a onclick="pageFunc('corinne')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="corinne">
+		<section class="page hidden">
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Syn/CorinnesPlace/foodTruck.png" alt="Corinne's Place Food Truck Flyer"></div>
+				<div class="col-image"><img src="Portfolio-Content/Syn/CorinnesPlace/foodTruck2.png" alt="Corinne's Place Food Truck Flyer"></div>
+			</div>
+			<div class="project-info">
+				<div class="title">Corinne's Place</div>
+				<div class="info">Since 1989, with her vibrant menu layouts and inviting atmosphere, Corinne's Place has delivered delicious and authentic Southern soul food to the community of Camden, New Jersey. At the Syndicate, to capture the essence of Corinne's Place, I incorporated a harmonious blend of color, typography and imagery to produce these flyers. The above flyers were used to promote the company's new app, while the ones below were for their Mother's Day packages.</div>
+			</div>
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Syn/CorinnesPlace/mother.png" alt="Corinne's Place Mothers Day Flyer"></div>
+				<div class="col-image"><img src="Portfolio-Content/Syn/CorinnesPlace/mother2.png" alt="Corinne's Place Mothers Day Flyer"></div>
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"><a onclick="pageFunc('adidas')">Previous Project</a></div>
+				<div class="next"><a onclick="pageFunc('streets')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="streets">
+		<section class="page hidden">
+			<div class="photos">
+				<div class="image"><img src="Portfolio-Content/Streets/streets.jpg" alt="Take It To The Streets Updated">
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="title">Take It To The Streets</div>
+				<div class="info">In 2019, my two friends, Emily Peguero and Pablo Ledesma, hosted their first fashion show in North Bergen, NJ. They gave me the opportunity to create the promotional flyers for the event, which would be one of my first real attempts at graphic design. The original flyers are below.
+				</div>
+				<div class="info">While I was really proud of them back then, over time, as I improved as a designer and narrowed down my preferred styles, I realized they didn't show much of my personality, weren't demonstrative of my capabilities, and lacked structure and creativity overall. I decided to remake them, making sure to incorporate aspects of what I remember the show to be like, as well as a few of my own embellishments.</div>
+			</div>
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Streets/streetsBefore.jpg" alt="Take It To The Streets Original">
+				</div><div class="col-image"><img src="Portfolio-Content/Streets/streetsBefore2.jpg" alt="Take It To The Streets Original">
+				</div>
+			</div>
+			<div class="photos">
+				<div class="image"><img src="Portfolio-Content/Streets/streetsBefore3.jpg" alt="Take It To The Streets Original">
+				</div>
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"><a onclick="pageFunc('corinne')">Previous Project</a></div>
+				<div class="next"><a onclick="pageFunc('unclevinnies')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="unclevinnies">
+		<section class="page hidden">
+		 	<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Syn/UV-Soaps/soaps1.jpg" alt="Uncle Vinnies Soaps Template">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/Syn/UV-Soaps/soaps2.jpg" alt="Uncle Vinnies Soaps Template">
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="title">Uncle Vinnies Comedy Club - Templates</div>
+				<div class="info">Uncle Vinnies, once Ferrara's Ristorante, is currently a staple in Point Pleasant Beach, NJ. Having showcased professional comics such as Andrew DICE Clay, Jackie "The Joke Man" Martling, Vic Di Bitetto, Robert Kelly and more, the comedy club has been noted as one of the best by <i>Night & Day Magazine, Stepping Out, NJ Monthly</i> and <i>Asbury Park Press.</i></div>
+				<div class="info">As a diversifying business and client of the Syndicate, Uncle Vinnies requested many different kinds of master flyer templates to reuse for their varying events. For example, I created the above two flyers as general templates for meet and greets and specil events hosted at Uncle Vinnies that were broader than just comic appearances.</div>
+			</div>
+			<div class="photos">
+				<div class="image"><img src="Portfolio-Content/Syn/UV-Templates/jackie.jpg" alt="Uncle Vinnies Jokeman Template">
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="info">Uncle Vinnies also collaborates with businesses such as Max's Es-ca, the Algonquin Arts Theatre, State Theater and American Hotel. Above, is a template flyer for events hosted by Uncle Vinnies but situated in one of the aformentioned locations. The club also wanted to find a way to present, in one flyer, multiple comics that would perform during the week, at both Uncle Vinnies and other locations. Below, are two iterations of that request.
+				</div>
+			</div>
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Syn/UV-Templates/temp1.jpg" alt="Uncle Vinnies This Week At Template">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/Syn/UV-Templates/temp2.jpg" alt="Uncle Vinnies This Week At Template">
+				</div>
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"><a onclick="pageFunc('streets')">Previous Project</a></div>
+				<div class="next"><a onclick="pageFunc('doors')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="doors">
+		<section class="page hidden">
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Photos/Door-Study/Red-Door.jpg" alt="Red Door">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/Photos/Door-Study/BW-Door.jpg" alt="Black and White Door">
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="title">Door Study</div>
+				<div class="info">You can tell a lot about a place by the door of its entrance. The likelihood of inner color abundance, how often passerbys come and go, or if they come at all. This door "study" started out with only home doors and the notion that doors are more the windows to a home than the windows themselves. The more door photos I took, though, the more my interest in doors in general grew - as you can see by this dedicated page. The majority here, as of now, are of home doors, but this will eventually be crowded of home doors, building doors, little doors, tall doors, bodega doors, toy doors, and doors doors doors doors.</div>
+				<div class="info">If you happen to come across a flavorful door or entrance, and wish to share, you can send me the address on my contact page. :)</div>
+			</div>
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Photos/Door-Study/American-Door.jpg" alt="American Colors Door">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/Photos/Door-Study/LaOaxa.jpg" alt="La Oaxaquena">
+				</div>
+			</div>
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Photos/Door-Study/Brick-Door.jpg" alt="Brick Door">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/Photos/Door-Study/TwoChair-Door.jpg" alt="Two Chairs with Door">
+				</div>
+			</div>
+			<div class="photos">
+				<div class="col-image"><img src="Portfolio-Content/Photos/Door-Study/Short-White-Door.jpg" alt="Short White Door">
+				</div>
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"><a onclick="pageFunc('unclevinnies')">Previous Project</a></div>
+				<div class="next"><a onclick="pageFunc('throwups')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="throwups">
+		<section class="page hidden">
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/ThrowUps/ThrowUps.jpg" alt="Throw Ups Insides">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/ThrowUps/ThrowUps19.jpg" alt="Throw Ups Insides">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/ThrowUps/ThrowUps25.jpg" alt="Throw Ups Insides">
+				</div>
+			</div>
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/ThrowUps/ThrowUps4.jpg" alt="Throw Ups Insides">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/ThrowUps/ThrowUps20.jpg" alt="Throw Ups Insides">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/ThrowUps/ThrowUps21.jpg" alt="Throw Ups Insides">
+				</div>
+			</div>
+			<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/ThrowUps/ThrowUps12.jpg" alt="Throw Ups Insides">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/ThrowUps/ThrowUps13.jpg" alt="Throw Ups Insides">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/ThrowUps/ThrowUps23.jpg" alt="Throw Ups Insides">
+				</div>
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"><a onclick="pageFunc('doors')">Previous Project</a></div>
+				<div class="next"><a onclick="pageFunc('light')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="light">
+		<section class="page hidden">
+			<div class="photos">
+				<div class="col-image"><img src="Portfolio-Content/Photos/LightStudy/highwayLight.jpg" alt="Black and White Highway">
+				</div>
+			</div>
+			<div class="photos">
+				<div class="col-image"><img src="Portfolio-Content/Photos/LightStudy/houseLight.jpg" alt="Black and White House">
+				</div>
+			</div>
+			<div class="photos">
+				<div class="col-image"><img src="Portfolio-Content/Photos/LightStudy/lights.jpg" alt="Black and White Lights">
+				</div>
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"><a onclick="pageFunc('doors')">Previous Project</a></div>
+				<div class="next"><a onclick="pageFunc('dragonette')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="dragonette">
+		<section class="page hidden">
+		 	<div class="photos">
+				<div class="image"><img src="Portfolio-Content/Syn/DragonetteSpotify/spotify.png" alt="Dragonette Spotify Cover">
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="title">Dragonette</div>
+				<div class="info"></div>
+			</div>
+			<div class="photos">
+				<div class="image"><img src="Portfolio-Content/Syn/DragonetteSpotify/spotify2.png" alt="Dragonette Spotify Cover">
+				</div>
+			</div>
+			<div class="photos">
+				<div class="image"><img src="Portfolio-Content/Syn/DragonetteSpotify/spotify3.png" alt="Dragonette Spotify Cover">
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"><a onclick="pageFunc('streets')">Previous Project</a></div>
+				<div class="next"><a onclick="pageFunc('doors')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="activism">
+		<section class="page hidden">
+		 	<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Fresher_Air/fresher2.png" alt="Activism Flyer">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/Fresher_Air/fresher4.jpg" alt="Activism Flyer">
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="title">Fresher Air</div>
+				<div class="info">Here are a few iterations for an activism flyer promoting urban agriculture within cities. The topic was inspired by the many vacant and abandoned lots in New York City that have the potential to serve not only as community spaces, but also as a means of fostering better air quality.</div>
+			</div>
+			<div class="photos">
+				<div class="image"><img src="Portfolio-Content/Fresher_Air/fresher1.png" alt="Activism Flyer">
+				</div>
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"><a onclick="pageFunc('streets')">Previous Project</a></div>
+				<div class="next"><a onclick="pageFunc('doors')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="greatdivide">
+		<section class="page hidden">
+		 	<div class="photos col">
+				<div class="col-image"><img src="Portfolio-Content/Syn/GreatDivide/recipes2.png" alt="Great Divide Recipe Flyer">
+				</div>
+				<div class="col-image"><img src="Portfolio-Content/Syn/GreatDivide/recipes3.png" alt="Great Divide Recipe Flyer">
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="title">The Great Divide</div>
+				<div class="info">While interning at the Syndicate, I was tasked with creating different templates for the Great Divide's camping recipes. They were interested in a more "modern" look, utilizing just the colors of their brand logo, and for something not to heavy on the eyes.</div>
+			</div>
+			<div class="photos">
+				<div class="image"><img src="Portfolio-Content/Syn/GreatDivide/recipes.png" alt="Great Divide Recipe Flyer">
+				</div>
+			</div>
+			<div class="second-menu menu">
+				<div class="previous"><a onclick="pageFunc('streets')">Previous Project</a></div>
+				<div class="next"><a onclick="pageFunc('doors')">Next Project</a></div>
+			</div>
+		</section>
+	</div>
+	<div id="resume">
+		<section class="page hidden">
+			<div class="resume-col">
+				<img src="me.jpg" alt="Ryan Sky Photo">
+				<div class="resume-text">
+					<div class="resume-title">Hi, I'm Ryan Sky.</div>
+					<div>I am a 21-year-old recent Rutgers grad who enjoys graphic design, web design, 3D animation, photographing doors, playing guitar, sketching out my dreams, going to small shows and finding new pastimes to fill my days with. I love Radiohead, the beach, my 3 plants, my 2 cats, and my 1 very big little brother.</div>
+					<br>
+					<div class="profexp">
+						<div>PROFESSIONAL EXPERIENCE</div>
+						<div>The Syndicate - Hoboken, New Jersey</div>
+						<div>Graphic Design Intern  |  Feb 2023 - April 2023</div>
+						<div>• Assisted and created still and video flyers, assets, and product mockups for clients</div>
+						<div>• Helped department supervisors in the brainstorming process for client projects</div>
+						<div>• Explored different design styles by adapting to a variety of client requests</div>
+					</div>
+					<br>
+					<div>SKILLS</div>
+					<div class="skills">
+						<div class="skill"><i>DESIGN</i>
+							<div>Photoshop</div>
+							<div>Illustrator</div>
+							<div>InDesign</div>
+							<div>Blender</div>
+							<div>AfterEffects</div>
+						</div>
+						<div class="skill"><i>CODING</i>
+							<div>HTML</div>
+							<div>CSS</div>
+							<div>JavaScript</div>
+						</div>
+						<div class="skill"><i>HANDS-ON</i>
+							<div>Sculpting</div>
+							<div>Pottery</div>
+							<div>Sketching</div>
+							<div>Embroidery</div>
+							<div>Photography</div>
+						</div>
+						<div class="skill"><i>MUSIC</i>
+							<div>Cubase</div>
+							<div>Audacity</div>
+							<div>Guitar</div>
+							<div>Piano</div>
+						</div>
+					</div>
+					<br>
+					<div class="education">
+						<div>EDUCATION</div>
+						<div>Rutgers University - New Brunswick</div>
+						<div>• Major in Information Technology & Informatics for Web Design & Development</div>
+						<div>• Minor in Entrepreneurship</div>
+						<div>• Magna Cum Laude</div>
+					</div>
+				</div>
+			</div>
+			<div class="resume-col">
+				
+			</div>
+		</section>
+	</div>
+	<div id="contact">
+		<section class="page hidden">
+			<div class="contact-col">
+				<div class="contact-div">
+					<div class="contact-text">If you'd like to work together, ask me a question, or for anything at all, please feel free to reach out to me!</div>
+					<br>
+					<div class="contact-text">sky@arizmendi.org</div>
+					<div class="contact-text">201.917.0304</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="footer">
+		<a href="index.html" class="ryansky">RYAN SKY</a>
+<!-- 		<div class="end-menu menu">
+			<a href="index.html">home</a>
+			<a href="contact.html">contact</a> 
+		</div> -->
+	</div>
+</body>
+</html>

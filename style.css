@@ -1,0 +1,452 @@
+* {box-sizing: border-box;}
+
+@font-face {
+	font-family: apple;
+	src: url(apple_garamond/AppleGaramond-Light.ttf);
+}
+
+body {
+	margin: 0px;
+	font-family: apple;
+
+}
+
+img {
+	border-radius: 3px;
+	border: 1px black solid;
+}
+
+/*****************  MENU ***********************************/
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 130px;
+	position: fixed;
+	align-items: center;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	font-size: 20px;
+	background-color: black;
+}
+
+.sidebar div > a {
+	color: white;
+	cursor: pointer;
+}
+
+.main-menu {
+	display: flex;
+	flex-direction: column;
+	margin-top: 14px;
+}
+
+.sub-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.hamburger {
+	scale: 60%;
+	display: none;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s;
+	border-radius: 5px;
+}
+
+.change .bar1 {
+	transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+	opacity: 0;}
+
+.change .bar3 {
+	transform: translate(0, -11px) rotate(45deg);
+}
+
+.mobile-menu {
+	display: none;
+}
+
+.mobile-menu.change {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	background-color: black;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.mobile-items {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+.ryansky{
+	font-size: 28px;
+	margin-bottom: 5px;
+	font-weight: 900;
+}
+
+.footer{
+	margin-right: 20px;
+	margin-top: 20px;
+	padding-top: 10px;
+	border-top: 1px black solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 140px;
+}
+
+/*****************  CONTENT  *********************************/
+
+.content {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.contentblock {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	gap: 20px;
+}
+
+.project{
+	position: relative;
+	overflow: hidden;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.project:hover .overlay{
+	opacity: 1;
+}
+
+.project .text {
+	width: 100%;
+	height: 100%;
+	font-weight: 300;
+	color: white;
+	position: absolute;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	transition: .7s ease;
+}
+
+p {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/**************  PAGES  ********************************/
+
+.replace {
+	margin-top: 20px;
+	margin-left: 150px;
+	margin-right: 20px;
+}
+
+.page {
+/*	margin-left: 140px;*/
+}
+
+.page img {
+	width: 100%;
+	height: 100%;
+}
+
+.page .project-info {
+	display: flex;
+	padding-bottom: 20px;
+	flex-direction: column;
+}
+
+.page .project-info > div {
+	padding-bottom: 10px;
+}
+
+.page .title {
+	font-weight: 600;
+	letter-spacing: -1px;
+	font-size: 28px;
+}
+
+.page .info {
+	font-size: 22px;
+	font-weight: 300;
+	letter-spacing: -.3px;
+}
+
+/* FOR DIVS WITH COLUMNS */
+.page .col {
+	display: flex;
+	gap: 20px;
+}
+
+.page .col-image {
+	flex: 1;
+}
+
+/* DIVS WITHOUT COLUMNS */
+
+.page .photos { 
+	padding-bottom: 20px;
+}
+
+.page .image {
+	flex: 1;
+}
+
+.second-menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	align-items: center;
+}
+
+.previous{
+	cursor: pointer;
+}
+
+.next {
+	cursor: pointer;
+}
+
+/***********************RESUME********************/
+.skills {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+.skill {
+	display: flex;
+	flex-direction: column;
+}
+
+.resume-col {
+	display: flex;
+	gap: 20px;
+	width: 100%;
+}
+
+.resume-col > img {
+	width: 40%;
+}
+
+.resume-text {
+	font-size: 20px;
+	width: 60%;
+}
+
+.resume-title {
+	font-size: 25px;
+}
+/********************CONTACT******************/
+.contact-col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+	height: 100%;
+}
+.contact-div {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	align-items: center;
+}
+.contact-text {
+	text-align: center;
+}
+
+
+/**************MOBILE***********************/
+@media screen and (min-width: 500px) and (max-width: 912px) {
+	.whole {
+		display: block;
+	}
+	.sidebar {
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	.main-menu {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-right: 5px;
+		padding-left: 5px;
+		margin-top: 0;
+	}
+	.mobile-menu.change {
+		display: none;
+	}
+	.sub-menu {
+		flex-direction: row;
+		gap: 10px;
+		font-size: 30px;
+	}
+	.ryansky {
+		margin-bottom: 0;
+		font-weight: 900;
+		font-size: 30px;
+	}
+	.replace {
+		margin-left: 15px;
+		margin-top: 15px;
+	}
+	.content {
+		margin-left: 0;
+		gap: 15px;
+	}
+	.contentblock {
+		gap: 15px;
+	}
+	.footer {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 499px) {
+	.whole {
+		display: block;
+	}
+	.sidebar {
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	.main-menu {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-right: 5px;
+		padding-left: 5px;
+		margin: 0;
+	}
+	.sub-menu {
+		display: none;
+	}
+	.mobile-menu.change {
+		display: flex;
+	}
+	.hamburger {
+		display: block;
+	}
+	.mobile-item {
+		font-size: 40px;
+	}
+	.ryansky {
+		margin-bottom: 0;
+		font-weight: 900;
+		font-size: 30px;
+	}
+	.replace {
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-left: 0;
+	}
+
+	.footer {
+		margin-left: 0;
+	}
+	.resume-col {
+		flex-direction: column;
+		width: 100%;
+	}
+	.resume-col > img, .resume-text{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+/****************LINKS********************/
+:any-link {
+	color: darkgrey;
+}
+
+:any-link: active{
+	text-decoration: none;
+}
+
+a:link {
+	color: black;
+	text-decoration: none; 
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darkgrey;
+	text-decoration: none; 
+}
+
+a:active {
+	text-decoration: none;
+	color: darkgrey;
+}
+
+.hidden {
+	visibility: hidden;
+	display: none;
+}
+
+.shown {
+	opacity: 100%;
+}
