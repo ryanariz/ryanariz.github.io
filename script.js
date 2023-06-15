@@ -5,6 +5,7 @@ function pageFunc(id) {
 	const page = document.querySelector(".page");
 	page.classList.remove("hidden");
 	newText.classList.add("hidden");
+	window.scrollTo(0, 0);
 }
 
 function menuChange(x) {
