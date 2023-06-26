@@ -14,8 +14,6 @@ img {
 	border-radius: 3px;
 	border: 1px solid rgb(0, 0, 0);
 }
-/*Test 2*/
-
 /*****************  MENU ***********************************/
 
 .sidebar {
@@ -167,9 +165,6 @@ p {
 	margin-top: 20px;
 	margin-left: 150px;
 	margin-right: 20px;
-}
-.page {
-/*	margin-left: 140px;*/
 }
 .page img {
 	width: 100%;
@@ -370,13 +365,16 @@ p {
 	.resume-col > img, .resume-text{
 		width: 100%;
 	}
+	.col{
+		flex-direction: column;
+	}
 }
 
 /****************LINKS********************/
 :any-link {
 	color: darkgrey;
 }
-:any-link: active{
+:any-link:active {
 	text-decoration: none;
 }
 a:link {
