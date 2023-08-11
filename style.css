@@ -151,6 +151,9 @@ img {
 	text-decoration: none;
 	transition: .7s ease;
 }
+.project .type {
+	color: white;
+}
 p {
 	margin: 0;
 	position: absolute;
