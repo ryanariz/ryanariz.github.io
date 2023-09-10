@@ -5,9 +5,14 @@
 	font-family: apple;
 	src: url(apple-garamond/AppleGaramond-Light.ttf);
 }
+@font-face {
+	font-family: jumper;
+	src: url(jumper_3/JumperPERSONALUSEONLY-Thin.ttf);
+}
+
 body {
 	margin: 0px;
-	font-family: apple;
+	font-family: sans-serif;
 
 }
 img {
@@ -42,6 +47,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+	font-size: 18px;
 }
 .hamburger {
 	scale: 60%;
@@ -86,9 +92,9 @@ img {
 	gap: 40px;
 }
 .ryansky{
-	font-size: 28px;
+	font-size: 22px;
 	margin-bottom: 5px;
-	font-weight: 900;
+	font-weight: 600;
 }
 .footer{
 	margin-right: 20px;
