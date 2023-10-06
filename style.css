@@ -222,7 +222,8 @@ p {
 .second-menu {
 	display: flex;
 	justify-content: space-between;
-	padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	align-items: center;
 }
 .previous{
