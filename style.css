@@ -229,6 +229,9 @@ p {
 .previous{
 	cursor: pointer;
 }
+div.center{
+	text-align: center;
+}
 
 .next {
 	cursor: pointer;
