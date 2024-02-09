@@ -1,0 +1,159 @@
+[
+	{
+		"id":"morph",
+		"title":"Morph",
+		"type":"2D Animation - AfterEffects, Photoshop",
+		"date":2023,
+		"text":"Original postcard by Drew Michael Photography - Chicago Illinois.",
+		"image":"Portfolio-Content/Morph/drewgif-1 copy.gif",
+		"medType":"vert"
+	},
+	{
+		"id":"bcs",
+		"title":"Better Call Saul",
+		"type":"2D Animation - AfterEffects",
+		"date":2023,
+		"text":"Song - Tapioca Tundra, Mike Nesmith Acoustic Version <br> Sounds - Moulaythami and Julien Matthey from freesound.org",
+		"vid":"Portfolio-Content/BCS/BCSComp.mp4",
+		"alt":"Better Call Saul Ad",
+		"medType":"vert"
+	},
+	{
+		"id": "lewis",
+		"title":"Lewis Black",
+		"type":"Graphic Design - Indesign, Photoshop",
+		"date":2023,
+		"text":"Lewis Black is an American stand-up comic known for his comical frustrations and takes on 'the absurdities of life.' As an intern at the Syndicate, I was tasked with ideating possible YouTube cover templates for his rebranding. Lewis and his team requested pops of vibrant color, big and blocky text, and the inclusion of his signature middle finger.",
+		"image":["Portfolio-Content/Syn/LewisBlack/LewisBlack1.png", "Portfolio-Content/Syn/LewisBlack/LewisBlack2.png", "Portfolio-Content/Syn/LewisBlack/LewisBlack3.png"],
+		"medType":"hor"
+	},
+	{
+		"id":"tonelle",
+		"title":"Tonelle Ave",
+		"type":"Illustration - Hand Drawing, Photoshop",
+		"date":2023,
+		"text":"Illustration of Tonelle Avenue from 69th Street bridge in North Bergen, NJ.",
+		"image":"Portfolio-Content/Illustrations/tonelle.jpg",
+		"medType":"vert"
+	},
+	{
+		"id":"bluestrawb",
+		"title":"Blue Strawberry Pictures",
+		"type":"Graphic Design - Illustrator",
+		"date":2023,
+		"text":"Production card for Brandon, Ryan, Alan, and Rob.",
+		"image":["Portfolio-Content/BlueStrawb/BlueStrawberry.png", "Portfolio-Content/BlueStrawb/BlueStrawberry-WhiteBG.png"],
+		"medType":"vert"
+	},
+	{
+		"id":"mnrk",
+		"title":"MNRK Heavy",
+		"type":"Graphic Design - Photoshop",
+		"date":2023,
+		"text":"MNRK Heavy, the heavy side of MNRK Music Group, is a record label for hard rock and heavy metal music. They've worked with reknowned artists such as Black Label Society, Avatar, Noctem, and Zakk Wilde to produce music and promote a wide variety of merch and apparel. At the Syndicate, I was tasked with creating straightforward Instagram templates for their artists' albums and singles that had anniversaries approaching.",
+		"image":["Portfolio-Content/Syn/MNRK/anni1.jpg", "Portfolio-Content/Syn/MNRK/anni2.jpg"],
+		"medType":"vert"
+	},
+	{
+		"id":"adidas",
+		"title":"Adidas Mock Promotional Video",
+		"type":"Video & Graphic Design - Photoshop, Premiere, Cubase Elements 12",
+		"date":2023,
+		"text":"A mock commercial that blends high-energy editing and a punchy tagline to show the Adidas' values of performance and success in both everyday life as well as in sports.",
+		"vid":"Portfolio-Content/adidasMock/adidasMockPromo.mp4",
+		"alt":"Adidas Mock Promotional Video",
+		"medType":"hor"
+	},
+	{
+		"id":"agog",
+		"title":"Leave You Agog",
+		"type":"Graphic Design - Photoshop",
+		"date":2023,
+		"text":"A conceptual cover for a collection of songs by artists such as Jimi Hendrix, Thom Yorke, Kurt Cobain, Kim Deal, and more.",
+		"image":["Portfolio-Content/Agog/leaveYouAgogFront.png", "Portfolio-Content/Agog/leaveYouAgogBack.png"],
+		"medType":"vert"
+	},
+	{
+		"id":"minolta",
+		"title":"Minolta Mock Promotional Video",
+		"type":"Video Editing, Typography & 3D Animation",
+		"date":2023,
+		"text":"A modern concept promo for the camera manunfacturing company Minolta, now Konica Minolta. Custom Minolta font and backtrack created by Ryan Arizmendi. Camera models:<br><div style='margin-top: 10px;'>Minolta X-300: Radovan Stastny <a style='text-decoration: underline;' href='https://sketchfab.com/radovan_stastny'>https://sketchfab.com/radovan_stastny</a><br>Rox Branded Konica: Fuji <a style='text-decoration: underline;' href='https://sketchfab.com/fujisan'>https://sketchfab.com/fujisan</a><br>Minolta X-570: Michael Emory Cerquoni <a style='text-decoration: underline;' href='https://sketchfab.com/nebadon2025'>https://sketchfab.com/nebadon2025</a></div>",
+		"vid":"Portfolio-Content/Minolta/MinoltaAd.mp4",
+		"alt":"Minolta Mock Promotional Video",
+		"medType":"hor"
+	},
+	{
+		"id":"streets",
+		"title":"Take It To The Streets",
+		"type":"Graphic Design - Photoshop",
+		"date":"2019/2023",
+		"text":"A rework of promotional flyers for a local fashion show in North Bergen, NJ, hosted by Emily Peguero and Pablo Ledesma in 2019 - includes improved hierarchy, enhanced photo manipulation, and an overall better demonstration of my structural and creative capability. Original last.",
+		"image":["Portfolio-Content/Streets/streets.jpg", "Portfolio-Content/Streets/streetsBefore.jpg"],
+		"medType":"vert"
+	},
+	{
+		"id":"doors",
+		"title":"Door Study",
+		"type":"Photography - Photoshop, Bridge",
+		"date":"Ongoing Project",
+		"text":"You can tell a lot about a place by the door of its entrance. The likelihood of inner color abundance, how often passerbys come and go, or if they come at all. This door 'study' started out with only home doors and the notion that doors are more the windows to a home than the windows themselves. The more door photos I took, though, the more my interest in doors in general grew.",
+		"image":["Portfolio-Content/Door-Study/Red-Door.jpg", "Portfolio-Content/Door-Study/American-Door.jpg", "Portfolio-Content/Door-Study/LaOaxa.jpg", "Portfolio-Content/Door-Study/Brick-Door.jpg", "Portfolio-Content/Door-Study/TwoChair-Door.jpg", "Portfolio-Content/Door-Study/CageDoor.jpg", "Portfolio-Content/Door-Study/GreenDoor.jpg", "Portfolio-Content/Door-Study/KGBDoor.jpg", "Portfolio-Content/Door-Study/RedGardenDoor.jpg", "Portfolio-Content/Door-Study/Short-White-Door.jpg"],
+		"medType":"vert"
+	},
+	{
+		"id":"shrocked",
+		"title":"Shrocked",
+		"type":"Illustration - Hand Drawing, Photoshop",
+		"date":2023,
+		"text":"Illustration of one of my clay rocks, who happens to look shocked. He is, shrocked.",
+		"image":"Portfolio-Content/Illustrations/shrocked.jpg",
+		"medType":"vert"
+	},
+	{
+		"id":"unclevinnies",
+		"title":"Uncle Vinnies Comedy Club",
+		"type":"Graphic Design - Photoshop",
+		"date":2023,
+		"text":"Uncle Vinnies, once Ferrara's Ristorante, is currently a staple in Point Pleasant Beach, NJ. Having showcased professional comics such as Andrew DICE Clay, Jackie 'The Joke Man' Martling, Vic Di Bitetto, Robert Kelly and more, the comedy club has been noted as one of the best by <i>Night & Day Magazine, Stepping Out, NJ Monthly</i> and <i>Asbury Park Press.</i><br>As a diversifying business and client of the Syndicate, Uncle Vinnies requested many different kinds of master flyer templates to reuse for their varying events. Below are general templates for meet and greets and specil events hosted at Uncle Vinnies, as well as templates for events hosted <i>by</i> Uncle Vinnies but situated in other locations, such as Max's Es-ca.",
+		"image":["Portfolio-Content/Syn/UV-Soaps/soaps1.jpg", "Portfolio-Content/Syn/UV-Templates/temp1.jpg", "Portfolio-Content/Syn/UV-Templates/temp2.jpg"],
+		"medType":"vert"
+	},
+	{
+		"id":"ensoul",
+		"title":"En Soul",
+		"type":"3D Animation - Blender",
+		"date":2023,
+		"text":"In my last semester at Rutgers, with a few leftover credits to take electives I didn't need, I registered for Animation 3D. This was my final project for the course, and my first time diving into any kind of animation, so it's fairly rough around the edges. But, all aspects of the animation, minus the sound effects of the characters, were created by me, and I'm proud of it. So, here it is as part of my portfolio. Enjoy!",
+		"vid":"Portfolio-Content/EnSoul/arizmendi-EnSoul.mp4",
+		"alt":"En Soul 3D Animation",
+		"medType":"hor"
+	},
+	{
+		"id":"nebulas",
+		"title":"Nebulas",
+		"type":"Illustration - Hand Drawing, Photoshop",
+		"date":2023,
+		"text":"Freehand illustration",
+		"image":"Portfolio-Content/Illustrations/nebulas.jpg",
+		"medType":"vert"
+	},
+	{
+		"id":"activism",
+		"title":"Fresher Air",
+		"type":"Graphic Design - InDesign",
+		"date":2023,
+		"text":"Iterations for an activism flyer promoting urban agriculture within cities. The topic was inspired by the many vacant and abandoned lots in New York City that have the potential to serve not only as community spaces, but also as a means of fostering better air quality.",
+		"image":["Portfolio-Content/Fresher_Air/fresher2.png", "Portfolio-Content/Fresher_Air/fresher4.jpg", "Portfolio-Content/Fresher_Air/fresher1.png"],
+		"medType":"vert"
+	},
+	{
+		"id":"dragonette",
+		"title":"Dragonette",
+		"type":"Graphic Design - Photoshop",
+		"date":2023,
+		"text":"Toront-based Dragonette was originally a group of three - Martina Sorbara, Dan Kurtz and Joel Stouffer - until just after their fourth studio album in 2016. Sorbara continued her solo career under the Dragonette name, and her most recent album <i>Twennies</i> was released in October 2022.<br>For this project, I worked closely with the creative directors at the Syndicate to produce iterations of Dragonette's Tour Life Playlist on Spotify - a curation of songs Dragonette listened to for the simple sake of listening.",
+		"image":["Portfolio-Content/Syn/DragonetteSpotify/spotify.png", "Portfolio-Content/Syn/DragonetteSpotify/spotify2.png", "Portfolio-Content/Syn/DragonetteSpotify/spotify3.png"],
+		"medType":"vert"
+	}
+]
