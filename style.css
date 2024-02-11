@@ -252,6 +252,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: .3vw;
+    margin-bottom: 20px;
 }
 .mediaVert {
     width: var(--page-vert);

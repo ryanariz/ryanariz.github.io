@@ -76,7 +76,7 @@
 	{
 		"id":"minolta",
 		"title":"Minolta Mock Promotional Video",
-		"type":"Video Editing, Typography & 3D Animation",
+		"type":"Video Editing, Typography & 3D Animation - Illustrator, AfterEffects, Blender",
 		"date":2023,
 		"text":"A modern concept promo for the camera manunfacturing company Minolta, now Konica Minolta. Custom Minolta font and backtrack created by Ryan Arizmendi. Camera models:<br><div style='margin-top: 10px;'>Minolta X-300: Radovan Stastny <a style='text-decoration: underline;' href='https://sketchfab.com/radovan_stastny'>https://sketchfab.com/radovan_stastny</a><br>Rox Branded Konica: Fuji <a style='text-decoration: underline;' href='https://sketchfab.com/fujisan'>https://sketchfab.com/fujisan</a><br>Minolta X-570: Michael Emory Cerquoni <a style='text-decoration: underline;' href='https://sketchfab.com/nebadon2025'>https://sketchfab.com/nebadon2025</a></div>",
 		"vid":"Portfolio-Content/Minolta/MinoltaAd.mp4",
@@ -139,13 +139,22 @@
 		"medType":"vert"
 	},
 	{
-		"id":"activism",
+		"id":"fresherAir",
 		"title":"Fresher Air",
 		"type":"Graphic Design - InDesign",
 		"date":2023,
 		"text":"Iterations for an activism flyer promoting urban agriculture within cities. The topic was inspired by the many vacant and abandoned lots in New York City that have the potential to serve not only as community spaces, but also as a means of fostering better air quality.",
 		"image":["Portfolio-Content/Fresher_Air/fresher2.png", "Portfolio-Content/Fresher_Air/fresher4.jpg", "Portfolio-Content/Fresher_Air/fresher1.png"],
 		"medType":"vert"
+	},
+	{
+		"id":"craftMix",
+		"title":"CraftMix Mock Design",
+		"type":"Graphic Design - Illustrator, Photoshop, Blender",
+		"date":2023,
+		"text":"CraftMix is a healthy, convenient, and delicious alternative to the popular but sugar-filled cocktail mixers in the market. This rebranding project was primarily an exercise to practice my skills in 3D package design and dieline creation in Illustrator, as well as illustration and typography hierarchy.",
+		"image":["Portfolio-Content/strawMojito/strawMojito3D.jpg", "Portfolio-Content/strawMojito/StrawBerryMojitoDieline.png"],
+		"medType":"hor"
 	},
 	{
 		"id":"dragonette",

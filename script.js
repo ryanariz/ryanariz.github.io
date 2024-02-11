@@ -66,7 +66,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <div class="resume">
                     <div class="profExp">
                         <h3>PROFESSIONAL EXPERIENCE</h3>
-                        <h4>Graphic Design Intern | Feb 2023 - April 2023</h4>
+                        <h4>Graphic Design Intern | The Syndicate</h4>
+                        <h4>Feb 2023 - April 2023</h4>
                         <ul>
                             <p>• Assisted and created still and video flyers, assets, and product mockups for clients</p>
                             <p>• Helped department supervisors in the brainstorming process for client projects</p>
@@ -107,8 +108,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     </div>
                     <div class="education">
                         <h3>EDUCATION</h3>
-                        <h4>Rutgers University - New Brunswick</h4>
-                        <h4>Bachelor's Degree - 2023</h4>
+                        <h4>Rutgers University | New Brunswick</h4>
+                        <h4>Bachelor's Degree | 2023</h4>
                         <ul>
                             <p>• Major in Information Technology & Informatics for Web Design & Development</p>
                             <p>• Minor in Entrepreneurship</p>
@@ -144,6 +145,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
 
         if (selectedPage) {
+            document.body.scrollTop = 0;
             replace.classList.add('newHTML');
 
             replace.innerHTML = `
