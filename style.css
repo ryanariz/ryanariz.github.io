@@ -240,6 +240,7 @@ article {
     grid-area: content;
     display: flex;
     overflow: auto;
+    overflow-x: clip;
     gap: 0.3vw;
 }
 .nav {
@@ -356,29 +357,15 @@ li {
     #work {
         display:block;
     }
-    /* .pageMedia {
-        width: 75%;
-    } */
     .skills {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
     }
-    /* Exclude h3 from the grid layout */
+    /* Exclude h3 from the grid layout in skills*/
     .skills h3 {
         grid-column: span 2;
     }
-    /* .about p {
-        font-size: small;
-    } */
-    /* .about h1 {
-        font-size: xx-large;
-    } */
-}
-@media (min-width: 1400px) {
-    /* #text {
-        /* width: 50%; */
-    
 }
 
 /* for now */

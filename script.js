@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let menuArray = ['about', 'contact', 'resume'];
 
     function handleClick(id) {
+        document.body.scrollTop = 0;
         // Checks if id passed is '' or exists in array of page or menu IDs
         if (id==='' || (idArray.indexOf(id)===-1 && menuArray.indexOf(id)===-1)) {
             document.querySelector('.projects').style.display = "flex";
@@ -145,7 +146,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
 
         if (selectedPage) {
-            document.body.scrollTop = 0;
             replace.classList.add('newHTML');
 
             replace.innerHTML = `
