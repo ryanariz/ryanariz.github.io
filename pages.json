@@ -157,6 +157,15 @@
 		"medType":"hor"
 	},
 	{
+		"id":"light",
+		"title":"Light Study",
+		"type":"Photography - Photoshop, Bridge",
+		"date":"Ongoing Project",
+		"text":"An exploration of light.",
+		"image":["Portfolio-Content/LightStudy/highwayLight.jpg", "Portfolio-Content/LightStudy/houseLight.jpg", "Portfolio-Content/LightStudy/lights.jpg"],
+		"medType":"hor"
+	},
+	{
 		"id":"dragonette",
 		"title":"Dragonette",
 		"type":"Graphic Design - Photoshop",
