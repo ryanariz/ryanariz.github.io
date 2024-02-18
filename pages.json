@@ -1,5 +1,14 @@
 [
 	{
+		"id":"sonic",
+		"title":"Sonic Youth Poster",
+		"type":"Graphic Design & 2D Animation - AfterEffects",
+		"date":2023,
+		"text":"Modernization of a 1996 Sonic Youth Daydream Nation Tour flyer.",
+		"image":"Portfolio-Content/Sonic/sonicPoster.gif",
+		"medType":"hor"
+	},
+	{
 		"id":"morph",
 		"title":"Morph",
 		"type":"2D Animation - AfterEffects, Photoshop",
@@ -14,7 +23,7 @@
 		"type":"2D Animation - AfterEffects",
 		"date":2023,
 		"text":"Song - Tapioca Tundra, Mike Nesmith Acoustic Version <br> Sounds - Moulaythami and Julien Matthey from freesound.org",
-		"vid":"Portfolio-Content/BCS/BCSComp.mp4",
+		"vid":"Portfolio-Content/BCS/BCS.mp4",
 		"alt":"Better Call Saul Ad",
 		"medType":"vert"
 	},
@@ -24,7 +33,7 @@
 		"type":"Graphic Design - Indesign, Photoshop",
 		"date":2023,
 		"text":"Lewis Black is an American stand-up comic known for his comical frustrations and takes on 'the absurdities of life.' As an intern at the Syndicate, I was tasked with ideating possible YouTube cover templates for his rebranding. Lewis and his team requested pops of vibrant color, big and blocky text, and the inclusion of his signature middle finger.",
-		"image":["Portfolio-Content/Syn/LewisBlack/LewisBlack1.png", "Portfolio-Content/Syn/LewisBlack/LewisBlack2.png", "Portfolio-Content/Syn/LewisBlack/LewisBlack3.png"],
+		"image":["Portfolio-Content/Syn/LewisBlack/LewisBlack1.jpg", "Portfolio-Content/Syn/LewisBlack/LewisBlack2.jpg", "Portfolio-Content/Syn/LewisBlack/LewisBlack3.jpg"],
 		"medType":"hor"
 	},
 	{
@@ -60,9 +69,18 @@
 		"type":"Video & Graphic Design - Photoshop, Premiere, Cubase Elements 12",
 		"date":2023,
 		"text":"A mock commercial that blends high-energy editing and a punchy tagline to show the Adidas' values of performance and success in both everyday life as well as in sports.",
-		"vid":"Portfolio-Content/adidasMock/adidasMockPromo.mp4",
+		"vid":"Portfolio-Content/adidasMock/adidasCommercial.mp4",
 		"alt":"Adidas Mock Promotional Video",
 		"medType":"hor"
+	},
+	{
+		"id":"nebulas",
+		"title":"Nebulas",
+		"type":"Illustration - Hand Drawing, Photoshop",
+		"date":"Ongoing Project",
+		"text":"B&W illustration collection.",
+		"image":["Portfolio-Content/Illustrations/nebulas.jpg", "Portfolio-Content/Illustrations/nebulas2.jpg"],
+		"medType":"vert"
 	},
 	{
 		"id":"agog",
@@ -70,18 +88,8 @@
 		"type":"Graphic Design - Photoshop",
 		"date":2023,
 		"text":"A conceptual cover for a collection of songs by artists such as Jimi Hendrix, Thom Yorke, Kurt Cobain, Kim Deal, and more.",
-		"image":["Portfolio-Content/Agog/leaveYouAgogFront.png", "Portfolio-Content/Agog/leaveYouAgogBack.png"],
+		"image":["Portfolio-Content/Agog/leaveYouAgogFront.jpg", "Portfolio-Content/Agog/leaveYouAgogBack.jpg"],
 		"medType":"vert"
-	},
-	{
-		"id":"minolta",
-		"title":"Minolta Mock Promotional Video",
-		"type":"Video Editing, Typography & 3D Animation - Illustrator, AfterEffects, Blender",
-		"date":2023,
-		"text":"A modern concept promo for the camera manunfacturing company Minolta, now Konica Minolta. Custom Minolta font and backtrack created by Ryan Arizmendi. Camera models:<br><div style='margin-top: 10px;'>Minolta X-300: Radovan Stastny <a style='text-decoration: underline;' href='https://sketchfab.com/radovan_stastny'>https://sketchfab.com/radovan_stastny</a><br>Rox Branded Konica: Fuji <a style='text-decoration: underline;' href='https://sketchfab.com/fujisan'>https://sketchfab.com/fujisan</a><br>Minolta X-570: Michael Emory Cerquoni <a style='text-decoration: underline;' href='https://sketchfab.com/nebadon2025'>https://sketchfab.com/nebadon2025</a></div>",
-		"vid":"Portfolio-Content/Minolta/MinoltaAd.mp4",
-		"alt":"Minolta Mock Promotional Video",
-		"medType":"hor"
 	},
 	{
 		"id":"streets",
@@ -89,7 +97,7 @@
 		"type":"Graphic Design - Photoshop",
 		"date":"2019/2023",
 		"text":"A rework of promotional flyers for a local fashion show in North Bergen, NJ, hosted by Emily Peguero and Pablo Ledesma in 2019 - includes improved hierarchy, enhanced photo manipulation, and an overall better demonstration of my structural and creative capability. Original last.",
-		"image":["Portfolio-Content/Streets/streets.jpg", "Portfolio-Content/Streets/streetsBefore.jpg"],
+		"image":["Portfolio-Content/Streets/streets.jpg", "Portfolio-Content/Streets/streetsBefore.jpg", "Portfolio-Content/Streets/streetsBefore2.jpg", "Portfolio-Content/Streets/streetsBefore3.jpg"],
 		"medType":"vert"
 	},
 	{
@@ -130,13 +138,24 @@
 		"medType":"hor"
 	},
 	{
-		"id":"nebulas",
-		"title":"Nebulas",
-		"type":"Illustration - Hand Drawing, Photoshop",
+		"id":"lemons",
+		"title":"Lemons",
+		"type":"Illustration - Hand Drawing, Illustrator",
 		"date":2023,
-		"text":"Freehand illustration",
-		"image":"Portfolio-Content/Illustrations/nebulas.jpg",
-		"medType":"vert"
+		"text":"As I was cutting lemons at work, I saw a face in one of the fruit butts.",
+		"image":"Portfolio-Content/Illustrations/lemons.jpg",
+		"alt":"Illustration of sliced lemons with feelings",
+		"medType":"hor"
+	},
+	{
+		"id":"minolta",
+		"title":"Minolta Mock Promotional Video",
+		"type":"Video Editing, Typography & 3D Animation - Illustrator, AfterEffects, Blender",
+		"date":2023,
+		"text":"A modern concept promo for the camera manunfacturing company Minolta, now Konica Minolta. Custom Minolta font and backtrack created by Ryan Arizmendi. Camera models:<br><div style='margin-top: 10px;'>Minolta X-300: Radovan Stastny <a style='text-decoration: underline;' href='https://sketchfab.com/radovan_stastny'>https://sketchfab.com/radovan_stastny</a><br>Rox Branded Konica: Fuji <a style='text-decoration: underline;' href='https://sketchfab.com/fujisan'>https://sketchfab.com/fujisan</a><br>Minolta X-570: Michael Emory Cerquoni <a style='text-decoration: underline;' href='https://sketchfab.com/nebadon2025'>https://sketchfab.com/nebadon2025</a></div>",
+		"vid":"Portfolio-Content/Minolta/MinoltaAd.mp4",
+		"alt":"Minolta Mock Promotional Video",
+		"medType":"hor"
 	},
 	{
 		"id":"fresherAir",
@@ -144,7 +163,7 @@
 		"type":"Graphic Design - InDesign",
 		"date":2023,
 		"text":"Iterations for an activism flyer promoting urban agriculture within cities. The topic was inspired by the many vacant and abandoned lots in New York City that have the potential to serve not only as community spaces, but also as a means of fostering better air quality.",
-		"image":["Portfolio-Content/Fresher_Air/fresher2.png", "Portfolio-Content/Fresher_Air/fresher4.jpg", "Portfolio-Content/Fresher_Air/fresher1.png"],
+		"image":["Portfolio-Content/Fresher_Air/fresher2.jpg", "Portfolio-Content/Fresher_Air/fresher1.jpg"],
 		"medType":"vert"
 	},
 	{
@@ -171,7 +190,16 @@
 		"type":"Graphic Design - Photoshop",
 		"date":2023,
 		"text":"Toront-based Dragonette was originally a group of three - Martina Sorbara, Dan Kurtz and Joel Stouffer - until just after their fourth studio album in 2016. Sorbara continued her solo career under the Dragonette name, and her most recent album <i>Twennies</i> was released in October 2022.<br>For this project, I worked closely with the creative directors at the Syndicate to produce iterations of Dragonette's Tour Life Playlist on Spotify - a curation of songs Dragonette listened to for the simple sake of listening.",
-		"image":["Portfolio-Content/Syn/DragonetteSpotify/spotify.png", "Portfolio-Content/Syn/DragonetteSpotify/spotify2.png", "Portfolio-Content/Syn/DragonetteSpotify/spotify3.png"],
+		"image":["Portfolio-Content/Syn/DragonetteSpotify/spotify.jpg", "Portfolio-Content/Syn/DragonetteSpotify/spotify2.jpg", "Portfolio-Content/Syn/DragonetteSpotify/spotify3.jpg"],
+		"medType":"vert"
+	},
+	{
+		"id":"routure",
+		"title":"Routure Mag",
+		"type":"Graphic Design - Photoshop, Illustrator, InDesign",
+		"date":2020,
+		"text":"Routure is Rutgers' University's first campus fashion magazine. Being part of the team at its inception, I had the opportunity to work on promotional flyers for Routure's initial release, article layouts, and cover designs.",
+		"image":["Portfolio-Content/Routure/larissa.jpg", "Portfolio-Content/Routure/hepburn.jpg", "Portfolio-Content/Routure/routure.jpg"],
 		"medType":"vert"
 	}
 ]
