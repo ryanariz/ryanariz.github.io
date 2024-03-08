@@ -161,6 +161,7 @@ aside {
     border-right: 2px solid black;
     overflow: auto;
     font-size: var(--fs-menu);
+    scrollbar-width: none;
 }
 h4, h3, h2{
     font-weight: 100;
@@ -171,6 +172,7 @@ article {
     overflow: auto;
     overflow-x: clip;
     gap: 0.3vw;
+    scrollbar-width: none;
 }
 .contentblock{
     display: flex;
@@ -385,6 +387,7 @@ li {
         align-items: center;
         text-align: center;
         z-index: 1;
+        scrollbar-width: none;
     }
     #mobile-dropdown > h3 {
         margin-bottom: 10px;
