@@ -27,8 +27,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let menuArray = ['about', 'contact', 'resume'];
 
+    // Will be used to hide mobileDropDown when item on menu is clicked
+    // Will also be used in toggling mobileDropDown further in code
+    const mobileDropDown = document.getElementById('mobile-dropdown');
+    const computedStyle = window.getComputedStyle(mobileDropDown);
+
     function handleClick(id) {
         document.body.scrollTop = 0;
+        if (computedStyle.display === "flex") {
+            mobileDropDown.style.display = "none";
+        }
+        
         // Checks if id passed is '' or exists in array of page or menu IDs
         if (id==='' || (idArray.indexOf(id)===-1 && menuArray.indexOf(id)===-1)) {
             document.querySelector('.projects').style.display = "flex";
@@ -204,19 +213,24 @@ document.addEventListener("DOMContentLoaded", async () => {
     const projects = document.querySelectorAll('.project');
     const replace = document.querySelector('.replace');
 
-    // projects.forEach(project => {
-    //     project.addEventListener('click', function() {
-    //         const id = this.id;
-    //         // handleClick(id);
-    //     });
-    // });
-
     replace.addEventListener('click', function(event) {
         if (event.target.classList.contains('nav')) {
             const navId = event.target.id;
             handleClick(navId);
         }
     });
+
+    // Toggle mobileDropDown visibility
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    mobileMenuButton.addEventListener('click', function() {
+        if (computedStyle.display === "none") {
+            mobileDropDown.style.display = "flex";
+        } else {
+            mobileDropDown.style.display = "none";
+        }
+    });
+
+
 
     //If page has been preloaded, url hash passed through handleClick()
     const hash = window.location.hash;

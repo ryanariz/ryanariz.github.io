@@ -22,6 +22,9 @@ body{
     color: rgb(23, 23, 23);
     margin: 0;
 }
+/* ************************************* */
+/* TITLEPAGE */
+/* ************************************* */
 #butterfly-box {
     position: fixed;
     top:0;
@@ -85,7 +88,7 @@ body{
     font-size: var(--fs-xl);
     font-weight: 100;
 }
-#menu{
+#title-page-menu{
     display: flex;
     margin: 8px;
     flex-direction: row;
@@ -94,6 +97,9 @@ body{
     z-index: 1; 
     font-size: var(--fs-sm);
 }
+/* ************************************* */
+/* ANCHOR TAGS */
+/* ************************************* */
 a{
     text-decoration: none;
     color: black;
@@ -105,6 +111,66 @@ a:focus{
 a:hover{
     text-decoration: none;
     color: rgb(134, 134, 134);
+}
+/* ************************************* */
+/* WORK PAGE */
+/* ************************************* */
+container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "title topbar topbar"
+        "side content content";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+}
+#web-title {
+    grid-area: title;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+#web-title h1 {
+    margin: 0;
+    font-size: var(--fs-sm);
+}
+#web-menu{
+    grid-area: topbar;
+    font-size: var(--fs-menu);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+#web-menu > a:hover{
+    cursor: pointer;
+}
+#mobile-menu {
+    display: none;
+}
+#mobile-dropdown{
+    display: none;
+}
+aside {
+    grid-area: side;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 2px solid black;
+    overflow: auto;
+    font-size: var(--fs-menu);
+}
+h4, h3, h2{
+    font-weight: 100;
+}
+article {
+    grid-area: content;
+    display: flex;
+    overflow: auto;
+    overflow-x: clip;
+    gap: 0.3vw;
 }
 .contentblock{
     display: flex;
@@ -156,12 +222,9 @@ a:hover{
     margin: 0;
 	color: white;
 }
-
 /* ************************************* */
 /* PAGES */
 /* ************************************* */
-
-
 .newHTML {
     display: flex;
     flex-direction: column;
@@ -189,60 +252,9 @@ a:hover{
     flex-direction: row;
     justify-content: space-between;
 }
-.newHTML > img {
+/* .newHTML > img {
     width: 100%;
-}
-container {
-    height: 100vh;
-    display: grid;
-    grid-template-areas: 
-        "title topbar topbar"
-        "side content content";
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-}
-h3, h2{
-    font-weight: 100;
-}
-.title {
-    grid-area: title;
-    padding: 10px;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-.title h1 {
-    margin: 0;
-    font-size: var(--fs-sm);
-}
-header{
-    grid-area: topbar;
-    font-size: var(--fs-menu);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 2px solid black;
-}
-header > a:hover{
-    cursor: pointer;
-}
-aside {
-    grid-area: side;
-    margin-left: 10px;
-    padding-right: 10px;
-    border-right: 2px solid black;
-    overflow: auto;
-    font-size: var(--fs-menu);
-}
-article {
-    grid-area: content;
-    display: flex;
-    overflow: auto;
-    overflow-x: clip;
-    gap: 0.3vw;
-}
+} */
 .nav {
     cursor: pointer;
 }
@@ -267,9 +279,9 @@ li {
 /* ************************************* */
 /* WORK MENU BUTTON NOT MOBILE */
 /* ************************************* */
-#work {
+/* #work {
     display: none;
-}
+} */
 
 /* ************************************* */
 /* ABOUT */
@@ -290,7 +302,7 @@ li {
     margin: 0px;
     font-size: var(--fs-menu);
     width: var(--about-info);
-    text-align: justify;
+    text-align: center;
 }
 .about div {
     display: flex;
@@ -301,7 +313,6 @@ li {
 .about img {
     width: var(--about-img);
 }
-
 /* ************************************* */
 /* CONTACT */
 /* ************************************* */
@@ -325,7 +336,6 @@ li {
     font-size: calc(var(--fs-menu) + 0.7rem);
     font-weight: 600;
 }
-
 /* ************************************* */
 /* RESUME */
 /* ************************************* */
@@ -343,19 +353,63 @@ li {
 .resume h4 {
     margin-top: 0;
 }
-
+/* ************************************* */
+/* MOBILE */
+/* ************************************* */
 @media (max-width: 800px) {
     container {
         grid-template-areas: 
-            "title topbar"
-            "content content";
-        grid-template-rows: auto auto 1fr;
+            "topbar"
+            "content";
+        grid-template-rows: auto 1fr;
+        grid-template-columns: auto;
+    }
+    #web-title {
+        display: none;
+    }
+    #web-menu {
+        display: none;
+    }
+    #mobile-menu {
+        grid-area: topbar;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 2px black solid;
+    }
+    #mobile-dropdown {
+        display: none;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+    }
+    #mobile-dropdown > h3 {
+        margin-bottom: 10px;
+    }
+    .mobile-main {
+        display: flex;
+    }
+    .mobile-menu-button {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .mobile-menu-item > a {
+        margin: -2;
+    }
+    .dingbat {
+        margin: 5px;
+    }
+    #mobile-title {
+        font-weight: 600;
+    }
+    #work {
+        display: block;
     }
     aside {
         display: none;
-    }
-    #work {
-        display:block;
     }
     .skills {
         display: grid;
