@@ -168,18 +168,40 @@ h4, h3, h2{
 }
 article {
     grid-area: content;
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+        "sect1 sect2 sect3"
+        "footer footer footer";
     overflow: auto;
     overflow-x: clip;
     gap: 0.3vw;
     scrollbar-width: none;
 }
-.contentblock{
+.contentblock1{
+    grid-area: sect1;
     display: flex;
-    width: 50%;
+    /* width: 50%; */
     flex-direction: column;
     gap: 0.3vw;
-    position: relative;
+    /* position: relative; */
+    z-index: 0;
+}
+.contentblock2{
+    grid-area: sect2;
+    display: flex;
+    /* width: 50%; */
+    flex-direction: column;
+    gap: 0.3vw;
+    /* position: relative; */
+    z-index: 0;
+}
+.contentblock3{
+    grid-area: sect3;
+    display: flex;
+    /* width: 50%; */
+    flex-direction: column;
+    gap: 0.3vw;
+    /* position: relative; */
     z-index: 0;
 }
 .project{
@@ -224,6 +246,15 @@ article {
     margin: 0;
 	color: white;
 }
+footer{
+    grid-area: footer;
+    text-align: center;
+    margin: 35px;
+    border: 1px dotted;
+}
+footer > p{
+    margin: 5px;
+}
 /* ************************************* */
 /* PAGES */
 /* ************************************* */
@@ -267,7 +298,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: .3vw;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 }
 .mediaVert {
     width: var(--page-vert);

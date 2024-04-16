@@ -74,6 +74,15 @@
 		"medType":"hor"
 	},
 	{
+		"id":"xSounds",
+		"title":"Sounds",
+		"type":"Graphic Design - Hand Drawing, Photoshop",
+		"date":"2024",
+		"text":"Album cover design for Soleanna's tenth music mix.",
+		"image":"Portfolio-Content/XSounds/sounds.jpg",
+		"medType":"vert"
+	},
+	{
 		"id":"nebulas",
 		"title":"Nebulas",
 		"type":"Illustration - Hand Drawing, Photoshop",
@@ -96,7 +105,7 @@
 		"title":"Take It To The Streets",
 		"type":"Graphic Design - Photoshop",
 		"date":"2019/2023",
-		"text":"A rework of promotional flyers for a local fashion show in North Bergen, NJ, hosted by Emily Peguero and Pablo Ledesma in 2019 - includes improved hierarchy, enhanced photo manipulation, and an overall better demonstration of my structural and creative capability. Original last.",
+		"text":"A rework of promotional flyers for a local fashion show in North Bergen, NJ, hosted by Emily Peguero and Pablo Ledesma in 2019 - includes improved hierarchy, enhanced photo manipulation, and an overall better demonstration of my structural and creative capability. Originals last.",
 		"image":["Portfolio-Content/Streets/streets.jpg", "Portfolio-Content/Streets/streetsBefore.jpg", "Portfolio-Content/Streets/streetsBefore2.jpg", "Portfolio-Content/Streets/streetsBefore3.jpg"],
 		"medType":"vert"
 	},
@@ -210,15 +219,6 @@
 		"date":2023,
 		"text":"Corinne's Place has delivered delicious and authentic Southern soul food to the community of Camden, New Jersey, since 1989. At the Syndicate, to capture the essence of Corinne's Place, I helped incorporate a harmonious blend of color, typography and imagery to produce flyers for the company's new app as well as their Mother's Day Packages.",
 		"image":["Portfolio-Content/Syn/CorinnesPlace/foodTruck.png", "Portfolio-Content/Syn/CorinnesPlace/foodTruck2.png", "Portfolio-Content/Syn/CorinnesPlace/mother.png", "Portfolio-Content/Syn/CorinnesPlace/mother2.png"],
-		"medType":"vert"
-	},
-	{
-		"id":"greatDivide",
-		"title":"The Great Divide",
-		"type":"Graphic Design - Illustrator",
-		"date":2023,
-		"text":"While interning at the Syndicate, I was tasked with aiding in the creation of different templates for the Great Divide's camping recipes.",
-		"image":["Portfolio-Content/Syn/GreatDivide/recipes2.jpg", "Portfolio-Content/Syn/GreatDivide/recipes3.jpg"],
 		"medType":"vert"
 	},
 	{

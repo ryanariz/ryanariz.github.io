@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         // Checks if id passed is '' or exists in array of page or menu IDs
         if (id==='' || (idArray.indexOf(id)===-1 && menuArray.indexOf(id)===-1)) {
-            document.querySelector('.projects').style.display = "flex";
+            document.querySelector('.projects').style.display = "grid";
             document.querySelector('.replace').style.display = "none";
             //Checks article with class "replace" for video, then pauses it if article is hidden
             const vidEl = document.querySelector('.pageVid');
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             return;
         } else if (menuArray.indexOf(id)!=-1) {
             document.querySelector('.projects').style.display = "none";
-            document.querySelector('.replace').style.display = "flex";
+            document.querySelector('.replace').style.display = "grid";
             replace.classList.add('newHTML');
             if (id === menuArray[0]) {
                 replace.innerHTML = `
