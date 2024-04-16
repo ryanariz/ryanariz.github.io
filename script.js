@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             return;
         } else if (menuArray.indexOf(id)!=-1) {
             document.querySelector('.projects').style.display = "none";
-            document.querySelector('.replace').style.display = "grid";
+            document.querySelector('.replace').style.display = "flex";
             replace.classList.add('newHTML');
             if (id === menuArray[0]) {
                 replace.innerHTML = `
