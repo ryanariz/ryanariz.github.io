@@ -64,15 +64,6 @@
 		"medType":"vert"
 	},
 	{
-		"id":"mnrk",
-		"title":"MNRK Heavy",
-		"type":"Graphic Design - Photoshop",
-		"date":2023,
-		"text":"MNRK Heavy, the heavy side of MNRK Music Group, is a record label for hard rock and heavy metal music. They've worked with reknowned artists such as Black Label Society, Avatar, Noctem, and Zakk Wilde to produce music and promote a wide variety of merch and apparel. At the Syndicate, I was tasked with creating straightforward Instagram templates for their artists' albums and singles that had anniversaries approaching.",
-		"image":["Portfolio-Content/Syn/MNRK/anni1.jpg", "Portfolio-Content/Syn/MNRK/anni2.jpg"],
-		"medType":"vert"
-	},
-	{
 		"id":"adidas",
 		"title":"Adidas Mock Promotional Video",
 		"type":"Video & Graphic Design - Photoshop, Premiere, Cubase Elements 12",
@@ -128,15 +119,6 @@
 		"medType":"vert"
 	},
 	{
-		"id":"shrocked",
-		"title":"Shrocked",
-		"type":"Illustration - Hand Drawing, Photoshop",
-		"date":2023,
-		"text":"Illustration of one of my clay rocks, who happens to look shocked. He is, shrocked.",
-		"image":"Portfolio-Content/Illustrations/shrocked.jpg",
-		"medType":"vert"
-	},
-	{
 		"id":"unclevinnies",
 		"title":"Uncle Vinnies Comedy Club",
 		"type":"Graphic Design - Photoshop",
@@ -163,16 +145,6 @@
 		"text":"Dignitary, NJ-based hard rock and metal band, asked me to create the cover design for their upcoming album <i>Underneath the Throggs Neck</i>.",
 		"image":"Portfolio-Content/Dignitary/dignitary.jpg",
 		"alt":"Dignitary's Underneath the Throggs Neck.",
-		"medType":"hor"
-	},
-	{
-		"id":"lemons",
-		"title":"Lemons",
-		"type":"Illustration - Hand Drawing, Illustrator",
-		"date":2024,
-		"text":"As I was cutting lemons at work, I saw a face in one of the fruit butts.",
-		"image":"Portfolio-Content/Illustrations/lemons.jpg",
-		"alt":"Illustration of sliced lemons with feelings",
 		"medType":"hor"
 	},
 	{
@@ -211,6 +183,15 @@
 		"text":"An exploration of light.",
 		"image":["Portfolio-Content/LightStudy/highwayLight.jpg", "Portfolio-Content/LightStudy/houseLight.jpg", "Portfolio-Content/LightStudy/lights.jpg"],
 		"medType":"hor"
+	},
+	{
+		"id":"shrocked",
+		"title":"Shrocked",
+		"type":"Illustration - Hand Drawing, Photoshop",
+		"date":2023,
+		"text":"Illustration of one of my clay rocks, who happens to look shocked. He is, shrocked.",
+		"image":"Portfolio-Content/Illustrations/shrocked.jpg",
+		"medType":"vert"
 	},
 	{
 		"id":"dragonette",
