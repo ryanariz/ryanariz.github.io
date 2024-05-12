@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 replace.innerHTML = `
                 <div class="about">
                     <h1>This is Ryan Sky.</h1>
-                    <h3>A 22-year-old artist who enjoys drawing in black and white, photographing doors, hiking to lakes, making music, and tattoos. She loves Radiohead and currently listens to Dr. Dog and Wilco.</h3>
+                    <h3>A 22-year-old artist who enjoys drawing in black and white, photographing doors, hiking to lakes, making music, and tattoos. She loves Radiohead, Blur, and Supergrass, though currently listens to Zero 7, Dr. Dog, and J.J. Cale.</h3>
                     <div><img src="Portfolio-Content/about/ryansky.jpg" alt="Photo of Ryan Sky"></div>
                 </div>
                 `;

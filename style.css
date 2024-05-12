@@ -9,7 +9,7 @@ html {
     --fs-lg: clamp(1.8rem, 3vw + 1rem , 3rem);
     --fs-sm: clamp(0.8rem, .3vw + 1rem, 3rem);
     --fs-menu: clamp(0.75rem, 0.3vw + .5rem, 0.125rem);
-    --about-img: clamp(20rem, 28vw + 17rem, 50rem);
+    --about-img: clamp(15rem, 37vw, 50rem);
     --about-info: clamp(15rem, 38vw + 4rem ,37rem);
     --page-vert: clamp(16.625rem, 17vw + 13rem, 44rem);
     --page-hor: clamp(16.625rem, 45vw + 1rem, 42rem);
