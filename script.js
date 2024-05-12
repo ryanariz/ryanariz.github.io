@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 replace.innerHTML = `
                 <div class="about">
                     <h1>This is Ryan Sky.</h1>
-                    <p>Ryan Sky is a 22 year old artist based in North Bergen, New Jersey. She enjoys drawing in black and white, 3D and graphic design for entertainment, photographing doors, traveling to music festivals, reads like Seconds by Bryan Lee O'Malley or Angels by Denis Johnson, creating downtempo and airy music, collecting (and occasionally making) ceramic bowls, and tattoos. She loves the Bends, the beach, her three plants, her two cats, and her 1 very big little brother.</p>
+                    <h3>A 22-year-old artist who enjoys drawing in black and white, photographing doors, hiking to lakes, making music, and tattoos. She loves Radiohead and currently listens to Dr. Dog and Wilco.</h3>
                     <div><img src="Portfolio-Content/about/ryansky.jpg" alt="Photo of Ryan Sky"></div>
                 </div>
                 `;
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             if (selectedPage.vid){
                 mediaDiv.innerHTML = `
-                <video class="media" controls autoplay loop>
+                <video class="media pageVid" controls loop>
                     <source src="${selectedPage.vid}" type="video/mp4" alt="${selectedPage.alt}"> 
                     Your browser does not support this video.
                 </video>

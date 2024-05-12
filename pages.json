@@ -41,7 +41,7 @@
 		"title":"Lewis Black",
 		"type":"Graphic Design - Indesign, Photoshop",
 		"date":2023,
-		"text":"Lewis Black is an American stand-up comic known for his comical frustrations and takes on 'the absurdities of life.' As an intern at the Syndicate, I was tasked with ideating possible YouTube cover templates for his rebranding. Lewis and his team requested pops of vibrant color, big and blocky text, and the inclusion of his signature middle finger.",
+		"text":"Concept YouTube cover templates for American stand-up comic Lewis Black's rebranding. Lewis and his team requested pops of vibrant color, big and blocky text, and the inclusion of his signature middle finger.",
 		"image":["Portfolio-Content/Syn/LewisBlack/LewisBlack1.jpg", "Portfolio-Content/Syn/LewisBlack/LewisBlack2.jpg", "Portfolio-Content/Syn/LewisBlack/LewisBlack3.jpg"],
 		"medType":"hor"
 	},
@@ -74,11 +74,11 @@
 		"medType":"hor"
 	},
 	{
-		"id":"spunk",
+		"id":"moxie",
 		"title":"Moxie Brewery's Spunk Stout",
 		"type":"3D & Graphic Design - Blender, Photoshop, Illustrator",
 		"date":"2024",
-		"text":"Concept branding and marketing project that draws inspiration from designs of the punk era. 3D can modeled by Ryan Arizmendi.",
+		"text":"Concept branding and marketing project that draws inspiration from the punk era. Beer can modeled and rendered in Blender.",
 		"image":["Portfolio-Content/Spunk/Spunk1.jpg", "Portfolio-Content/Spunk/Spunk2.jpg", "Portfolio-Content/Spunk/Spunk3.jpg"],
 		"medType":"vert"
 	},
@@ -114,7 +114,7 @@
 		"title":"Door Study",
 		"type":"Photography - Photoshop, Bridge",
 		"date":"Ongoing Project",
-		"text":"You can tell a lot about a place by the door of its entrance. The likelihood of inner color abundance, how often passerbys come and go, or if they come at all. This door 'study' started out with only home doors and the notion that doors are more the windows to a home than the windows themselves. The more door photos I took, though, the more my interest in doors in general grew.",
+		"text":"You can tell a lot of place by the door of its entrance. The likelihood of inner color abundance, how often passerbys come and go, or if they come at all. This door 'study' started out with only home doors and the notion that doors are more the windows to a home than the windows themselves. Not sure if I still believe that last part, but I think doors have their own chronicle, of which I try to capture.",
 		"image":["Portfolio-Content/Door-Study/Red-Door.jpg", "Portfolio-Content/Door-Study/American-Door.jpg", "Portfolio-Content/Door-Study/LaOaxa.jpg", "Portfolio-Content/Door-Study/Brick-Door.jpg", "Portfolio-Content/Door-Study/CageDoor.jpg", "Portfolio-Content/Door-Study/greenWall.jpg", "Portfolio-Content/Door-Study/KGBDoor.jpg", "Portfolio-Content/Door-Study/RedGardenDoor.jpg", "Portfolio-Content/Door-Study/Short-White-Door.jpg", "Portfolio-Content/Door-Study/nycDoor.jpg", "Portfolio-Content/Door-Study/whiteSlantDoor.jpg", "Portfolio-Content/Door-Study/yellowDoor.jpg", "Portfolio-Content/Door-Study/dePalmas.jpg"],
 		"medType":"vert"
 	},
@@ -123,7 +123,7 @@
 		"title":"Uncle Vinnies Comedy Club",
 		"type":"Graphic Design - Photoshop",
 		"date":2023,
-		"text":"Uncle Vinnies, once Ferrara's Ristorante, is currently a staple in Point Pleasant Beach, NJ. Having showcased professional comics such as Andrew DICE Clay, Jackie 'The Joke Man' Martling, Vic Di Bitetto, Robert Kelly and more, the comedy club has been noted as one of the best by <i>Night & Day Magazine, Stepping Out, NJ Monthly</i> and <i>Asbury Park Press.</i><br>As a diversifying business and client of the Syndicate, Uncle Vinnies requested many different kinds of master flyer templates to reuse for their varying events. Below are general templates for meet and greets and specil events hosted at Uncle Vinnies, as well as templates for events hosted <i>by</i> Uncle Vinnies but situated in other locations, such as Max's Es-ca.",
+		"text":"As a diversifying business, Uncle Vinnies requested master flyer templates to reuse for their varying events. Below are general templates for meet and greets and special events hosted at Uncle Vinnies, as well as templates for events hosted <i>by</i> Uncle Vinnies but situated in other locations, such as Max's Es-ca.",
 		"image":["Portfolio-Content/Syn/UV-Soaps/soaps1.jpg", "Portfolio-Content/Syn/UV-Templates/temp1.jpg", "Portfolio-Content/Syn/UV-Templates/temp2.jpg"],
 		"medType":"vert"
 	},
@@ -132,7 +132,7 @@
 		"title":"En Soul",
 		"type":"3D Animation - Blender",
 		"date":2023,
-		"text":"In my last semester at Rutgers, with a few leftover credits to take electives I didn't need, I registered for Animation 3D. This was my final project for the course, and my first time diving into any kind of animation, so it's fairly rough around the edges. But, all aspects of the animation, minus the sound effects of the characters, were created by me, and I'm proud of it. So, here it is as part of my portfolio. Enjoy!",
+		"text":"In my last semester at Rutgers, with a few leftover credits to take electives I didn't need, I registered for Animation 3D. This was my final project for the course, and my first time diving into any kind of animation, so it's fairly rough around the edges. But, all aspects of the animation, minus the grunts of its main character, were created by me, and I'm proud of it. So, here it is as part of my portfolio.",
 		"vid":"Portfolio-Content/EnSoul/arizmendi-EnSoul.mp4",
 		"alt":"En Soul 3D Animation",
 		"medType":"hor"
@@ -171,7 +171,7 @@
 		"title":"CraftMix Mock Design",
 		"type":"Graphic Design - Illustrator, Photoshop, Blender",
 		"date":2023,
-		"text":"CraftMix is a healthy, convenient, and delicious alternative to the popular but sugar-filled cocktail mixers in the market. This rebranding project was primarily an exercise to practice my skills in 3D package design and dieline creation in Illustrator, as well as illustration and typography hierarchy.",
+		"text":"CraftMix is a healthy, convenient, and delicious alternative to the popular but sugar-filled cocktail mixers in the market. This rebranding project was primarily an exercise to practice my skills in 3D package design and dieline creation.",
 		"image":["Portfolio-Content/strawMojito/strawMojito3D.jpg", "Portfolio-Content/strawMojito/StrawBerryMojitoDieline.png"],
 		"medType":"hor"
 	},
@@ -198,7 +198,7 @@
 		"title":"Dragonette",
 		"type":"Graphic Design - Photoshop",
 		"date":2023,
-		"text":"Toront-based Dragonette was originally a group of three - Martina Sorbara, Dan Kurtz and Joel Stouffer - until just after their fourth studio album in 2016. Sorbara continued her solo career under the Dragonette name, and her most recent album <i>Twennies</i> was released in October 2022.<br>For this project, I worked closely with the creative directors at the Syndicate to produce iterations of Dragonette's Tour Life Playlist on Spotify - a curation of songs Dragonette listened to for the simple sake of listening.",
+		"text":"For this project, I worked closely with the creative directors at the Syndicate to produce iterations of Dragonette's Tour Life Playlist on Spotify - a curation of songs Dragonette listened to for the simple sake of listening.",
 		"image":["Portfolio-Content/Syn/DragonetteSpotify/spotify.jpg", "Portfolio-Content/Syn/DragonetteSpotify/spotify2.jpg", "Portfolio-Content/Syn/DragonetteSpotify/spotify3.jpg"],
 		"medType":"vert"
 	},
@@ -207,7 +207,7 @@
 		"title":"Corinne's Place",
 		"type":"Graphic Design - InDesign, Illustrator",
 		"date":2023,
-		"text":"Corinne's Place has delivered delicious and authentic Southern soul food to the community of Camden, New Jersey, since 1989. At the Syndicate, to capture the essence of Corinne's Place, I helped incorporate a harmonious blend of color, typography and imagery to produce flyers for the company's new app as well as their Mother's Day Packages.",
+		"text":"To capture the essence of Corinne's Place, I helped incorporate a harmonious blend of color, typography and imagery to produce flyers for the company's new app as well as their Mother's Day Packages.",
 		"image":["Portfolio-Content/Syn/CorinnesPlace/foodTruck.png", "Portfolio-Content/Syn/CorinnesPlace/foodTruck2.png", "Portfolio-Content/Syn/CorinnesPlace/mother.png", "Portfolio-Content/Syn/CorinnesPlace/mother2.png"],
 		"medType":"vert"
 	},
