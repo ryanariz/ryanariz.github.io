@@ -22,7 +22,7 @@
 		"title":"Morph",
 		"type":"2D Animation - AfterEffects, Photoshop",
 		"date":2023,
-		"text":"Original postcard by Drew Michael Photography - Chicago Illinois.",
+		"text":"Animation project over a postcard by Drew Michael Photography - Chicago Illinois.",
 		"image":"Portfolio-Content/Morph/drewgif-1 copy.gif",
 		"medType":"vert"
 	},
@@ -62,16 +62,6 @@
 		"text":"Production card for Brandon, Ryan, Alan, and Rob.",
 		"image":["Portfolio-Content/BlueStrawb/BlueStrawberry.png", "Portfolio-Content/BlueStrawb/BlueStrawberry-WhiteBG.png"],
 		"medType":"vert"
-	},
-	{
-		"id":"adidas",
-		"title":"Adidas Mock Promotional Video",
-		"type":"Video & Graphic Design - Photoshop, Premiere, Cubase Elements 12",
-		"date":2023,
-		"text":"A mock commercial that blends high-energy editing and a punchy tagline to show the Adidas' values of performance and success in both everyday life as well as in sports.",
-		"vid":"Portfolio-Content/adidasMock/adidasCommercial.mp4",
-		"alt":"Adidas Mock Promotional Video",
-		"medType":"hor"
 	},
 	{
 		"id":"moxie",
@@ -119,6 +109,16 @@
 		"medType":"vert"
 	},
 	{
+		"id":"adidas",
+		"title":"Adidas Mock Promotional Video",
+		"type":"Video & Graphic Design - Photoshop, Premiere, Cubase Elements 12",
+		"date":2023,
+		"text":"Mock commercial for Adidas. Music by Ryan Sky Arizmendi.",
+		"vid":"Portfolio-Content/adidasMock/adidasCommercial.mp4",
+		"alt":"Adidas Mock Promotional Video",
+		"medType":"hor"
+	},
+	{
 		"id":"unclevinnies",
 		"title":"Uncle Vinnies Comedy Club",
 		"type":"Graphic Design - Photoshop",
@@ -128,14 +128,13 @@
 		"medType":"vert"
 	},
 	{
-		"id":"ensoul",
-		"title":"En Soul",
-		"type":"3D Animation - Blender",
-		"date":2023,
-		"text":"In my last semester at Rutgers, with a few leftover credits to take electives I didn't need, I registered for Animation 3D. This was my final project for the course, and my first time diving into any kind of animation, so it's fairly rough around the edges. But, all aspects of the animation, minus the grunts of its main character, were created by me, and I'm proud of it. So, here it is as part of my portfolio.",
-		"vid":"Portfolio-Content/EnSoul/arizmendi-EnSoul.mp4",
-		"alt":"En Soul 3D Animation",
-		"medType":"hor"
+		"id":"growingPains",
+		"title":"Growing Pains",
+		"type":"2D Animation - Photoshop, AfterEffects",
+		"date":2024,
+		"text":"A very short film.",
+		"vid":"Portfolio-Content/GrowingPains/growingPains.mp4",
+		"medType":"vert"
 	},
 	{
 		"id":"dignitary",
@@ -198,26 +197,8 @@
 		"title":"Dragonette",
 		"type":"Graphic Design - Photoshop",
 		"date":2023,
-		"text":"For this project, I worked closely with the creative directors at the Syndicate to produce iterations of Dragonette's Tour Life Playlist on Spotify - a curation of songs Dragonette listened to for the simple sake of listening.",
+		"text":"Iterations of Dragonette's Tour Life Playlist on Spotify - a curation of songs Dragonette listened to for the simple sake of listening.",
 		"image":["Portfolio-Content/Syn/DragonetteSpotify/spotify.jpg", "Portfolio-Content/Syn/DragonetteSpotify/spotify2.jpg", "Portfolio-Content/Syn/DragonetteSpotify/spotify3.jpg"],
-		"medType":"vert"
-	},
-	{
-		"id":"corinnes",
-		"title":"Corinne's Place",
-		"type":"Graphic Design - InDesign, Illustrator",
-		"date":2023,
-		"text":"To capture the essence of Corinne's Place, I helped incorporate a harmonious blend of color, typography and imagery to produce flyers for the company's new app as well as their Mother's Day Packages.",
-		"image":["Portfolio-Content/Syn/CorinnesPlace/foodTruck.png", "Portfolio-Content/Syn/CorinnesPlace/foodTruck2.png", "Portfolio-Content/Syn/CorinnesPlace/mother.png", "Portfolio-Content/Syn/CorinnesPlace/mother2.png"],
-		"medType":"vert"
-	},
-	{
-		"id":"routure",
-		"title":"Routure Mag",
-		"type":"Graphic Design - Photoshop, Illustrator, InDesign",
-		"date":2020,
-		"text":"Routure is Rutgers' University's first campus fashion magazine. Being part of the team at its inception, I had the opportunity to work on promotional flyers for Routure's initial release, article layouts, and cover designs.",
-		"image":["Portfolio-Content/Routure/larissa.jpg", "Portfolio-Content/Routure/hepburn.jpg", "Portfolio-Content/Routure/routure.jpg"],
 		"medType":"vert"
 	}
 ]
