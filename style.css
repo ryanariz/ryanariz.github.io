@@ -421,6 +421,7 @@ li {
         margin-top: 20px;
         margin-bottom: 60px;
         overflow-x: clip;
+        padding: 1.7vw;
     }
     #web-title {
         display: none;
