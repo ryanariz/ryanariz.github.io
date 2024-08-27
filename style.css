@@ -127,12 +127,14 @@ container {
         "side content";
     grid-template-columns: 17% 83%;
     grid-template-rows: auto 1fr;
-    width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
     gap: 0.7vw;
     margin-top: 60px;
     margin-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 #web-title {
     grid-area: title;

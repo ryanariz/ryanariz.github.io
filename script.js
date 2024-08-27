@@ -65,8 +65,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             } else if (id === menuArray[1]) {
                 replace.innerHTML = `
                 <div class="contact">
-                    <h1>If you'd like to work together, ask a question, or for anything at all, feel free to reach out to me at:</h1>
-                    <p>sky@arizmendi.org</p>
+                    <h1>If you'd like to work together or are interested in commissioning a piece, please feel free to contact me at:</h1>
+                    <h1>ryanskydesigns@gmail.com</h1>
                 </div>
                 `;
                 console.log("contact");
