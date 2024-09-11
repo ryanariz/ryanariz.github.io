@@ -55,8 +55,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (id === menuArray[0]) {
                 replace.innerHTML = `
                 <div class="about">
-                    <h1>This is Ryan Sky.</h1>
-                    <h3>A 22-year-old artist who enjoys drawing in black and white, photographing doors, hiking to lakes, making music, and tattoos. She loves Radiohead, Blur, and Supergrass, though currently listens to Zero 7, Dr. Dog, and J.J. Cale.</h3>
+                    <h1>Ryan Sky</h1>
+                    <h3>I am a multidisciplinary creative interested in the promotional branding of local artists and businesses in entertainment sector, though I am eager to work alongside businesses of all kinds. I am inspired by designs of the blues, rock and punk era, Art Nouveau, and the many artists and designers I’ve met in university, at art shows, and on my road trips.
+
+                    My introduction to graphic design started in highschool where I took the lead in designing a “Magazine from the Past” for my history class. Shortly after, I was asked to design the promotional flyers for Take It to the Streets, a local fashion show. I was Head Graphic Designer for Routure, Rutgers’ first campus fashion magazine, where I worked on covers, article layouts, and, as I was on on track for Web Design, the maintenance of their website. I later collaborated with a few students at the Mason Gross School of Arts to create the production card for Blue Strawberry Pictures, their film production company. In my last semester at Rutgers, I took on a Graphic Design Internship, and, since then, have dove head-first into looking for opportunities to put my creative skillset to use.</h3>
                     <div><img src="Portfolio-Content/about/ryansky.jpg" alt="Photo of Ryan Sky"></div>
                 </div>
                 `;

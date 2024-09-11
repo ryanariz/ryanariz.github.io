@@ -484,6 +484,15 @@ li {
     .skills h3 {
         grid-column: span 2;
     }
+    #text{
+        width: auto;
+    }
+    .mediaVert{
+        width: 100%;
+    }
+    .mediaHor{
+        width: 100%;
+    }
 }
 
 /* for now */
