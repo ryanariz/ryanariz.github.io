@@ -284,7 +284,8 @@ footer > p{
 .newHTML > .info {
     font-size: var(--fs-menu);
     text-align: center;
-    width: 80%;
+    width: 90%;
+    max-width: 750px;
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -300,9 +301,6 @@ footer > p{
     flex-direction: row;
     justify-content: space-between;
 }
-/* .newHTML > img {
-    width: 100%;
-} */
 .nav {
     cursor: pointer;
 }
@@ -316,26 +314,20 @@ li {
     margin-bottom: 45px;
 }
 .mediaVert {
-    width: var(--page-vert);
+    width: 100%;
+    max-width: 750px;
 }
 .mediaHor {
-    width: var(--page-hor);
+    width: 100%;
+    max-width: 750px;
 }
-#text {
-    width: var(--page-vert);
-}
-/* ************************************* */
-/* WORK MENU BUTTON NOT MOBILE */
-/* ************************************* */
-/* #work {
-    display: none;
-} */
+
 
 /* ************************************* */
 /* ABOUT */
 /* ************************************* */
 .about {
-    margin: 20px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -349,7 +341,8 @@ li {
 .about h3 {
     margin: 0px;
     font-size: var(--fs-menu);
-    width: var(--about-info);
+    width: 90%;
+    max-width: 750px;
     line-height: 18px;
     text-align: left;
     text-indent: 40px;
@@ -357,11 +350,12 @@ li {
 .about div {
     display: flex;
     justify-content: center;
-    margin: 23px;
+    margin-top: 23px;
     border-radius: 50%;
 }
 .about img {
-    width: var(--about-img);
+    width: 100%;
+    max-width: 750px;
 }
 /* ************************************* */
 /* CONTACT */
@@ -372,13 +366,14 @@ li {
     flex-direction: column;
     height: 75%;
     justify-content: center;
+    width: 90%;
+    max-width: 600px;
 }
 .contact h1 {
     font-size: calc(var(--fs-sm) + .2rem);
     font-weight: 100;
     text-align: center;
-    margin: 10px;
-    width: var(--about-info);
+    width: 100%;
 }
 .contact p {
     margin: 0px;
@@ -488,15 +483,15 @@ li {
     .skills h3 {
         grid-column: span 2;
     }
-    #text{
+    /* #text{
         width: auto;
-    }
-    .mediaVert{
+    } */
+    /* .mediaVert{
         width: 100%;
     }
     .mediaHor{
         width: 100%;
-    }
+    } */
 }
 
 /* for now */
