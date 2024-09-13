@@ -56,9 +56,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 replace.innerHTML = `
                 <div class="about">
                     <h1>Ryan Sky</h1>
-                    <h3>I am a multidisciplinary creative interested in the promotional branding of local artists and businesses in entertainment sector, though I am eager to work alongside businesses of all kinds. I am inspired by designs of the blues, rock and punk era, Art Nouveau, and the many artists and designers I’ve met in university, at art shows, and on my road trips.
-
-                    My introduction to graphic design started in highschool where I took the lead in designing a “Magazine from the Past” for my history class. Shortly after, I was asked to design the promotional flyers for Take It to the Streets, a local fashion show. I was Head Graphic Designer for Routure, Rutgers’ first campus fashion magazine, where I worked on covers, article layouts, and, as I was on on track for Web Design, the maintenance of their website. I later collaborated with a few students at the Mason Gross School of Arts to create the production card for Blue Strawberry Pictures, their film production company. In my last semester at Rutgers, I took on a Graphic Design Internship, and, since then, have dove head-first into looking for opportunities to put my creative skillset to use.</h3>
+                    <h3>I am a multidisciplinary creative interested in the promotional branding of local artists and businesses in entertainment sector, though I am eager to work alongside businesses of all kinds. I am inspired by designs of the blues, rock and punk era, Art Nouveau, and the many artists and designers I’ve met in university, at art shows, and on my road trips.</h3>
+                    <h3>My introduction to graphic design started in highschool where I took the lead in designing a “Magazine from the Past” for my history class. Shortly after, I was asked to design the promotional flyers for Take It to the Streets, a local fashion show. I was Head Graphic Designer for the first issue of Routure, Rutgers’ first campus fashion magazine, where I worked on covers, article layouts, and, as I was on on track for Web Design, the maintenance of their website. I later collaborated with a few students at the Mason Gross School of Arts to create the production card for Blue Strawberry Pictures, their film production company. In my last semester at Rutgers, I took on a Graphic Design Internship, and, since then, have dove head-first into looking for opportunities to put my creative skillset to use.</h3>
                     <div><img src="Portfolio-Content/about/ryansky.jpg" alt="Photo of Ryan Sky"></div>
                 </div>
                 `;
@@ -75,60 +74,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 return;
             } else if (id === menuArray[2]) {
                 replace.innerHTML = `
-                <div class="resume">
-                    <div class="profExp">
-                        <h3>PROFESSIONAL EXPERIENCE</h3>
-                        <h4>Graphic Design Intern | The Syndicate</h4>
-                        <h4>Feb 2023 - April 2023</h4>
-                        <ul>
-                            <p>• Assisted and created still and video flyers, assets, and product mockups for clients</p>
-                            <p>• Helped department supervisors in the brainstorming process for client projects</p>
-                            <p>• Explored different design styles by adapting to a variety of client requests</p>
-                        </ul>
-                    </div>
-                    <div class="skills">
-                        <h3>SKILLS</h3>
-                            <div class="skill">
-                                <i><h4>DESIGN</h4></i>
-                                <p>Illustrator</p>
-                                <p>Blender</p>
-                                <p>Photoshop</p>
-                                <p>InDesign</p>
-                                <p>AfterEffects</p>
-                            </div>
-                            <div class="skill">
-                                <i><h4>CODING</h4></i>
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JavaScript</p>
-                            </div>
-                            <div class="skill">
-                                <i><h4>HANDS-ON</h4></i>
-                                <p>Illustration</p>
-                                <p>Photography</p>
-                                <p>Pottery</p>
-                                <p>Embroidery</p>
-                            </div>
-                            <div class="skill">
-                                <i><h4>MUSIC</h4></i>
-                                <p>Guitar</p>
-                                <p>GarageBand</p>
-                                <p>Cubase</p>
-                                <p>Audacity</p>
-                                <p>Piano</p>
-                            </div>
-                    </div>
-                    <div class="education">
-                        <h3>EDUCATION</h3>
-                        <h4>Rutgers University | New Brunswick</h4>
-                        <h4>Bachelor's Degree | 2023</h4>
-                        <ul>
-                            <p>• Major in Information Technology & Informatics for Web Design & Development</p>
-                            <p>• Minor in Entrepreneurship</p>
-                            <p>• Magna Cum Laude</p>
-                        </ul>
-                    </div>
-                </div>
+                <div class="resume"><img src="Portfolio-Content/resume/Ryan-Arizmendi.png" alt="Photo of Ryan Sky"></div>
                 `;
                 console.log("resume");
                 return;

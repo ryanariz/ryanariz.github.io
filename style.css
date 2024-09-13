@@ -351,7 +351,8 @@ li {
     font-size: var(--fs-menu);
     width: var(--about-info);
     line-height: 18px;
-    text-align: center;
+    text-align: left;
+    text-indent: 40px;
 }
 .about div {
     display: flex;
@@ -391,7 +392,7 @@ li {
 .resume {
     margin: 20px;
 }
-.skills {
+/* .skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -401,6 +402,9 @@ li {
 }
 .resume h4 {
     margin-top: 0;
+} */
+.resume > img {
+    width: 100%;
 }
 /* ************************************* */
 /* MOBILE */
