@@ -4,8 +4,8 @@
 		"title":"Sounds",
 		"type":"Graphic Design - Hand Drawing, Photoshop",
 		"date":"2024",
-		"text":"Album cover design for Soleanna's tenth music mix.",
-		"image":"Portfolio-Content/XSounds/sounds.jpg",
+		"text":"Album cover design and T-shirt mockup for Soleanna's tenth music mix.",
+		"image":["Portfolio-Content/XSounds/album-layout.png", "Portfolio-Content/XSounds/tshirt-layout.png", "Portfolio-Content/XSounds/cdcases.png"],
 		"medType":"vert"
 	},
 	{
