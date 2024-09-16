@@ -4,11 +4,11 @@
 html {
     scrollbar-width: none;
     font-size: 1rem;
-    font-family: monospace;
+    font-family: "interstate", sans-serif;
     --fs-xl: clamp(6rem, 5vw + 6rem, 31.25rem);
     --fs-lg: clamp(1.8rem, 3vw + 1rem , 3rem);
-    --fs-sm: clamp(0.8rem, .3vw + 1rem, 3rem);
-    --fs-menu: clamp(0.75rem, 0.3vw + .5rem, 0.125rem);
+    --fs-sm: clamp(1.8rem, 1vw + 1rem, 3rem);
+    --fs-menu: clamp(0.75rem, 0.3vw + 0.9rem, 1.125rem);
     --about-img: clamp(15rem, 37vw, 50rem);
     --about-info: clamp(15rem, 38vw + 4rem ,37rem);
     --page-vert: clamp(16.625rem, 17vw + 13rem, 44rem);
@@ -18,6 +18,70 @@ html {
     font-family: apple;
     src: url(apple_garamond/AppleGaramond.ttf)
 }
+/* Interstate Hairline
+    font-family: "interstate", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+Interstate Hairline Italic
+    font-family: "interstate", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+Interstate Thin
+    font-family: "interstate", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+Interstate Thin Italic
+    font-family: "interstate", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+Interstate Extra Light
+    font-family: "interstate", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+Interstate Extra Light Italic
+    font-family: "interstate", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+Interstate Light
+    font-family: "interstate", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+Interstate Light Italic
+    font-family: "interstate", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+Interstate Regular
+    font-family: "interstate", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+Interstate Italic
+    font-family: "interstate", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+Interstate Bold
+    font-family: "interstate", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+Interstate Bold Italic
+    font-family: "interstate", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+Interstate Black
+    font-family: "interstate", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+Interstate Black Italic
+    font-family: "interstate", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+Interstate Ultra Black
+    font-family: "interstate", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+Interstate Ultra Black Italic
+    font-family: "interstate", sans-serif;
+    font-weight: 900;
+    font-style: italic; */
 body{
     background-color: #121212;
     color: #ffffff;
@@ -72,7 +136,7 @@ body{
     }
 }
 #ryansky{
-    font-family: apple, 'Times New Roman', Times, serif;
+    font-family: "interstate", sans-serif;
     height: 90%;
     width: 100%;
     position: fixed;
@@ -87,7 +151,7 @@ body{
 }
 #ryansky > h1{
     font-size: var(--fs-xl);
-    font-weight: 100;
+    font-weight: 500;
 }
 #title-page-menu{
     display: flex;
@@ -116,9 +180,9 @@ a:hover{
 /* ************************************* */
 /* WORK PAGE */
 /* ************************************* */
-h4, h3, h2{
+/* h4, h3, h2{
     font-weight: 100;
-}
+} */
 container {
     /* height: 100vh; */
     display: grid;
@@ -156,8 +220,8 @@ container {
     align-items: center;
     /* border-bottom: 2px solid black; */
 }
-#web-menu > a:hover{
-    cursor: pointer;
+.dingbat{
+    font-family: monospace;
 }
 #mobile-menu {
     display: none;
@@ -167,17 +231,18 @@ container {
 }
 aside {
     grid-area: side;
-    /* margin-left: 10px; */
-    /* padding-right: 10px; */
-    /* border-right: 2px solid black; */
-    /* overflow: auto; */
-    font-size: var(--fs-menu);
-    /* font-size: 14px; */
+    font-size: 0.9rem;
     line-height: 13px;
 
 }
 aside div {
     line-height: 10px;
+}
+h2 {
+    font-weight: 500;
+}
+h3 {
+    font-weight: 300;
 }
 article {
     grid-area: content;
@@ -244,7 +309,7 @@ article {
 }
 .project .text {
     margin: 0;
-	font-weight: 300;
+	font-weight: 700;
 	color: white;
 	position: absolute;
     top: 50%;
@@ -295,7 +360,8 @@ footer > p{
 }
 .newHTML #title{
     font-size: var(--fs-sm);
-    font-weight: 600;
+    font-weight: 500;
+    margin-bottom: 10px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -335,8 +401,8 @@ li {
     align-items: center;
 }
 .about h1 {
-    font-size: var(--fs-lg);
-    font-weight: bold;
+    font-size: var(--fs-sm);
+    font-weight: 500;
     text-align: center;
     margin: 10px;
 }
@@ -345,7 +411,7 @@ li {
     font-size: var(--fs-menu);
     width: 90%;
     max-width: 750px;
-    line-height: 18px;
+    line-height: 23px;
     text-align: left;
     text-indent: 40px;
 }
@@ -372,16 +438,10 @@ li {
     max-width: 600px;
 }
 .contact h1 {
-    font-size: calc(var(--fs-sm) + .2rem);
-    font-weight: 100;
+    font-size: var(--fs-sm);
+    font-weight: 300;
     text-align: center;
     width: 100%;
-}
-.contact p {
-    margin: 0px;
-    text-align: center;
-    font-size: calc(var(--fs-menu) + 0.7rem);
-    font-weight: 600;
 }
 /* ************************************* */
 /* RESUME */
@@ -389,17 +449,6 @@ li {
 .resume {
     margin: 20px;
 }
-/* .skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.resume h3 {
-    width: 100%
-}
-.resume h4 {
-    margin-top: 0;
-} */
 .resume > img {
     width: 100%;
 }
@@ -436,6 +485,10 @@ li {
         align-items: center;
         padding-right: 20px;
         padding-left: 20px;
+        justify-content: space-between;
+    }
+    #mobile-menu-items > a {
+        margin: 2px;
     }
     #mobile-dropdown {
         display: none;
@@ -447,31 +500,26 @@ li {
         scrollbar-width: none;
         line-height: 8px;
     }
-    #mobile-dropdown > h3 {
-        margin-bottom: 10px;
+    .when-menu-small {
+        display: none;
+    }
+    #first-dingbat {
+        display: none;
+    }
+    #mobile-dropdown h2 {
+        margin-bottom: 2px;
     }
     .mobile-main {
         display: flex;
     }
-    .mobile-menu-button {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .mobile-menu-item > a {
-        margin: -2;
-    }
     .dingbat {
-        margin: 5px;
+        margin: 10px;
     }
     #mobile-title {
-        display: flex;
-        justify-content: center;
+        width: 18%
     }
     #mobile-title img{
-        width: 18%;
-    }
-    #work {
-        display: block;
+        width: 100%;
     }
     aside {
         display: none;
@@ -479,10 +527,15 @@ li {
     .mediaDiv {
         gap: 1.3vw;
     }
-    
 }
-
-/* for now */
-.comingsoon {
-    display: none;
+@media (max-width: 600px){
+    .menu-button {
+        display: none;
+    }
+    .when-menu-small {
+        display: flex;
+    }
+    .small-menu-button {
+        margin: 5px;
+    }
 }
