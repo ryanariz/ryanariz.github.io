@@ -7,7 +7,7 @@ html {
     font-family: "interstate", sans-serif;
     --fs-xl: clamp(6rem, 5vw + 6rem, 31.25rem);
     --fs-lg: clamp(1.8rem, 3vw + 1rem , 3rem);
-    --fs-sm: clamp(1.8rem, 1vw + 1rem, 3rem);
+    --fs-sm: clamp(1.8rem, 1vw + 1rem, 2.3rem);
     --fs-menu: clamp(0.75rem, 0.3vw + 0.9rem, 1.125rem);
     --about-img: clamp(15rem, 37vw, 50rem);
     --about-info: clamp(15rem, 38vw + 4rem ,37rem);
@@ -180,9 +180,6 @@ a:hover{
 /* ************************************* */
 /* WORK PAGE */
 /* ************************************* */
-/* h4, h3, h2{
-    font-weight: 100;
-} */
 container {
     /* height: 100vh; */
     display: grid;
@@ -202,12 +199,6 @@ container {
 }
 #web-title {
     grid-area: title;
-    /* padding: 10px; */
-    /* border-bottom: 2px solid black;
-    border-right: 2px solid black; */
-    /* margin: 0; */
-    /* display: flex;
-    justify-content: center; */
 }
 #web-title img {
     width: 60%;
@@ -218,7 +209,6 @@ container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border-bottom: 2px solid black; */
 }
 .dingbat{
     font-family: monospace;
@@ -250,36 +240,28 @@ article {
     grid-template-areas: 
         "sect1 sect2 sect3"
         "footer footer footer";
-    /* overflow: auto;
-    overflow-x: clip; */
     gap: 0.7vw;
 
 }
 .contentblock1{
     grid-area: sect1;
     display: flex;
-    /* width: 50%; */
     flex-direction: column;
     gap: 0.7vw;
-    /* position: relative; */
     z-index: 0;
 }
 .contentblock2{
     grid-area: sect2;
     display: flex;
-    /* width: 50%; */
     flex-direction: column;
     gap: 0.7vw;
-    /* position: relative; */
     z-index: 0;
 }
 .contentblock3{
     grid-area: sect3;
     display: flex;
-    /* width: 50%; */
     flex-direction: column;
     gap: 0.7vw;
-    /* position: relative; */
     z-index: 0;
 }
 .project{
@@ -373,6 +355,9 @@ footer > p{
 li {
     list-style-type: none;
 }
+#text{
+    line-height: 22px;
+}
 .mediaDiv {
     display: flex;
     flex-direction: column;
@@ -383,11 +368,9 @@ li {
 }
 .mediaVert {
     width: 100%;
-    /* max-width: 750px; */
 }
 .mediaHor {
     width: 100%;
-    /* max-width: 750px; */
 }
 
 
