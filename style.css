@@ -349,6 +349,7 @@ footer > p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    line-height: 32px;
 }
 .nav {
     cursor: pointer;
