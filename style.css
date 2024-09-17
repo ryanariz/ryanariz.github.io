@@ -5,7 +5,8 @@ html {
     scrollbar-width: none;
     font-size: 1rem;
     font-family: "interstate", sans-serif;
-    --fs-xl: clamp(6rem, 5vw + 6rem, 31.25rem);
+    --index-title: clamp(4rem, 17vw, 15rem);
+    --index-menu: clamp(0.8rem, 1vw + 1rem, 2.3rem);
     --fs-lg: clamp(1.8rem, 3vw + 1rem , 3rem);
     --fs-sm: clamp(1.8rem, 1vw + 1rem, 2.3rem);
     --fs-menu: clamp(0.75rem, 0.3vw + 0.9rem, 1.125rem);
@@ -150,17 +151,17 @@ body{
     z-index: -1;
 }
 #ryansky > h1{
-    font-size: var(--fs-xl);
+    font-size: var(--index-title);
     font-weight: 500;
 }
-#title-page-menu{
+#index-menu{
     display: flex;
     margin: 8px;
     flex-direction: row;
     justify-content: space-between;
     gap: 5vw;
     z-index: 1; 
-    font-size: var(--fs-sm);
+    font-size: var(--index-menu);
 }
 /* ************************************* */
 /* ANCHOR TAGS */
