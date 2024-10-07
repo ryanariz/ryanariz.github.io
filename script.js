@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 replace.innerHTML = `
                 <div class="about">
                     <h1>Ryan Sky</h1>
-                    <h3 id="about-text">I am a multidisciplinary creative interested in the promotional branding of local artists and businesses in the entertainment sector, though I am eager to work alongside businesses of all kinds. I am inspired by designs of the blues, rock and punk era, Art Nouveau, and the many artists and designers I’ve met in university, at art shows, and on my road trips.</h3>
+                    <h3 id="about-text">A designer from New Jersey. My work is inspired by designs of the blues, rock and punk era, Art Nouveau, and the many artists and designers I’ve met in university, at art shows, and on my road trips. I'm interested in the promotional branding of artists and businesses in the entertainment sector, though eager to work alongside businesses of all kinds.</h3>
                     <h3>Email: ryanskydesigns@gmail.com<br>Instagram: @skazure</h3>
-                    <div><img src="Portfolio-Content/about/ryansky.jpg" alt="Photo of Ryan Sky"></div>
+                    <div><img src="Portfolio-Content/about/ryan-sky.jpg" alt="Photo of Ryan Sky"></div>
                 </div>
                 `;
                 console.log("about");
