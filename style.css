@@ -453,6 +453,9 @@ li {
         overflow-x: clip;
         padding: 1.7vw;
     }
+    .overlay {
+        display: none;
+    }
     #web-title {
         display: none;
     }

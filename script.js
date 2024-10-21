@@ -17,15 +17,15 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.log(error);
     }
 
-    console.log(pages);
+    // console.log(pages);
 
     let idArray = [];
     pages.forEach(page => {
         idArray.push(`${page.id}`);
     });
-    console.log(idArray);
+    // console.log(idArray);
 
-    let menuArray = ['about', 'contact', 'resume'];
+    let menuArray = ['about', 'resume'];
 
     // Will be used to hide mobileDropDown when item on menu is clicked
     // Will also be used in toggling mobileDropDown further in code
@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             document.querySelector('.projects').style.display = "none";
             document.querySelector('.replace').style.display = "flex";
             replace.classList.add('newHTML');
+            // about
             if (id === menuArray[0]) {
                 replace.innerHTML = `
                 <div class="about">
@@ -61,22 +62,14 @@ document.addEventListener("DOMContentLoaded", async () => {
                     <div><img src="Portfolio-Content/about/ryan-sky.jpg" alt="Photo of Ryan Sky"></div>
                 </div>
                 `;
-                console.log("about");
+                // console.log("about");
                 return;
+            // resume
             } else if (id === menuArray[1]) {
-                replace.innerHTML = `
-                <div class="contact">
-                    <h1>If you'd like to work together or are interested in commissioning a piece, please feel free to contact me at:</h1>
-                    <h1>ryanskydesigns@gmail.com</h1>
-                </div>
-                `;
-                console.log("contact");
-                return;
-            } else if (id === menuArray[2]) {
                 replace.innerHTML = `
                 <div class="resume"><img src="Portfolio-Content/resume/Ryan-Arizmendi.png" alt="Photo of Ryan Sky"></div>
                 `;
-                console.log("resume");
+                // console.log("resume");
                 return;
             }
         } else if (idArray.indexOf(id)!=-1) {
