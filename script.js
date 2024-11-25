@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                         <a class="nav" href="#${nextId}" id="${nextId}">⇾</a>
                     </div>
                     <div id="date">${selectedPage.date}</div>
-                    <div id="type">${selectedPage.type}</div>
+                    
                     <div id="text">${selectedPage.text}</div>
                 </div>
                 <div class="mediaDiv">
@@ -124,8 +124,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 </video>
                 `
                 ;
-            }
-            else {
+            } else if (selectedPage.image){
                 const imageArray=selectedPage.image;
                 if (Array.isArray(imageArray) === true){
                     imageArray.forEach((image) => {
@@ -134,7 +133,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 } else {
                     mediaDiv.innerHTML += `<img class="media" src="${selectedPage.image}"></img>`;
                 }
+            // v NOT IN USE
+            } else if (selectedPage.link){
+                mediaDiv.innerHTML = `
+                <iframe width="560" height="315"  src="${selectedPage.link.src}" title="${selectedPage.link.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                `
             }
+        
             
             const medias = document.querySelectorAll('.media');
             if (selectedPage.medType === 'vert') {
