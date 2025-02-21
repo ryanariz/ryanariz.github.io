@@ -284,11 +284,12 @@ li {
         right: 0;
         top: 0;
         bottom: 0;
-        z-index: 0;
+        pointer-events: none;
     }
     #mobile-menu.change{
         opacity: 100;
         z-index: 2;
+        pointer-events: all;
     }
     #hamburger{
         display: block;
