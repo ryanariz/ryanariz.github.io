@@ -260,9 +260,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     //If page has been preloaded, url hash passed through handleClick()
     const path = window.location.pathname;
     const hash = window.location.hash;
-    if (path === "/graphics.html") {
+    if (path === "/graphics") {
         handleClick(hash.substring(1));
-    } else if (path === "/illustration.html") {
+    } else if (path === "/illustration") {
         handleClick2(hash.substring(1));
     } else {
         handleClick3(hash.substring(1));
@@ -271,9 +271,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     window.onpopstate = function() {
         const path = window.location.pathname;
         const hash = window.location.hash;
-        if (path === "/graphics.html") {
+        if (path === "/graphics") {
             handleClick(hash.substring(1));
-        } else if (path === "/illustration.html") {
+        } else if (path === "/illustration") {
             handleClick2(hash.substring(1));
         } else {
             handleClick3(hash.substring(1));
