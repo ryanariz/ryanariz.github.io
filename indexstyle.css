@@ -26,7 +26,6 @@ a:hover{
 }
 #index-div{
     display: flex;
-    position: fixed;
     height: 100svh;
     width: 100svw;
     flex-direction: column;
