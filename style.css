@@ -6,6 +6,9 @@ html{
 body{
     background: rgb(18, 18, 18);
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 a{
     text-decoration: none;
     color: #ffffff;

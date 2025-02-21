@@ -167,12 +167,10 @@ document.addEventListener("DOMContentLoaded", async () => {
                 // Image is wider than the modal -> fit by width
                 image.style.width = "100%";
                 image.style.height = "auto";
-                console.log("Resizing by width");
             } else {
                 // Image is taller than the modal -> fit by height
                 image.style.width = "auto";
                 image.style.height = "100%";
-                console.log("Resizing by height");
             }
         }
     

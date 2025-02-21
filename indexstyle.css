@@ -12,6 +12,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 a{
     text-decoration: none;
     color: #ffffff;
@@ -31,7 +34,10 @@ a:hover{
     flex-direction: column;
 }
 #index-title{
-    margin: 5% 0 0 5%;
+    margin: clamp(2%, 20px, 4%);
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 #index-title > img{
     width: clamp(8rem, 9vw + 5rem, 14rem)
@@ -40,9 +46,11 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    flex: auto;
-    margin: 0 5% 5% 0;
     align-items: flex-end;
+    margin: clamp(2%, 20px, 4%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 #butterfly-box {
     position: fixed;
