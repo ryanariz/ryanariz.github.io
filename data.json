@@ -1,0 +1,305 @@
+{
+    "graphics":
+    [   
+        {
+            "id":"YouTube-Latin-Grammy",
+            "title":"YouTube Latin Grammys",
+            "type":"Graphic Design - Illustrator, Indesign",
+            "date":"2024",
+            "text":"Working with agency ObsidianWorks' team, I designed the event menus for YouTube's 2024 Latin Grammy Music & Culture Celebration.",
+            "image":["Portfolio-Content/OW/EventMenus/menu1.jpg", "Portfolio-Content/OW/EventMenus/menus.png", "Portfolio-Content/OW/EventMenus/menu2.jpg"],
+            "medType":"vert"
+        },
+        {
+            "id": "Lewis-Black",
+            "title":"Lewis Black",
+            "type":"Graphic Design - Indesign, Photoshop",
+            "date":2023,
+            "text":"Lewis Black is an American stand-up comic known for his comical frustrations and takes on 'the absurdities of life.' As an intern at the Syndicate, I created concept YouTube video thumbnails for his page. Lewis and his team requested pops of vibrant color, big and blocky text, and the inclusion of his signature middle finger.",
+            "image":["Portfolio-Content/Syn/LewisBlack/LewisBlack1.jpg", "Portfolio-Content/Syn/LewisBlack/LewisBlack2.jpg", "Portfolio-Content/Syn/LewisBlack/LewisBlack3.jpg"],
+            "medType":"hor"
+        },
+        {
+            "id":"Growing-Pains",
+            "title":"Growing Pains",
+            "type":"2D Animation - Photoshop, AfterEffects",
+            "date":2024,
+            "text":"A very short film.",
+            "vid":"Portfolio-Content/GrowingPains/growingPains.mp4",
+            "medType":"vert"
+        },
+        {
+            "id":"Uncle-Vinnies",
+            "title":"Uncle Vinnies Comedy Club",
+            "type":"Graphic Design - Photoshop",
+            "date":2023,
+            "text":"Uncle Vinnies, once Ferrara's Ristorante, is currently a staple in Point Pleasant Beach, NJ. Having showcased professional comics such as Andrew DICE Clay, Jackie 'The Joke Man' Martling, Vic Di Bitetto, Robert Kelly and more, the comedy club has been noted as one of the best by <i>Night & Day Magazine, Stepping Out, NJ Monthly</i> and <i>Asbury Park Press.</i><br>As a diversifying business, Uncle Vinnies requested the Syndicate make master flyer templates to reuse for their varying events. Below are general templates for meet and greets and special events hosted at Uncle Vinnies, as well as templates for events hosted <i>by</i> Uncle Vinnies but situated in other locations, such as Max's Es-ca.",
+            "image":["Portfolio-Content/Syn/UV-Soaps/soaps1.jpg", "Portfolio-Content/Syn/UV-Templates/temp1.jpg", "Portfolio-Content/Syn/UV-Templates/temp2.jpg"],
+            "medType":"vert"
+        },
+        {
+            "id":"Leave-You-Agog",
+            "title":"Leave You Agog",
+            "type":"Graphic Design - Photoshop",
+            "date":2023,
+            "text":"A conceptual cover for a collection of songs by artists such as Jimi Hendrix, Thom Yorke, Kurt Cobain, Kim Deal, and more.",
+            "image":["Portfolio-Content/Agog/leaveYouAgogFront.jpg", "Portfolio-Content/Agog/leaveYouAgogBack.jpg"],
+            "medType":"vert"
+        },
+        {
+            "id":"Adidas",
+            "title":"Adidas Mock Promotional Video",
+            "type":"Video & Graphic Design - Photoshop, Premiere, Cubase Elements 12",
+            "date":2023,
+            "text":"Mock commercial for Adidas. Music by Ryan Sky Arizmendi.",
+            "vid":"Portfolio-Content/adidasMock/adidasCommercial.mp4",
+            "alt":"Adidas Mock Promotional Video",
+            "medType":"hor"
+        },
+        {
+            "id":"SoundsBySoleanna",
+            "title":"Sounds",
+            "type":"Graphic Design - Hand Drawing, Photoshop",
+            "date":"2024",
+            "text":"Album cover design and T-shirt mockup for Soleanna's tenth music mix.",
+            "image":["Portfolio-Content/XSounds/album-layout.png", "Portfolio-Content/XSounds/tshirt-layout.png", "Portfolio-Content/XSounds/cdcases.png"],
+            "medType":"vert"
+        },
+        {
+            "id":"Better-Call-Saul",
+            "title":"Better Call Saul",
+            "type":"2D Animation - AfterEffects",
+            "date":2023,
+            "text":"A concept promotional video for Better Call Saul.<br>Song - Tapioca Tundra, Mike Nesmith Acoustic Version<br>Sounds - Moulaythami and Julien Matthey from freesound.org",
+            "vid":"Portfolio-Content/BCS/BCS.mp4",
+            "alt":"Better Call Saul Ad",
+            "medType":"vert"
+        },
+        {
+            "id":"Take-It-To-The-Streets",
+            "title":"Take It To The Streets",
+            "type":"Graphic Design - Photoshop",
+            "date":"2019/2023",
+            "text":"Promotional flyer for a local fashion show in North Bergen, NJ, hosted by Emily Peguero and Pablo Ledesma in 2019.",
+            "image":"Portfolio-Content/Streets/streets.jpg",
+            "medType":"vert"
+        },
+        {
+            "id":"Morph",
+            "title":"Morph",
+            "type":"2D Animation - AfterEffects, Photoshop",
+            "date":2023,
+            "text":"Animation project over a postcard by Drew Michael Photography - Chicago Illinois.",
+            "image":"Portfolio-Content/Morph/drewgif-1 copy.gif",
+            "medType":"vert"
+        },
+        {
+            "id":"Craft-Mix",
+            "title":"CraftMix Mock Design",
+            "type":"Graphic Design - Illustrator, Photoshop, Blender",
+            "date":2023,
+            "text":"CraftMix is a healthy, convenient, and delicious alternative to the popular but sugar-filled cocktail mixers in the market. This rebranding project was primarily an exercise to practice my skills in 3D package design and dieline creation.",
+            "image":["Portfolio-Content/strawMojito/strawMojito3D.jpg", "Portfolio-Content/strawMojito/StrawBerryMojitoDieline.png"],
+            "medType":"hor"
+        },
+        {
+            "id":"Moxie-Brewery",
+            "title":"Moxie Brewery's Spunk Stout",
+            "type":"3D & Graphic Design - Blender, Photoshop, Illustrator",
+            "date":"2024",
+            "text":"Concept branding and marketing project that draws inspiration from the punk era. Beer can modeled and rendered in Blender.",
+            "image":["Portfolio-Content/Spunk/Spunk1.jpg", "Portfolio-Content/Spunk/Spunk2.jpg", "Portfolio-Content/Spunk/Spunk3.jpg"],
+            "medType":"vert"
+        },
+        {
+            "id":"Soleanna-Run-Club",
+            "title":"Soleanna Run Club",
+            "type":"Graphic Design - Photoshop, Illustrator",
+            "date":2024,
+            "text":"Flyers for DJ Soleanna's newly formed runclub.",
+            "image":["Portfolio-Content/SoleannaRunClub/flyer1.png", "Portfolio-Content/SoleannaRunClub/flyer2.png", "Portfolio-Content/SoleannaRunClub/flyer3.png", "Portfolio-Content/SoleannaRunClub/flyer4.png"],
+            "medType":"hor"
+        },
+        {
+            "id":"Dignitary",
+            "title":"Dignitary",
+            "type":"Graphic Design & Illustration - Hand Drawing, Illustrator, Photoshop",
+            "date":2024,
+            "text":"Dignitary, NJ-based hard rock and metal band, asked me to create the cover design for their upcoming album <i>Underneath the Throggs Neck</i>.",
+            "image":"Portfolio-Content/Dignitary/dignitary.jpg",
+            "alt":"Dignitary's Underneath the Throggs Neck.",
+            "medType":"hor"
+        },
+        {
+            "id":"Sonic-Youth",
+            "title":"Sonic Youth Poster",
+            "type":"Graphic Design & 2D Animation - AfterEffects",
+            "date":2023,
+            "text":"Modernization of a 1996 Sonic Youth Daydream Nation Tour flyer.",
+            "image":"Portfolio-Content/Sonic/sonicPoster.gif",
+            "medType":"hor"
+        },
+        {
+            "id":"Minolta",
+            "title":"Minolta Mock Promotional Video",
+            "type":"Video Editing, Typography & 3D Animation - Illustrator, AfterEffects, Blender",
+            "date":2023,
+            "text":"A modern concept promo for the camera manunfacturing company Minolta, now Konica Minolta. Custom Minolta font and backtrack created by Ryan Arizmendi. Camera models:<br><div style='margin-top: 10px;'>Minolta X-300: Radovan Stastny <a style='text-decoration: underline;' href='https://sketchfab.com/radovan_stastny'>https://sketchfab.com/radovan_stastny</a><br>Rox Branded Konica: Fuji <a style='text-decoration: underline;' href='https://sketchfab.com/fujisan'>https://sketchfab.com/fujisan</a><br>Minolta X-570: Michael Emory Cerquoni <a style='text-decoration: underline;' href='https://sketchfab.com/nebadon2025'>https://sketchfab.com/nebadon2025</a></div>",
+            "vid":"Portfolio-Content/Minolta/MinoltaAd.mp4",
+            "alt":"Minolta Mock Promotional Video",
+            "medType":"hor"
+        },
+        {
+            "id":"Dragonette",
+            "title":"Dragonette",
+            "type":"Graphic Design - Photoshop",
+            "date":2023,
+            "text":"As an intern at the Syndicate, I created these iterations of Dragonette's Tour Life Playlist on Spotify - a curation of songs Dragonette listened to for the simple sake of listening.",
+            "image":["Portfolio-Content/Syn/DragonetteSpotify/spotify.jpg", "Portfolio-Content/Syn/DragonetteSpotify/spotify2.jpg", "Portfolio-Content/Syn/DragonetteSpotify/spotify3.jpg"],
+            "medType":"vert"
+        }
+    ],
+    "photography":
+    [
+        {
+            "id":"Doors",
+            "title":"Doors",
+            "type":"Photography - Photoshop, Bridge",
+            "date":"Ongoing Project",
+            "text":"Doors collected through digital and film photography, born from the notion that doors are more the windows to a home than the windows themselves.",
+            "image":[
+                "door28.jpg", "door1.jpg", "door2.jpg", "door3.jpg", "door4.jpg", "door5.jpg", 
+                "door6.jpg", "door7.jpg", "door8.jpg", "door9.jpg", "door10.jpg",
+                "door11.jpg", "door12.jpg", "door13.jpg", "door14.jpg", "door17.jpg", "door15.jpg",
+                "door16.jpg", "door18.jpg", "door20.jpg",
+                "door21.jpg", "door22.jpg", "door23.jpg", "door24.jpg", "door25.jpg",
+                "door26.jpg", "door27.jpg", "door29.jpg", "door19.jpg"
+              ]
+        },
+        {
+            "id":"Mexico",
+            "title":"Mexico",
+            "type":"Photography - Photoshop, Bridge",
+            "date":"2024",
+            "text":"Photos from my visit in Cancun.",
+            "image":["dadandson.jpg", "cigs.jpg", "threeguys.jpg", "holdinghands.jpg", "umbrellas.jpg", "shutterlong.jpg", "twoguys.jpg", "feetontowel.jpg", "foot.jpg", "ladywithchild.jpg", "cats.jpg", "girlplastichead.jpg", "sandyback.jpg", "pillars.jpg", "birds.jpg"]
+        },
+        {
+            "id":"People",
+            "title":"People",
+            "type":"Photography - Photoshop, Bridge",
+            "date":"2023-2024 (So far)",
+            "text":"Captured mainly on my roadtrip through DC, Pittsburgh, Butler, Cleveland, Grand Rapids, and Toronto.",
+            "image":["girlonswing.jpg",
+            "cristofer.jpg",
+            "blackbirdguy.jpg",
+            "building.jpg",
+            "ferry.jpg",
+            "girlonbeach.jpg",
+            "guyonbike.jpg",
+            "xladimir.jpg",
+            "guyonbike2.jpg",
+            "guysbydoor.jpg",
+            "guywithcig.jpg",
+            "happydog.JPG",
+            "keepout.jpg",
+            "ladywithkids.jpg",
+            "legends.JPG",
+            "coloredchairs.jpg",
+            "guyincar.jpg",
+            "lincoln.jpg",
+            "liquorstoreguy.jpg",
+            "manholdingson.jpg",
+            "mansitting.jpg",
+            "piercing.jpg",
+            "rapidskids.jpg",
+            "rich.jpg",
+            "smilingman.jpg",
+            "threeladies.jpg",
+            "uke.jpg",
+            "womanhat.jpg",
+            "yonaira.jpg"]
+        },
+        {
+            "id":"Misc",
+            "title":"Misc",
+            "type":"Photography - Photoshop, Bridge",
+            "date":"2023-2024",
+            "text":"From shoes to toilets to everything nice.",
+            "image":["misc1.jpg",
+            "misc2.jpg",
+            "misc3.JPG",
+            "misc4.jpg",
+            "misc5.jpg",
+            "misc6.jpg",
+            "misc7.jpg",
+            "misc8.jpg",
+            "misc9.jpg",
+            "misc10.jpg",
+            "misc11.jpg"]
+        }
+    ],
+    "illustration":
+    [
+        {
+            "id":"ThisSeatIsWarm",
+            "title":"This Seat Is Warm",
+            "image":"Portfolio-Content/Illustrations/ThisSeatIsWarm.jpg"
+        },
+        {
+            "id":"Shrocked",
+            "title":"Shrocked",
+            "image":"Portfolio-Content/Illustrations/Shrocked.jpg"
+        },
+        {
+            "id":"Cat",
+            "title":"Cat",
+            "image":"Portfolio-Content/Illustrations/Cat.jpg"
+        },
+        {
+            "id":"Droop",
+            "title":"Droop",
+            "image":"Portfolio-Content/Illustrations/Droop.jpg"
+        },
+        {
+            "id":"LadyLeaps",
+            "title":"Lady Leaps",
+            "image":"Portfolio-Content/Illustrations/LadyLeaps.png"
+        },
+        {
+            "id":"Cat2",
+            "title":"Cat 2",
+            "image":"Portfolio-Content/Illustrations/Cat2.jpg"
+        },
+        {
+            "id":"Nebulas2",
+            "title":"Nebulas 2",
+            "image":"Portfolio-Content/Illustrations/Nebulas2.jpg"
+        },
+        {
+            "id":"BigTeeth",
+            "title":"Big Teeth",
+            "image":"Portfolio-Content/Illustrations/BigTeeth.jpg"
+        },
+        {
+            "id":"Tonelle",
+            "title":"Tonelle",
+            "image":"Portfolio-Content/Illustrations/Tonelle.jpg"
+        },
+        {
+            "id":"DidITurnOffTheFaucet",
+            "title":"Did I Turn Off The Faucet",
+            "image":"Portfolio-Content/Illustrations/DidITurnOffTheFaucet.jpg"
+        },
+        {
+            "id":"Nebulas",
+            "title":"Nebulas",
+            "image":"Portfolio-Content/Illustrations/Nebulas.jpg"
+        },
+        {
+            "id":"Hmmdifrr",
+            "title":"Hmmdifrr",
+            "image":"Portfolio-Content/Illustrations/Hmmdifrr.png" 
+        } 
+    ]   
+}

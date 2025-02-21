@@ -1,185 +1,285 @@
-async function loadPages() {
+async function loadData() {
     // OR return (await fetch("pages.json")).json();
-    const response = await fetch("pages.json");
-    const pages = await response.json();
-
-    return pages;
+    const response = await fetch("data.json");
+    const data = await response.json();
+    
+    return data;
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-    let pages = [];
+    let data = [];
 
     try {
-        pages = await loadPages();
+        data = await loadData();
         console.log("Fetch successful")
     } catch (error) {
         console.log("Fetch unsuccessful");
         console.log(error);
     }
 
-    // console.log(pages);
-
+    let graphics = data.graphics;
+    let photos = data.photography;
+    let illus = data.illustration;
+    let all = graphics.concat(photos, illus);
     let idArray = [];
-    pages.forEach(page => {
-        idArray.push(`${page.id}`);
+    
+    // Creats idArray of all project IDs
+    all.forEach(project => {
+        idArray.push(project.id);
     });
-    // console.log(idArray);
 
-    let menuArray = ['about', 'resume'];
+    // for mobileMenu
+    const hamburger = document.getElementById('hamburger');
+    const bar = document.querySelectorAll('.bar');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-    // Will be used to hide mobileDropDown when item on menu is clicked
-    // Will also be used in toggling mobileDropDown further in code
-    const mobileDropDown = document.getElementById('mobile-dropdown');
-    const computedStyle = window.getComputedStyle(mobileDropDown);
+    // for all functions
+    const replace = document.querySelector('#replace');
+
+    // for handleClick
+    const body = document.body;
+    const content = document.querySelector('.content');
+    
+    // for handleClick2
+    // const modal = document.querySelector('#modal');
+    // const modalImg = document.querySelector('#modal-img');
 
     function handleClick(id) {
         document.body.scrollTop = 0;
-        if (computedStyle.display === "flex") {
-            mobileDropDown.style.display = "none";
-        }
-        
-        // Checks if id passed is '' or exists in array of page or menu IDs
-        if (id==='' || (idArray.indexOf(id)===-1 && menuArray.indexOf(id)===-1)) {
-            document.querySelector('.projects').style.display = "grid";
-            document.querySelector('.replace').style.display = "none";
+        document.documentElement.scrollTop = 0;
+
+        // If no id is passed, content appears. Should probably make an error page for this.
+        if (id==='' || idArray.indexOf(id)===-1) {
+            content.style.display = "flex";
+            replace.style.display = "none";
             //Checks article with class "replace" for video, then pauses it if article is hidden
             const vidEl = document.querySelector('.pageVid');
             if (vidEl) {
                 vidEl.pause();
             }
             return;
-        } else if (menuArray.indexOf(id)!=-1) {
-            document.querySelector('.projects').style.display = "none";
-            document.querySelector('.replace').style.display = "flex";
-            replace.classList.add('newHTML');
-            // about
-            if (id === menuArray[0]) {
-                replace.innerHTML = `
-                <div class="about">
-                    <h1>Ryan Sky</h1>
-                    <h3 id="about-text">A designer from New Jersey. My work is inspired by designs of the blues, rock and punk era, Art Nouveau, and the many artists and designers I’ve met in university, at art shows, and on my road trips. I'm interested in the promotional branding of artists and businesses in the entertainment sector, though eager to work alongside businesses of all kinds.</h3>
-                    <h3>Email: ryanskydesigns@gmail.com<br>Instagram: @skazure</h3>
-                    <div><img src="Portfolio-Content/about/ryan-sky.jpg" alt="Photo of Ryan Sky"></div>
-                </div>
-                `;
-                // console.log("about");
-                return;
-            // resume
-            } else if (id === menuArray[1]) {
-                replace.innerHTML = `
-                <div class="resume"><img src="Portfolio-Content/resume/Ryan-Arizmendi.png" alt="Photo of Ryan Sky"></div>
-                `;
-                // console.log("resume");
-                return;
-            }
+
+        // If id exists in idArray, show replace(page)
         } else if (idArray.indexOf(id)!=-1) {
-            document.querySelector('.projects').style.display = "none";
-            document.querySelector('.replace').style.display = "flex";
+            content.style.display = "none";
+            replace.style.display = "flex";
         }
         
-        const selectedPage = pages.find(page => page.id === id);
-        const selectedPageIndex = pages.findIndex(page => page.id == id);
+        // Finds project with same id as id clicked
+        const project = graphics.find(project => project.id === id);
         
         // Assigns previous and next buttons with id
-        if (selectedPageIndex == 0) {
-            var prevIdIndex = (pages.length - 1);
-            var prevId = pages[prevIdIndex].id;
-        } else {
-            var prevIdIndex = selectedPageIndex - 1;
-            var prevId = pages[prevIdIndex].id;
-        }
-        if (selectedPageIndex === (pages.length - 1)) {
-            var nextId = pages[0].id;
-        } else {
-            var nextIdIndex = selectedPageIndex + 1;
-            var nextId = pages[nextIdIndex].id;
-        }
-
-        if (selectedPage) {
-            replace.classList.add('newHTML');
-
+        let projectIndex = graphics.findIndex(project => project.id === id);
+        let prevId = graphics[(projectIndex === 0 ? graphics.length : projectIndex) - 1].id;
+        let nextId = graphics[(projectIndex + 1) % graphics.length].id;
+        
+        if (project) {
             replace.innerHTML = `
-                <div class="info">
-                    <div id="title">
-                        <a class="nav" href="#${prevId}" id="${prevId}">⇽</a>
-                        <div>${selectedPage.title}</div>
-                        <a class="nav" href="#${nextId}" id="${nextId}">⇾</a>
+                <div id="project-div">
+                    <div id="project-info">
+                        <h1>${project.title}</h1>
+                        <p>${project.type}</p>
+                        <p>${project.text}</p>
                     </div>
-                    <div id="date">${selectedPage.date}</div>
-                    <div id="type">${selectedPage.type}</div>
-                    <div id="text">${selectedPage.text}</div>
+                    <div class="mediaDiv">
+                    </div>
                 </div>
-                <div class="mediaDiv">
+                <div id="project-nav">
+                    <a class="nav" href="#${prevId}" id="${prevId}">⇽ Previous</a>
+                    <a class="nav" href="#${nextId}" id="${nextId}">Next ⇾</a>
                 </div>
             `;
 
             const mediaDiv = document.querySelector('.mediaDiv');
-            console.log(mediaDiv)
 
-            if (selectedPage.vid){
+            if (project.vid){
                 mediaDiv.innerHTML = `
                 <video class="media pageVid" controls loop>
-                    <source src="${selectedPage.vid}" type="video/mp4" alt="${selectedPage.alt}"> 
+                    <source src="${project.vid}" type="video/mp4" alt="${project.alt}"> 
                     Your browser does not support this video.
                 </video>
                 `
                 ;
-            }
-            else {
-                const imageArray=selectedPage.image;
+            } else if (project.image){
+                const imageArray=project.image;
                 if (Array.isArray(imageArray) === true){
                     imageArray.forEach((image) => {
                         mediaDiv.innerHTML += `<img class="media" src="${image}"></img>`;
                     });
                 } else {
-                    mediaDiv.innerHTML += `<img class="media" src="${selectedPage.image}"></img>`;
+                    mediaDiv.innerHTML += `<img class="media" src="${project.image}"></img>`;
                 }
-            }
-            
-            const medias = document.querySelectorAll('.media');
-            if (selectedPage.medType === 'vert') {
-                medias.forEach(media => {
-                    media.classList.add('mediaVert');
-                });
-            } else if (selectedPage.medType === 'hor') {
-                medias. forEach(media => {
-                    media.classList.add('mediaHor');
-                });
             }
         }
         console.log("DONE");
         return;
     }
 
-    const projects = document.querySelectorAll('.project');
-    const replace = document.querySelector('.replace');
-
-    replace.addEventListener('click', function(event) {
-        if (event.target.classList.contains('nav')) {
-            const navId = event.target.id;
-            handleClick(navId);
+    function handleClick2(id) {
+        const idExists = idArray.includes(id);
+        if (!id || !idExists) {
+            content.style.display = "flex";
+            replace.style.display = "none";
+            return;
         }
-    });
 
-    // Toggle mobileDropDown visibility
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    mobileMenuButton.addEventListener('click', function() {
-        if (computedStyle.display === "none") {
-            mobileDropDown.style.display = "flex";
+        content.style.display = "none";
+        replace.style.display = "flex";
+        
+
+        // Finds project in illus data
+        // const project = illus.find(project => project.id === id);
+
+        const projectIndex = illus.findIndex(project => project.id === id);
+
+        if (projectIndex === -1) return;
+
+        const project = illus[projectIndex];
+
+        // Assigns previous and next navigation
+        let prevId = illus[(projectIndex === 0 ? illus.length : projectIndex) - 1].id;
+        let nextId = illus[(projectIndex + 1) % illus.length].id;
+        console.log(projectIndex, prevId, nextId);
+
+        replace.innerHTML = `
+        <div id="project-info">
+            <h1>${project.title}</h1>
+        </div>
+        <div id="illus-image-div">
+            <img src="${project.image}" id="illus-image">
+        </div>
+        <div id="project-nav">
+            <a class="nav" href="#${prevId}" id="${prevId}">⇽</a>
+            <a class="nav" href="#${nextId}" id="${nextId}">⇾</a>
+        </div>
+        `;
+
+        let image = document.querySelector('#illus-image');
+        let div = document.querySelector('#illus-image-div');
+
+        function adjustDivSize() {
+            
+            let divAspect = div.clientWidth / div.clientHeight;
+            let imgAspect = image.naturalWidth / image.naturalHeight;
+            console.log(imgAspect, divAspect);
+    
+            if (imgAspect > divAspect) {
+                // Image is wider than the modal -> fit by width
+                image.style.width = "100%";
+                image.style.height = "auto";
+                console.log("Resizing by width");
+            } else {
+                // Image is taller than the modal -> fit by height
+                image.style.width = "auto";
+                image.style.height = "100%";
+                console.log("Resizing by height");
+            }
+        }
+    
+        // Ensure the image is fully loaded before adjusting size
+        image.onload = function () {
+            div.style.display = "flex";
+            adjustDivSize();
+        };
+    
+        // Adjust on window resize
+        window.addEventListener("resize", adjustDivSize);
+    }
+
+    function handleClick3(id) {
+        // If no id is passed, content appears. Should probably make an error page for this.
+        if (id==='' || idArray.indexOf(id)===-1) {
+            content.style.display = "flex";
+            replace.style.display = "none";
+            //Checks article with class "replace" for video, then pauses it if article is hidden
+            const vidEl = document.querySelector('.pageVid');
+            if (vidEl) {
+                vidEl.pause();
+            }
+            return;
+
+        // If id exists in idArray, show replace(page)
+        } else if (idArray.indexOf(id)!=-1) {
+            content.style.display = "none";
+            replace.style.display = "flex";
+        }
+
+        const project = photos.find(project => project.id === id);
+        const images = project.image;
+
+        // Assigns previous and next buttons with id
+        let projectIndex = photos.findIndex(project => project.id === id);
+        let prevId = photos[(projectIndex === 0 ? photos.length : projectIndex) - 1].id;
+        let nextId = photos[(projectIndex + 1) % photos.length].id;
+
+        // Splits image array into 3 arrays
+        const blockSize = Math.ceil(images.length / 2);
+        const block1 = images.slice(0, blockSize);
+        const block2 = images.slice(blockSize);
+
+        const blockImages = (block) => {
+            return block.map(image => `<img src="Portfolio-Content/Photography/${id}/${image}" alt="${id} Image" class="image">`
+            ).join('');
+        };
+
+        replace.innerHTML = `
+        <div id="project-info">
+            <h1>${project.title}</h1>
+            <p>${project.type}</p>
+            <p>${project.text}</p>
+        </div>
+        <div id="photography-blocks">
+            <div class="block">
+                ${blockImages(block1)}
+            </div>
+            <div class="block">
+                ${blockImages(block2)}
+            </div>
+        </div>
+        <div id="project-nav">
+            <a class="nav" href="#${prevId}" id="${prevId}">⇽ Previous</a>
+            <a class="nav" href="#${nextId}" id="${nextId}">Next ⇾</a>
+        </div>
+        `;
+        return;
+
+    }
+
+    // Toggle mobileDropDown visibility and scroll on click
+    hamburger.addEventListener('click', function() {
+        bar.forEach(x => x.classList.toggle("change"));
+        mobileMenu.classList.toggle("change");
+        const mobileMenuStyle = window.getComputedStyle(mobileMenu);
+        if (mobileMenuStyle.opacity === "0") {
+            body.style.overflowY = "hidden";
         } else {
-            mobileDropDown.style.display = "none";
+            body.style.overflowY = "auto";
+            mobileMenu.disabled = true;
+            console.log("test");
         }
     });
-
-
 
     //If page has been preloaded, url hash passed through handleClick()
+    const path = window.location.pathname;
     const hash = window.location.hash;
-    handleClick(hash.substring(1));
+    if (path === "/graphics.html") {
+        handleClick(hash.substring(1));
+    } else if (path === "/illustration.html") {
+        handleClick2(hash.substring(1));
+    } else {
+        handleClick3(hash.substring(1));
+    }
 
     window.onpopstate = function() {
+        const path = window.location.pathname;
         const hash = window.location.hash;
-        handleClick(hash.substring(1));
+        if (path === "/graphics.html") {
+            handleClick(hash.substring(1));
+        } else if (path === "/illustration.html") {
+            handleClick2(hash.substring(1));
+        } else {
+            handleClick3(hash.substring(1));
+        }
     }
 });
 

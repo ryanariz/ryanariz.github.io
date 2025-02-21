@@ -1,0 +1,90 @@
+html{
+    font-size: 1rem;
+    font-family: "interstate", san-serif;
+    color: white;
+}
+body{
+    background: rgb(18, 18, 18);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+a:focus{
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+}
+#index-div{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+#index-title{
+    margin: 5% 0 0 5%;
+}
+#index-title > img{
+    width: clamp(8rem, 9vw + 5rem, 14rem)
+}
+#index-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: auto;
+    margin: 0 5% 5% 0;
+    align-items: flex-end;
+}
+#butterfly-box {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+#butterfly {
+    width: clamp(200px, 15vw, 600px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(-1);
+    animation: loader 8s steps(100) infinite;
+}
+@keyframes loader {
+    0% {
+        margin-right: -30%;
+        margin-bottom: -30%;
+    }
+    100% {
+        margin-right: 100vw;
+        margin-bottom: 100vh;
+    }
+}
+#butterfly2 {  
+    width: clamp(300px, 50vw, 1000px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: loader2 8s steps(100) infinite;
+}
+@keyframes loader2 {
+    from {
+        margin-left: -30%;
+        margin-bottom:-30%;
+    }
+    to {
+        margin-left: 100vw;
+        margin-bottom: 100vh;
+    }
+}
