@@ -242,6 +242,11 @@
     "illustration":
     [
         {
+            "id":"LegLand",
+            "title":"Leg Land",
+            "image":"Portfolio-Content/Illustrations/LegLand.png"
+        },
+        {
             "id":"ThisSeatIsWarm",
             "title":"This Seat Is Warm",
             "image":"Portfolio-Content/Illustrations/ThisSeatIsWarm.jpg"
@@ -257,16 +262,6 @@
             "image":"Portfolio-Content/Illustrations/Cat.jpg"
         },
         {
-            "id":"Droop",
-            "title":"Droop",
-            "image":"Portfolio-Content/Illustrations/Droop.jpg"
-        },
-        {
-            "id":"LadyLeaps",
-            "title":"Lady Leaps",
-            "image":"Portfolio-Content/Illustrations/LadyLeaps.png"
-        },
-        {
             "id":"Cat2",
             "title":"Cat 2",
             "image":"Portfolio-Content/Illustrations/Cat2.jpg"
@@ -280,6 +275,11 @@
             "id":"BigTeeth",
             "title":"Big Teeth",
             "image":"Portfolio-Content/Illustrations/BigTeeth.jpg"
+        },
+        {
+            "id":"LadyLeaps",
+            "title":"Lady Leaps",
+            "image":"Portfolio-Content/Illustrations/LadyLeaps.png"
         },
         {
             "id":"Tonelle",
@@ -300,6 +300,11 @@
             "id":"Hmmdifrr",
             "title":"Hmmdifrr",
             "image":"Portfolio-Content/Illustrations/Hmmdifrr.png" 
-        } 
+        },
+        {
+            "id":"Droop",
+            "title":"Droop",
+            "image":"Portfolio-Content/Illustrations/Droop.jpg"
+        }
     ]   
 }
