@@ -66,6 +66,15 @@
             "medType":"vert"
         },
         {
+            "id":"Magnus-Media",
+            "title":"Magnus Media",
+            "type":"Graphic Design - Illustrator",
+            "date":"2025",
+            "text":"Drink menu design for Magnus Media's <i>A Decade of Music</i> event.",
+            "image":["Portfolio-Content/BelindaAquine/Magnus_Drink_Menu_Mockup.png", "Portfolio-Content/BelindaAquine/Magnus_Drink_Menu.png"],
+            "medType":"vert"
+        },
+        {
             "id":"Better-Call-Saul",
             "title":"Better Call Saul",
             "type":"2D Animation - AfterEffects",
