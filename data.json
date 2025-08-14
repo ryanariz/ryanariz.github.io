@@ -9,8 +9,12 @@
             "text": "INTER's live performance series, Sonic Sessions invited local and emerging artists to perform in their immersive 360° dome. I created the visual identity for the program, including the logo, promotional flyers, exterior signage, and dome projection animations, ensuring a cohesive look across all elements.",
             "media": [
                 {
+                    "type":"text",
+                    "content": "<b>TEST ANIMS</b>"
+                },
+                {
                     "type": "two-gif",
-                    "src": ["/Portfolio-Content/SonicSessions/Dome2.mp4", "/Portfolio-Content/SonicSessions/Globe.mp4"]
+                    "src": ["/Portfolio-Content/SonicSessions/try/Dome2.mp4", "/Portfolio-Content/SonicSessions/try/Globe.mp4"]
                 },
                 {
                     "type":"text",
@@ -18,7 +22,7 @@
                 },
                 {
                     "type": "one-gif",
-                    "src": "/Portfolio-Content/SonicSessions/Dome-Anim2.mp4"
+                    "src": "/Portfolio-Content/SonicSessions/try/Dome-Anim2.mp4"
                 },
                 {
                     "type":"text",
@@ -26,7 +30,7 @@
                 },
                 {
                     "type": "two-image",
-                    "src": ["/Portfolio-Content/SonicSessions/SSPost2.png", "/Portfolio-Content/SonicSessions/Artist-2.png"]
+                    "src": ["/Portfolio-Content/SonicSessions/flyer.jpg", "/Portfolio-Content/SonicSessions/artist.jpg"]
                 },
                 {
                     "type":"text",
@@ -34,7 +38,7 @@
                 },
                 {
                     "type": "one-image",
-                    "src": "/Portfolio-Content/SonicSessions/Ticket.png"
+                    "src": "/Portfolio-Content/SonicSessions/ticket.jpg"
                 },
                 {
                     "type":"text",
@@ -104,7 +108,7 @@
             "text":"Forged from an unserious sketch and my stubborn need to make it move, this animation is about the slow, beautiful decay we call growing.",
             "media": [
                 {
-                    "type": "one-video",
+                    "type": "one-gif",
                     "src": "/Portfolio-Content/GrowingPains/growingPains.mp4"
                 },
                 {
@@ -251,28 +255,36 @@
             "text":"A modern concept promo for the camera manunfacturing company Minolta, now Konica Minolta. Custom Minolta font and backtrack created by Ryan Arizmendi. Camera models:<br><div style='margin-top: 10px;'>Minolta X-300: Radovan Stastny <a style='text-decoration: underline;' href='https://sketchfab.com/radovan_stastny'>https://sketchfab.com/radovan_stastny</a><br>Rox Branded Konica: Fuji <a style='text-decoration: underline;' href='https://sketchfab.com/fujisan'>https://sketchfab.com/fujisan</a><br>Minolta X-570: Michael Emory Cerquoni <a style='text-decoration: underline;' href='https://sketchfab.com/nebadon2025'>https://sketchfab.com/nebadon2025</a></div>",
             "media": [
                 {
+                    "type": "text",
+                    "content": "TYPOGRAPHY"
+                },
+                {
+                    "type": "two-image",
+                    "src":["/Portfolio-Content/Minolta/typography.jpg", "/Portfolio-Content/Minolta/typography2.jpg"]
+                },
+                {
+                    "type": "text",
+                    "content": "PROMO AD"
+                },
+                {
                     "type": "one-video",
                     "src": "/Portfolio-Content/Minolta/Minolta.mp4"
                 },
                 {
                     "type": "text",
-                    "content": "LOGO & BRANDING"
+                    "content": "LOGOS"
                 },
                 {
-                    "type": "three-image",
-                    "src":["/Portfolio-Content/Minolta/branding-01.jpg", "/Portfolio-Content/Minolta/branding-02.jpg", "/Portfolio-Content/Minolta/branding-03.jpg"]
+                    "type": "two-image",
+                    "src":["/Portfolio-Content/Minolta/logo2.jpg", "/Portfolio-Content/Minolta/logo3.jpg"]
                 },
                 {
-                    "type":"one-image",
-                    "src":"/Portfolio-Content/Minolta/branding-04.jpg"
-                },
-                {
-                    "type":"text",
-                    "content":"TYPOGRAPHY"
+                    "type": "text",
+                    "content": "COLOR PALETTE"
                 },
                 {
                     "type":"one-image",
-                    "src":"/Portfolio-Content/Minolta/typography.jpg"
+                    "src":"/Portfolio-Content/Minolta/branding.jpg"
                 }
             ]
         },
@@ -323,7 +335,7 @@
                 },
                 {
                     "type": "three-image",
-                    "src": ["/Portfolio-Content/Streets/streetsBefore.jpg", "/Portfolio-Content/Streets/streetsBefore2.jpg", "/Portfolio-Content/Streets/streetsBefore3.jpg"]
+                    "src": ["/Portfolio-Content/Streets/before.jpg", "/Portfolio-Content/Streets/before2.jpg", "/Portfolio-Content/Streets/before3.jpg"]
                 }
             ]
         },
@@ -335,8 +347,8 @@
             "text":"Animation project over a postcard by Drew Michael Photography - Chicago Illinois.",
             "media":[
                 {
-                    "type":"one-image",
-                    "src":"/Portfolio-Content/Morph/morph.gif"
+                    "type":"one-gif",
+                    "src":"/Portfolio-Content/Morph/morph.mp4"
                 }
             ]
         },
@@ -397,8 +409,12 @@
                     "content": "<b>PROCESS</b>"
                 },
                 {
-                    "type": "three-image",
-                    "src": ["/Portfolio-Content/Moxie/render1.jpg", "/Portfolio-Content/Moxie/render2.jpg", "/Portfolio-Content/Moxie/render3.jpg"]
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/Moxie/render1.jpg", "/Portfolio-Content/Moxie/render2.jpg"]
+                },
+                {
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/Moxie/render3.jpg"
                 }
             ]
         },
@@ -465,7 +481,7 @@
                 },
                 {
                     "type": "two-image",
-                    "src": ["/Portfolio-Content/Dignitary/DignitaryDraft1.png", "/Portfolio-Content/Dignitary/DignitaryDraft2.png"]
+                    "src": ["/Portfolio-Content/Dignitary/draft1.png", "/Portfolio-Content/Dignitary/draft2.jpg"]
                 },
                 {
                     "type": "text",
