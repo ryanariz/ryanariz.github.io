@@ -1,6 +1,6 @@
 async function loadData() {
     // OR return (await fetch("pages.json")).json();
-    const response = await fetch("data.json");
+    const response = await fetch("/data.json");
     const data = await response.json();
     
     return data;
@@ -43,7 +43,55 @@ document.addEventListener("DOMContentLoaded", async () => {
     // for handleClick2
     // const modal = document.querySelector('#modal');
     // const modalImg = document.querySelector('#modal-img');
+    function renderCustomMediaBlock(item) {
+        if (item.type === 'text') {
+            return `<div class="media text-block">${item.content}</div>`;
+        }
+    
+        const imageTypes = ['one-image', 'two-image', 'three-image', 'four-image'];
+        const videoTypes = ['one-video', 'two-video', 'three-video'];
+        const gifTypes = ['one-gif', 'two-gif', 'three-gif'];
+    
+        if (imageTypes.includes(item.type)) {
+            const layoutClass = `media-row ${item.type.split('-')[0]}`;
+            const srcArray = Array.isArray(item.src) ? item.src : [item.src];
+            const imagesHTML = srcArray.map((imgSrc, i) => {
+                return `<img src="${imgSrc}" class="mediaImg" alt="${item.alt ? item.alt[i] || '' : ''}">`;
+            }).join('');
+            return `<div class="${layoutClass}">${imagesHTML}</div>`;
+        }
+    
+        if (videoTypes.includes(item.type)) {
+            const layoutClass = `media-row ${item.type.split('-')[0]}`;
+            const srcArray = Array.isArray(item.src) ? item.src : [item.src];
+            const videosHTML = srcArray.map((vidSrc) => {
+                return `
+                    <video class="mediaVid" controls loop autoplay muted>
+                        <source src="${vidSrc}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                `;
+            }).join('');
+            return `<div class="${layoutClass}">${videosHTML}</div>`;
+        }
 
+        if (gifTypes.includes(item.type)) {
+            const layoutClass = `media-row ${item.type.split('-')[0]}`;
+            const srcArray = Array.isArray(item.src) ? item.src : [item.src];
+            const videosHTML = srcArray.map((vidSrc) => {
+                return `
+                    <video class="mediaVid" loop autoplay muted>
+                        <source src="${vidSrc}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                `;
+            }).join('');
+            return `<div class="${layoutClass}">${videosHTML}</div>`;
+        }
+    
+        // Fallback for unknown types
+        return '';
+    }
     function handleClick(id) {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -78,8 +126,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <div id="project-div">
                     <div id="project-info">
                         <h1>${project.title}</h1>
+                        <hr/>
                         <p>${project.type}</p>
+                        <hr/>
                         <p>${project.text}</p>
+                        <hr/>
                     </div>
                     <div class="mediaDiv">
                     </div>
@@ -89,26 +140,39 @@ document.addEventListener("DOMContentLoaded", async () => {
                     <a class="nav" href="#${nextId}" id="${nextId}">Next ⇾</a>
                 </div>
             `;
-
+            console.log("test");
             const mediaDiv = document.querySelector('.mediaDiv');
 
-            if (project.vid){
+            // if (project.vid){
+            //     mediaDiv.innerHTML = `
+            //     <video class="media pageVid" controls loop>
+            //         <source src="${project.vid}" type="video/mp4" alt="${project.alt}"> 
+            //         Your browser does not support this video.
+            //     </video>
+            //     `
+            //     ;
+            // } else if (project.image){
+            //     const imageArray=project.image;
+            //     if (Array.isArray(imageArray) === true){
+            //         imageArray.forEach((image) => {
+            //             mediaDiv.innerHTML += `<img class="media" src="${image}"></img>`;
+            //         });
+            //     } else {
+            //         mediaDiv.innerHTML += `<img class="media" src="${project.image}"></img>`;
+            //     }
+            // }
+            if (project.media && Array.isArray(project.media)) {
+                mediaDiv.innerHTML = project.media.map(item => renderCustomMediaBlock(item)).join('');
+            } else if (project.vid) {
                 mediaDiv.innerHTML = `
-                <video class="media pageVid" controls loop>
-                    <source src="${project.vid}" type="video/mp4" alt="${project.alt}"> 
-                    Your browser does not support this video.
-                </video>
-                `
-                ;
-            } else if (project.image){
-                const imageArray=project.image;
-                if (Array.isArray(imageArray) === true){
-                    imageArray.forEach((image) => {
-                        mediaDiv.innerHTML += `<img class="media" src="${image}"></img>`;
-                    });
-                } else {
-                    mediaDiv.innerHTML += `<img class="media" src="${project.image}"></img>`;
-                }
+                    <video class="media pageVid" controls loop>
+                        <source src="${project.vid}" type="video/mp4" alt="${project.alt || ''}">
+                        Your browser does not support this video.
+                    </video>
+                `;
+            } else if (project.image) {
+                const imageArray = Array.isArray(project.image) ? project.image : [project.image];
+                mediaDiv.innerHTML = imageArray.map(image => `<img class="media" src="${image}">`).join('');
             }
         }
         console.log("DONE");
@@ -210,13 +274,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         let prevId = photos[(projectIndex === 0 ? photos.length : projectIndex) - 1].id;
         let nextId = photos[(projectIndex + 1) % photos.length].id;
 
-        // Splits image array into 3 arrays
+        // Splits image array into 2 arrays
         const blockSize = Math.ceil(images.length / 2);
         const block1 = images.slice(0, blockSize);
         const block2 = images.slice(blockSize);
 
         const blockImages = (block) => {
-            return block.map(image => `<img src="Portfolio-Content/Photography/${id}/${image}" alt="${id} Image" class="image">`
+            return block.map(image => `<img src="/Portfolio-Content/Photography/${id}/${image}" alt="${id} Image" class="image">`
             ).join('');
         };
 
@@ -260,9 +324,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     //If page has been preloaded, url hash passed through handleClick()
     const path = window.location.pathname;
     const hash = window.location.hash;
-    if (path === "/graphics") {
+    if (path === "/graphics/") {
         handleClick(hash.substring(1));
-    } else if (path === "/illustration") {
+    } else if (path === "/illustration/") {
         handleClick2(hash.substring(1));
     } else {
         handleClick3(hash.substring(1));
@@ -271,9 +335,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     window.onpopstate = function() {
         const path = window.location.pathname;
         const hash = window.location.hash;
-        if (path === "/graphics") {
+        if (path === "/graphics/") {
             handleClick(hash.substring(1));
-        } else if (path === "/illustration") {
+        } else if (path === "/illustration/") {
             handleClick2(hash.substring(1));
         } else {
             handleClick3(hash.substring(1));

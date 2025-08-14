@@ -2,142 +2,279 @@
     "graphics":
     [   
         {
+            "id":"Sonic-Sessions",
+            "title":"SONIC SESSIONS - INTER",
+            "type":"2D Animation & Graphic Design - Illustrator, AfterEffects",
+            "date":"2024",
+            "text": "INTER's live performance series, Sonic Sessions invited local and emerging artists to perform in their immersive 360° dome. I created the visual identity for the program, including the logo, promotional flyers, exterior signage, and dome projection animations, ensuring a cohesive look across all elements.",
+            "media": [
+                {
+                    "type": "two-gif",
+                    "src": ["/Portfolio-Content/SonicSessions/Dome2.mp4", "/Portfolio-Content/SonicSessions/Globe.mp4"]
+                },
+                {
+                    "type":"text",
+                    "content": "<b>360 ANIM</b>"
+                },
+                {
+                    "type": "one-gif",
+                    "src": "/Portfolio-Content/SonicSessions/Dome-Anim2.mp4"
+                },
+                {
+                    "type":"text",
+                    "content": "<b>FLYER & ARTIST POST</b>"
+                },
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/SonicSessions/SSPost2.png", "/Portfolio-Content/SonicSessions/Artist-2.png"]
+                },
+                {
+                    "type":"text",
+                    "content": "<b>WEB TICKET</b>"
+                },
+                {
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/SonicSessions/Ticket.png"
+                },
+                {
+                    "type":"text",
+                    "content": "<b>EXTERIOR SCREEN ANIMATIONS</b>"
+                },
+                {
+                    "type": "two-gif",
+                    "src": ["/Portfolio-Content/SonicSessions/SSExterior.mp4", "/Portfolio-Content/SonicSessions/SSExterior2.mp4"]
+                }
+            ]
+        },
+        {
             "id":"YouTube-Latin-Grammy",
             "title":"YouTube Latin Grammys",
             "type":"Graphic Design - Illustrator, Indesign",
             "date":"2024",
-            "text":"Working with agency ObsidianWorks' team, I designed the event menus for YouTube's 2024 Latin Grammy Music & Culture Celebration.",
-            "image":["Portfolio-Content/OW/EventMenus/menu1.jpg", "Portfolio-Content/OW/EventMenus/menus.png", "Portfolio-Content/OW/EventMenus/menu2.jpg"],
-            "medType":"vert"
+            "text": "Working with agency ObsidianWorks' team, I designed the event menus and banners for YouTube's 2024 Latin Grammy Music & Culture Celebration.",
+            "media": [
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/OW/YT/menu1.jpg", "/Portfolio-Content/OW/YT/menu2.jpg"]
+                },
+                {
+                    "type":"text",
+                    "content": "<b>ITERATIONS</b>"
+                },
+                {
+                    "type": "three-image",
+                    "src": ["/Portfolio-Content/OW/YT/menu-flat1.jpg", "/Portfolio-Content/OW/YT/menu-flat2.jpg", "/Portfolio-Content/OW/YT/menu-flat3.jpg"]
+                },
+                {
+                    "type":"text",
+                    "content": "<b>DJ BOOTH BANNER</b>"
+                },
+                {
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/OW/YT/YTBanner.jpg"
+                }
+            ]
         },
         {
             "id": "Lewis-Black",
             "title":"Lewis Black",
-            "type":"Graphic Design - Indesign, Photoshop",
+            "type":"Graphic Design - Illustrator, Photoshop",
             "date":2023,
             "text":"Lewis Black is an American stand-up comic known for his comical frustrations and takes on 'the absurdities of life.' As an intern at the Syndicate, I created concept YouTube video thumbnails for his page. Lewis and his team requested pops of vibrant color, big and blocky text, and the inclusion of his signature middle finger.",
-            "image":["Portfolio-Content/Syn/LewisBlack/LewisBlack1.jpg", "Portfolio-Content/Syn/LewisBlack/LewisBlack2.jpg", "Portfolio-Content/Syn/LewisBlack/LewisBlack3.jpg"],
-            "medType":"hor"
+            "media": [
+                {
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/Syn/LewisBlack/LewisBlack1.jpg"
+                },
+                {
+                    "type":"text",
+                    "content": "<b>ITERATIONS</b>"
+                },
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/Syn/LewisBlack/LewisBlack2.jpg","/Portfolio-Content/Syn/LewisBlack/LewisBlack3.jpg"]
+                }
+            ]
         },
         {
             "id":"Growing-Pains",
             "title":"Growing Pains",
             "type":"2D Animation - Photoshop, AfterEffects",
             "date":2024,
-            "text":"A very short film.",
-            "vid":"Portfolio-Content/GrowingPains/growingPains.mp4",
-            "medType":"vert"
+            "text":"Forged from an unserious sketch and my stubborn need to make it move, this animation is about the slow, beautiful decay we call growing.",
+            "media": [
+                {
+                    "type": "one-video",
+                    "src": "/Portfolio-Content/GrowingPains/growingPains.mp4"
+                },
+                {
+                    "type": "three-image",
+                    "src": ["/Portfolio-Content/GrowingPains/text1.jpg", "/Portfolio-Content/GrowingPains/text2.jpg", "/Portfolio-Content/GrowingPains/text3.jpg"]
+                },
+                {
+                    "type":"text",
+                    "content": "<b>THE UNSERIOUS SKETCH</b>"
+                },
+                {
+                    "type": "one-image",
+                    "src":"/Portfolio-Content/GrowingPains/drawing.jpg"
+                }
+            ]
         },
         {
-            "id":"Uncle-Vinnies",
-            "title":"Uncle Vinnies Comedy Club",
-            "type":"Graphic Design - Photoshop",
+            "id":"Blackbird-Pub",
+            "title":"Blackbird Pub",
+            "type":"Graphic Design & Words of Wisdom - InDesign & Illustrator",
             "date":2023,
-            "text":"Uncle Vinnies, once Ferrara's Ristorante, is currently a staple in Point Pleasant Beach, NJ. Having showcased professional comics such as Andrew DICE Clay, Jackie 'The Joke Man' Martling, Vic Di Bitetto, Robert Kelly and more, the comedy club has been noted as one of the best by <i>Night & Day Magazine, Stepping Out, NJ Monthly</i> and <i>Asbury Park Press.</i></p><p>As a diversifying business, Uncle Vinnies requested the Syndicate make master flyer templates to reuse for their varying events. Below are general templates for meet and greets and special events hosted at Uncle Vinnies, as well as templates for events hosted <i>by</i> Uncle Vinnies but situated in other locations, such as Max's Es-ca.",
-            "image":["Portfolio-Content/Syn/UV-Soaps/soaps1.jpg", "Portfolio-Content/Syn/UV-Templates/temp1.jpg", "Portfolio-Content/Syn/UV-Templates/temp2.jpg"],
-            "medType":"vert"
+            "text":"Being one of the best bars in Cliffside Park (in my humble opinion), I was very excited to get to work on a few flyers for their holiday events and a custom menu with full creative freedom - specifically with the cocktail categories, of which I rather enjoy. To top it off, on my free time I made a little montage video showcasing the great regulars of Blackbird with music by Starikova.",
+            "media":[
+                {
+                    "type":"text",
+                    "content": "<b>HOLIDAY FLYERS</b>"
+                },
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/Blackbird/uglysweater.png", "/Portfolio-Content/Blackbird/movenight.png"]
+                },
+                {
+                    "type":"text",
+                    "content": "<b>MENU DESIGN</b>"
+                },
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/Blackbird/menu-01.jpg", "/Portfolio-Content/Blackbird/menu-02.jpg"]
+                },
+                {
+                    "type":"text",
+                    "content": "<b>WORDS OF WISDOM</b>"
+                },
+                {
+                    "type": "one-video",
+                    "src": "/Portfolio-Content/Blackbird/words.mp4"
+                }
+
+            ]
         },
         {
             "id":"Leave-You-Agog",
             "title":"Leave You Agog",
-            "type":"Graphic Design - Photoshop",
+            "type":"Graphic Design - Illustrator, Photoshop",
             "date":2023,
             "text":"A conceptual cover for a collection of songs by artists such as Jimi Hendrix, Thom Yorke, Kurt Cobain, Kim Deal, and more.",
-            "image":["Portfolio-Content/Agog/leaveYouAgogFront.jpg", "Portfolio-Content/Agog/leaveYouAgogBack.jpg"],
-            "medType":"vert"
+            "media":[
+                {
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/Agog/leaveYouAgogFront.jpg"
+                },
+                {
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/Agog/leaveYouAgogBack.jpg"
+                }
+            ]
         },
         {
             "id":"Adidas",
-            "title":"Adidas Mock Promotional Video",
-            "type":"Video & Graphic Design - Photoshop, Premiere, Cubase Elements 12",
+            "title":"Adidas Concept Promo",
+            "type":"Music, Video & Graphic Design - Photoshop, Premiere, Cubase Elements 12",
             "date":2023,
-            "text":"Mock commercial for Adidas. Music by Ryan Sky Arizmendi.",
-            "vid":"Portfolio-Content/adidasMock/adidasCommercial.mp4",
-            "alt":"Adidas Mock Promotional Video",
-            "medType":"hor"
+            "text":"Concept commercial for Adidas. Music by Ryan Sky Arizmendi.",
+            "media": [
+                {
+                    "type": "one-video",
+                    "src": "/Portfolio-Content/adidasMock/adidasCommercial.mp4"
+                }
+            ]
         },
         {
             "id":"SoundsBySoleanna",
             "title":"Sounds",
-            "type":"Graphic Design - Hand Drawing, Photoshop",
+            "type":"Graphic Design - Hand Drawing, Photoshop, Illustrator",
             "date":"2024",
             "text":"Album cover design and T-shirt mockup for Soleanna's tenth music mix.",
-            "image":["Portfolio-Content/XSounds/album-layout.png", "Portfolio-Content/XSounds/tshirt-layout.png", "Portfolio-Content/XSounds/cdcases.png"],
-            "medType":"vert"
+            "media": [
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/XSounds/test/album-blackBG.jpg","/Portfolio-Content/XSounds/test/album-whiteBG.jpg"]
+                },
+                {
+                    "type": "three-image",
+                    "src": ["/Portfolio-Content/XSounds/single-tees/black.png", "/Portfolio-Content/XSounds/single-tees/white.png", "/Portfolio-Content/XSounds/single-tees/grey.png"]
+                },
+                {
+                    "type": "text",
+                    "content": "<b>INSPO</b>"
+                },
+                {
+                    "type": "four-image",
+                    "src": ["/Portfolio-Content/XSounds/inspo/inspo.jpg", "/Portfolio-Content/XSounds/inspo/inspo2.jpg", "/Portfolio-Content/XSounds/inspo/inspo3.jpg", "/Portfolio-Content/XSounds/inspo/inspo4.jpg"]
+                },
+                {
+                    "type": "text",
+                    "content": "<b>ITERATIONS</b>"
+                },
+                {
+                    "type": "three-image",
+                    "src": ["/Portfolio-Content/XSounds/iterations/it1.png", "/Portfolio-Content/XSounds/iterations/it2.jpg", "/Portfolio-Content/XSounds/iterations/it3.jpg"]
+                }
+            ]
         },
         {
-            "id":"Magnus-Media",
-            "title":"Magnus Media",
-            "type":"Graphic Design - Illustrator",
-            "date":"2025",
-            "text":"Drink menu design for Magnus Media's <i>A Decade of Music</i> event.",
-            "image":["Portfolio-Content/BelindaAquine/Magnus_DrinkMenu_Mockup.png", "Portfolio-Content/BelindaAquine/Magnus_DrinkMenu.png"],
-            "medType":"vert"
-        },
-        {
-            "id":"Better-Call-Saul",
-            "title":"Better Call Saul",
-            "type":"2D Animation - AfterEffects",
+            "id":"Miller-Lite-Experiential",
+            "title":"Miller Lite",
+            "type":"Experiential & T-Shirt Design - Illustrator",
             "date":2023,
-            "text":"A concept promotional video for Better Call Saul.<br>Song - Tapioca Tundra, Mike Nesmith Acoustic Version<br>Sounds - Moulaythami and Julien Matthey from freesound.org",
-            "vid":"Portfolio-Content/BCS/BCS.mp4",
-            "alt":"Better Call Saul Ad",
-            "medType":"vert"
+            "text":"Working with event planner Belinda Aquine for Miller Lite, I produced detailed 2D mockups of a branded activation featuring interactive elements such as a prize wheel, photo booth, and merchandise station. I designed and arranged key visual components—including step-and-repeats, table linens, photo overlays, prize wheel graphics, and merchandise layouts—to maintain cohesive brand standards.",
+            "media": [
+                {
+                    "type": "text",
+                    "content": "MOCKUP & EXECUTION"
+                },
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/MillerLite/activation.jpg", "/Portfolio-Content/MillerLite/event.jpg"]
+                },
+                {
+                    "type": "text",
+                    "content": "ELEMENTS FOR ML & CVS (NOT PICTURED YET)"
+                },
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/MillerLite/elements-02.jpg", "/Portfolio-Content/MillerLite/elements-01.jpg"]
+                }
+            ]
         },
         {
-            "id":"Take-It-To-The-Streets",
-            "title":"Take It To The Streets",
-            "type":"Graphic Design - Photoshop",
-            "date":"2019/2023",
-            "text":"Promotional flyer for a local fashion show in North Bergen, NJ, hosted by Emily Peguero and Pablo Ledesma in 2019.",
-            "image":"Portfolio-Content/Streets/streets.jpg",
-            "medType":"vert"
-        },
-        {
-            "id":"Morph",
-            "title":"Morph",
-            "type":"2D Animation - AfterEffects, Photoshop",
+            "id":"Minolta",
+            "title":"Minolta Mock Promotional Video",
+            "type":"Video Editing, Typography & 3D Animation",
             "date":2023,
-            "text":"Animation project over a postcard by Drew Michael Photography - Chicago Illinois.",
-            "image":"Portfolio-Content/Morph/drewgif-1 copy.gif",
-            "medType":"vert"
-        },
-        {
-            "id":"Craft-Mix",
-            "title":"CraftMix Mock Design",
-            "type":"Graphic Design - Illustrator, Photoshop, Blender",
-            "date":2023,
-            "text":"CraftMix is a healthy, convenient, and delicious alternative to the popular but sugar-filled cocktail mixers in the market. This rebranding project was primarily an exercise to practice my skills in 3D package design and dieline creation.",
-            "image":["Portfolio-Content/strawMojito/strawMojito3D.jpg", "Portfolio-Content/strawMojito/StrawBerryMojitoDieline.png"],
-            "medType":"hor"
-        },
-        {
-            "id":"Moxie-Brewery",
-            "title":"Moxie Brewery's Spunk Stout",
-            "type":"3D & Graphic Design - Blender, Photoshop, Illustrator",
-            "date":"2024",
-            "text":"Concept branding and marketing project that draws inspiration from the punk era. Beer can modeled and rendered in Blender.",
-            "image":["Portfolio-Content/Spunk/Spunk1.jpg", "Portfolio-Content/Spunk/Spunk2.jpg", "Portfolio-Content/Spunk/Spunk3.jpg"],
-            "medType":"vert"
-        },
-        {
-            "id":"Soleanna-Run-Club",
-            "title":"Soleanna Run Club",
-            "type":"Graphic Design - Photoshop, Illustrator",
-            "date":2024,
-            "text":"Flyers for DJ Soleanna's newly formed runclub.",
-            "image":["Portfolio-Content/SoleannaRunClub/flyer1.png", "Portfolio-Content/SoleannaRunClub/flyer2.png", "Portfolio-Content/SoleannaRunClub/flyer3.png", "Portfolio-Content/SoleannaRunClub/flyer4.png"],
-            "medType":"hor"
-        },
-        {
-            "id":"Dignitary",
-            "title":"Dignitary",
-            "type":"Graphic Design & Illustration - Hand Drawing, Illustrator, Photoshop",
-            "date":2024,
-            "text":"Dignitary, NJ-based hard rock and metal band, asked me to create the cover design for their upcoming album <i>Underneath the Throggs Neck</i>.",
-            "image":"Portfolio-Content/Dignitary/dignitary.jpg",
-            "alt":"Dignitary's Underneath the Throggs Neck.",
-            "medType":"hor"
+            "text":"A modern concept promo for the camera manunfacturing company Minolta, now Konica Minolta. Custom Minolta font and backtrack created by Ryan Arizmendi. Camera models:<br><div style='margin-top: 10px;'>Minolta X-300: Radovan Stastny <a style='text-decoration: underline;' href='https://sketchfab.com/radovan_stastny'>https://sketchfab.com/radovan_stastny</a><br>Rox Branded Konica: Fuji <a style='text-decoration: underline;' href='https://sketchfab.com/fujisan'>https://sketchfab.com/fujisan</a><br>Minolta X-570: Michael Emory Cerquoni <a style='text-decoration: underline;' href='https://sketchfab.com/nebadon2025'>https://sketchfab.com/nebadon2025</a></div>",
+            "media": [
+                {
+                    "type": "one-video",
+                    "src": "/Portfolio-Content/Minolta/Minolta.mp4"
+                },
+                {
+                    "type": "text",
+                    "content": "LOGO & BRANDING"
+                },
+                {
+                    "type": "three-image",
+                    "src":["/Portfolio-Content/Minolta/branding-01.jpg", "/Portfolio-Content/Minolta/branding-02.jpg", "/Portfolio-Content/Minolta/branding-03.jpg"]
+                },
+                {
+                    "type":"one-image",
+                    "src":"/Portfolio-Content/Minolta/branding-04.jpg"
+                },
+                {
+                    "type":"text",
+                    "content":"TYPOGRAPHY"
+                },
+                {
+                    "type":"one-image",
+                    "src":"/Portfolio-Content/Minolta/typography.jpg"
+                }
+            ]
         },
         {
             "id":"Sonic-Youth",
@@ -145,27 +282,225 @@
             "type":"Graphic Design & 2D Animation - AfterEffects",
             "date":2023,
             "text":"Modernization of a 1996 Sonic Youth Daydream Nation Tour flyer.",
-            "image":"Portfolio-Content/Sonic/sonicPoster.gif",
-            "medType":"hor"
+            "media": [
+                {
+                    "type":"one-gif",
+                    "src":"/Portfolio-Content/Sonic/sonicPoster.mp4"
+                }
+            ]
         },
         {
-            "id":"Minolta",
-            "title":"Minolta Mock Promotional Video",
-            "type":"Video Editing, Typography & 3D Animation - Illustrator, AfterEffects, Blender",
+            "id":"Better-Call-Saul",
+            "title":"Better Call Saul Concept Promo",
+            "type":"2D Animation - AfterEffects",
             "date":2023,
-            "text":"A modern concept promo for the camera manunfacturing company Minolta, now Konica Minolta. Custom Minolta font and backtrack created by Ryan Arizmendi. Camera models:<br><div style='margin-top: 10px;'>Minolta X-300: Radovan Stastny <a style='text-decoration: underline;' href='https://sketchfab.com/radovan_stastny'>https://sketchfab.com/radovan_stastny</a><br>Rox Branded Konica: Fuji <a style='text-decoration: underline;' href='https://sketchfab.com/fujisan'>https://sketchfab.com/fujisan</a><br>Minolta X-570: Michael Emory Cerquoni <a style='text-decoration: underline;' href='https://sketchfab.com/nebadon2025'>https://sketchfab.com/nebadon2025</a></div>",
-            "vid":"Portfolio-Content/Minolta/MinoltaAd.mp4",
-            "alt":"Minolta Mock Promotional Video",
-            "medType":"hor"
+            "text":"A concept promotional video for Vince Gilligan's Breaking Bad spin-off, Better Call Saul.<br>Song - Tapioca Tundra, Mike Nesmith Acoustic Version<br>Sounds - Moulaythami and Julien Matthey from freesound.org",
+            "media": [
+                {
+                    "type": "one-video",
+                    "src": "/Portfolio-Content/BCS/BCS.mp4"
+                }
+            ]
+        },
+        {
+            "id":"Take-It-To-The-Streets",
+            "title":"Take It To The Streets",
+            "type":"Graphic Design - Photoshop",
+            "date":"2019/2023",
+            "text":"A rework of an earlier promotional flyer I designed for a local fashion show in North Bergen, NJ, hosted by Emily Peguero and Pablo Ledesma in 2019.",
+            "media": [
+                {
+                    "type": "text",
+                    "content": "<b>2023 REWORK</b>"
+                },
+                {
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/Streets/streets.jpg"
+                },
+                {
+                    "type": "text",
+                    "content": "<b>2019 FLYERS</b>"
+                },
+                {
+                    "type": "three-image",
+                    "src": ["/Portfolio-Content/Streets/streetsBefore.jpg", "/Portfolio-Content/Streets/streetsBefore2.jpg", "/Portfolio-Content/Streets/streetsBefore3.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"Morph",
+            "title":"Morph",
+            "type":"2D Animation - AfterEffects, Photoshop",
+            "date":2023,
+            "text":"Animation project over a postcard by Drew Michael Photography - Chicago Illinois.",
+            "media":[
+                {
+                    "type":"one-image",
+                    "src":"/Portfolio-Content/Morph/morph.gif"
+                }
+            ]
+        },
+        {
+            "id":"Inter",
+            "title":"INTER",
+            "type":"Brand Implementation & Design Expansion for INTER Museum",
+            "date":2024,
+            "text":"<b>COMING SOON!</b><br> But in the meantime... some cool web tickets I did for them.",
+            "media":[
+                {
+                    "type":"two-image",
+                    "src":["/Portfolio-Content/INTER/web1.png", "/Portfolio-Content/INTER/web4.png"]
+                },
+                {
+                    "type":"two-image",
+                    "src":["/Portfolio-Content/INTER/web3.png", "/Portfolio-Content/INTER/web2.png"]
+                }
+            ]
+        },
+        {
+            "id":"Moxie-Brewery",
+            "title":"Moxie Brewery's Spunk Stout",
+            "type":"3D & Graphic Design - Blender, Photoshop, Illustrator",
+            "date":"2024",
+            "text":"Concept branding and marketing project that draws inspiration from the punk era. Beer can modeled and rendered in Blender.",
+            "media": [
+                {
+                    "type": "text",
+                    "content": "<b>FINAL RENDERING</b>"
+                },
+                {
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/Moxie/moxie1.jpg"
+                },
+                {
+                    "type": "text",
+                    "content": "<b>ASSETS</b>"
+                },
+                {
+                    "type": "three-image",
+                    "src": ["/Portfolio-Content/Moxie/mouth1.png", "/Portfolio-Content/Moxie/mouth3.png", "/Portfolio-Content/Moxie/mouth7.png"]
+                },
+                {
+                    "type": "four-image",
+                    "src": ["/Portfolio-Content/Moxie/mouth2.png", "/Portfolio-Content/Moxie/mouth4.png", "/Portfolio-Content/Moxie/mouth5.png", "/Portfolio-Content/Moxie/mouth6.png"]
+                },
+                {
+                    "type": "text",
+                    "content": "<b>CAN DESIGN & SIGNAGE</b>"
+                },
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/Moxie/moxie2.jpg", "/Portfolio-Content/Moxie/moxie3.jpg"]
+                },
+                {
+                    "type": "text",
+                    "content": "<b>PROCESS</b>"
+                },
+                {
+                    "type": "three-image",
+                    "src": ["/Portfolio-Content/Moxie/render1.jpg", "/Portfolio-Content/Moxie/render2.jpg", "/Portfolio-Content/Moxie/render3.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"Milkyways",
+            "title":"Milkyways Icecream",
+            "type":"Graphic Design - Photoshop, Illustrator",
+            "date":2024,
+            "text":"Menu specials and exterior A-frames for the last stop of INTER's intergalactic trip, Milkyways Icecream.",
+            "media": [
+                {
+                    "type": "text",
+                    "content": "<b>SPECIALS</b>"
+                },
+                {
+                    "type": "three-image",
+                    "src": ["/Portfolio-Content/Milkyways/special1.jpg", "/Portfolio-Content/Milkyways/special2.jpg", "/Portfolio-Content/Milkyways/special3.jpg"]
+                },
+                {
+                    "type": "text",
+                    "content": "<b>A-FRAMES</b>"
+                },
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/Milkyways/frame1.jpg", "/Portfolio-Content/Milkyways/frame2.jpg"]
+                }
+            ]
+        },
+        {
+            "id":"Soleanna-Run-Club",
+            "title":"Soleanna Run Club",
+            "type":"Graphic Design - Photoshop, Illustrator",
+            "date":2024,
+            "text":"Flyers for Soleanna's newly formed runclub.",
+            "media": [
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/SoleannaRunClub/flyer1.png", "/Portfolio-Content/SoleannaRunClub/flyer2.png"]
+                },
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/SoleannaRunClub/flyer3.png", "/Portfolio-Content/SoleannaRunClub/flyer4.png"]
+                }
+            ]
+        },
+        {
+            "id":"Dignitary",
+            "title":"Dignitary",
+            "type":"Graphic Design & Illustration - Hand Drawing, Illustrator, Photoshop",
+            "date":2024,
+            "text":"Album cover design for North Jersey agressive punk band <b>Dignitary's</b> 2024 album <i>Underneath the Throggs Neck</i>.",
+            "media":[
+                {
+                    "type": "text",
+                    "content": "<b>FINAL</b>"
+                },
+                {
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/Dignitary/Dignitary.jpg"
+                },
+                {
+                    "type": "text",
+                    "content": "<b>DRAFTS</b>"
+                },
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/Dignitary/DignitaryDraft1.png", "/Portfolio-Content/Dignitary/DignitaryDraft2.png"]
+                },
+                {
+                    "type": "text",
+                    "content": "<b>INSPIRATION</b>"
+                },
+                {
+                    "type": "four-image",
+                    "src": ["/Portfolio-Content/Dignitary/inspo1.jpg", "/Portfolio-Content/Dignitary/inspo2.jpg", "/Portfolio-Content/Dignitary/inspo3.jpg", "/Portfolio-Content/Dignitary/inspo4.jpg"]
+                }
+            ]
         },
         {
             "id":"Dragonette",
             "title":"Dragonette",
-            "type":"Graphic Design - Photoshop",
+            "type":"Graphic Design - Photoshop, Illustrator",
             "date":2023,
             "text":"As an intern at the Syndicate, I created these iterations of Dragonette's Tour Life Playlist on Spotify - a curation of songs Dragonette listened to for the simple sake of listening.",
-            "image":["Portfolio-Content/Syn/DragonetteSpotify/spotify.jpg", "Portfolio-Content/Syn/DragonetteSpotify/spotify2.jpg", "Portfolio-Content/Syn/DragonetteSpotify/spotify3.jpg"],
-            "medType":"vert"
+            "media": [
+                {
+                    "type": "text",
+                    "content": "<b>FINAL</b>"
+                },
+                {
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/Syn/DragonetteSpotify/spotify.jpg"
+                },
+                {
+                    "type": "text",
+                    "content": "<b>DRAFTS</b>"
+                },
+                {
+                    "type": "two-image",
+                    "src": ["/Portfolio-Content/Syn/DragonetteSpotify/spotify2.jpg", "/Portfolio-Content/Syn/DragonetteSpotify/spotify3.jpg"]
+                }
+            ]
         }
     ],
     "photography":
@@ -253,67 +588,67 @@
         {
             "id":"LegLand",
             "title":"Leg Land",
-            "image":"Portfolio-Content/Illustrations/LegLand.png"
+            "image":"/Portfolio-Content/Illustrations/LegLand.png"
         },
         {
             "id":"ThisSeatIsWarm",
             "title":"This Seat Is Warm",
-            "image":"Portfolio-Content/Illustrations/ThisSeatIsWarm.jpg"
+            "image":"/Portfolio-Content/Illustrations/ThisSeatIsWarm.jpg"
         },
         {
             "id":"Shrocked",
             "title":"Shrocked",
-            "image":"Portfolio-Content/Illustrations/Shrocked.jpg"
+            "image":"/Portfolio-Content/Illustrations/Shrocked.jpg"
         },
         {
             "id":"Cat",
             "title":"Cat",
-            "image":"Portfolio-Content/Illustrations/Cat.jpg"
+            "image":"/Portfolio-Content/Illustrations/Cat.jpg"
         },
         {
             "id":"Cat2",
             "title":"Cat 2",
-            "image":"Portfolio-Content/Illustrations/Cat2.jpg"
+            "image":"/Portfolio-Content/Illustrations/Cat2.jpg"
         },
         {
             "id":"Nebulas2",
             "title":"Nebulas 2",
-            "image":"Portfolio-Content/Illustrations/Nebulas2.jpg"
+            "image":"/Portfolio-Content/Illustrations/Nebulas2.jpg"
         },
         {
             "id":"BigTeeth",
             "title":"Big Teeth",
-            "image":"Portfolio-Content/Illustrations/BigTeeth.jpg"
+            "image":"/Portfolio-Content/Illustrations/BigTeeth.jpg"
         },
         {
             "id":"LadyLeaps",
             "title":"Lady Leaps",
-            "image":"Portfolio-Content/Illustrations/LadyLeaps.png"
+            "image":"/Portfolio-Content/Illustrations/LadyLeaps.png"
         },
         {
             "id":"Tonelle",
             "title":"Tonelle",
-            "image":"Portfolio-Content/Illustrations/Tonelle.jpg"
+            "image":"/Portfolio-Content/Illustrations/Tonelle.jpg"
         },
         {
             "id":"DidITurnOffTheFaucet",
             "title":"Did I Turn Off The Faucet",
-            "image":"Portfolio-Content/Illustrations/DidITurnOffTheFaucet.jpg"
+            "image":"/Portfolio-Content/Illustrations/DidITurnOffTheFaucet.jpg"
         },
         {
             "id":"Nebulas",
             "title":"Nebulas",
-            "image":"Portfolio-Content/Illustrations/Nebulas.jpg"
+            "image":"/Portfolio-Content/Illustrations/Nebulas.jpg"
         },
         {
-            "id":"Hmmdifrr",
-            "title":"Hmmdifrr",
-            "image":"Portfolio-Content/Illustrations/Hmmdifrr.png" 
+            "id":"Humphrey",
+            "title":"Humphrey",
+            "image":"/Portfolio-Content/Illustrations/Hmmdifrr.png" 
         },
         {
             "id":"Droop",
             "title":"Droop",
-            "image":"Portfolio-Content/Illustrations/Droop.jpg"
+            "image":"/Portfolio-Content/Illustrations/Droop.jpg"
         }
     ]   
 }
