@@ -239,11 +239,19 @@
                 },
                 {
                     "type": "text",
-                    "content": "ELEMENTS FOR ML & CVS (NOT PICTURED YET)"
+                    "content": "ELEMENTS FOR MILLER LITE"
                 },
                 {
-                    "type": "two-image",
-                    "src": ["/Portfolio-Content/MillerLite/elements-02.jpg", "/Portfolio-Content/MillerLite/elements-01.jpg"]
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/MillerLite/ml.jpg"
+                },
+                {
+                    "type": "text",
+                    "content": "ELEMENTS FOR CVS (EVENT NOT PICTURED YET"
+                },
+                {
+                    "type": "one-image",
+                    "src": "/Portfolio-Content/MillerLite/cvs.jpg"
                 }
             ]
         },
@@ -473,7 +481,7 @@
                 },
                 {
                     "type": "one-image",
-                    "src": "/Portfolio-Content/Dignitary/Dignitary.jpg"
+                    "src": "/Portfolio-Content/Dignitary/final.jpg"
                 },
                 {
                     "type": "text",
