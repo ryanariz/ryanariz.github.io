@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const srcArray = Array.isArray(item.src) ? item.src : [item.src];
             const videosHTML = srcArray.map((vidSrc) => {
                 return `
-                    <video class="mediaVid" controls loop autoplay muted>
+                    <video class="mediaVid" webkit-playsinline playsinline controls loop autoplay muted>
                         <source src="${vidSrc}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const srcArray = Array.isArray(item.src) ? item.src : [item.src];
             const videosHTML = srcArray.map((vidSrc) => {
                 return `
-                    <video class="mediaVid" loop autoplay muted>
+                    <video class="mediaVid" webkit-playsinline playsinline loop autoplay muted>
                         <source src="${vidSrc}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
