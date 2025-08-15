@@ -247,7 +247,7 @@
                 },
                 {
                     "type": "text",
-                    "content": "ELEMENTS FOR CVS (EVENT NOT PICTURED YET"
+                    "content": "ELEMENTS FOR CVS (EVENT NOT PICTURED)"
                 },
                 {
                     "type": "one-image",
@@ -667,7 +667,7 @@
         {
             "id":"Humphrey",
             "title":"Humphrey",
-            "image":"/Portfolio-Content/Illustrations/Hmmdifrr.png" 
+            "image":"/Portfolio-Content/Illustrations/Humphrey.png" 
         },
         {
             "id":"Droop",

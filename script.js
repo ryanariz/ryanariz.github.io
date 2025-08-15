@@ -287,8 +287,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         replace.innerHTML = `
         <div id="project-info">
             <h1>${project.title}</h1>
-            <p>${project.type}</p>
+            <hr>
             <p>${project.text}</p>
+            <hr>
         </div>
         <div id="photography-blocks">
             <div class="block">
