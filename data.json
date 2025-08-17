@@ -109,7 +109,7 @@
             "media": [
                 {
                     "type": "one-gif",
-                    "src": "/Portfolio-Content/GrowingPains/growingPains.mp4"
+                    "src": "/Portfolio-Content/GrowingPains/GrowingPains2.mp4"
                 },
                 {
                     "type": "three-image",
@@ -198,7 +198,7 @@
             "media": [
                 {
                     "type": "two-image",
-                    "src": ["/Portfolio-Content/XSounds/test/album-blackBG.jpg","/Portfolio-Content/XSounds/test/album-whiteBG.jpg"]
+                    "src": ["/Portfolio-Content/XSounds/album-blackBG.jpg","/Portfolio-Content/XSounds/album-whiteBG.jpg"]
                 },
                 {
                     "type": "three-image",
