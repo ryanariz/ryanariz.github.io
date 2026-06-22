@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let graphics = data.graphics;
     let photos = data.photography;
     let illus = data.illustration;
+    let misc = data.misc;
     let all = graphics.concat(photos, illus);
     let idArray = [];
     
@@ -28,70 +29,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         idArray.push(project.id);
     });
 
-    // for mobileMenu
-    const hamburger = document.getElementById('hamburger');
-    const bar = document.querySelectorAll('.bar');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    // for all functions
-    const replace = document.querySelector('#replace');
-
     // for handleClick
-    const body = document.body;
+    const replace = document.querySelectorAll('.replace');
+    const infoReplace = document.querySelector('#info-replace');
+    const mainReplace = document.querySelector('#main-replace');
     const content = document.querySelector('.content');
+    const replaceTitle = document.querySelector('#replace-title');
     
-    // for handleClick2
-    // const modal = document.querySelector('#modal');
-    // const modalImg = document.querySelector('#modal-img');
-    function renderCustomMediaBlock(item) {
-        if (item.type === 'text') {
-            return `<div class="media text-block">${item.content}</div>`;
-        }
-    
-        const imageTypes = ['one-image', 'two-image', 'three-image', 'four-image'];
-        const videoTypes = ['one-video', 'two-video', 'three-video'];
-        const gifTypes = ['one-gif', 'two-gif', 'three-gif'];
-    
-        if (imageTypes.includes(item.type)) {
-            const layoutClass = `media-row ${item.type.split('-')[0]}`;
-            const srcArray = Array.isArray(item.src) ? item.src : [item.src];
-            const imagesHTML = srcArray.map((imgSrc, i) => {
-                return `<img src="${imgSrc}" class="mediaImg" alt="${item.alt ? item.alt[i] || '' : ''}">`;
-            }).join('');
-            return `<div class="${layoutClass}">${imagesHTML}</div>`;
-        }
-    
-        if (videoTypes.includes(item.type)) {
-            const layoutClass = `media-row ${item.type.split('-')[0]}`;
-            const srcArray = Array.isArray(item.src) ? item.src : [item.src];
-            const videosHTML = srcArray.map((vidSrc) => {
-                return `
-                    <video class="mediaVid" webkit-playsinline playsinline controls loop autoplay muted>
-                        <source src="${vidSrc}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                `;
-            }).join('');
-            return `<div class="${layoutClass}">${videosHTML}</div>`;
-        }
-
-        if (gifTypes.includes(item.type)) {
-            const layoutClass = `media-row ${item.type.split('-')[0]}`;
-            const srcArray = Array.isArray(item.src) ? item.src : [item.src];
-            const videosHTML = srcArray.map((vidSrc) => {
-                return `
-                    <video class="mediaVid" webkit-playsinline playsinline loop autoplay muted>
-                        <source src="${vidSrc}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                `;
-            }).join('');
-            return `<div class="${layoutClass}">${videosHTML}</div>`;
-        }
-    
-        // Fallback for unknown types
-        return '';
-    }
     function handleClick(id) {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -99,238 +43,140 @@ document.addEventListener("DOMContentLoaded", async () => {
         // If no id is passed, content appears. Should probably make an error page for this.
         if (id==='' || idArray.indexOf(id)===-1) {
             content.style.display = "flex";
-            replace.style.display = "none";
-            //Checks article with class "replace" for video, then pauses it if article is hidden
-            const vidEl = document.querySelector('.pageVid');
-            if (vidEl) {
-                vidEl.pause();
-            }
+            replace.forEach(item => {
+                item.style.display = "none";
+            });
+            replaceTitle.innerHTML = `Work`;
             return;
 
         // If id exists in idArray, show replace(page)
         } else if (idArray.indexOf(id)!=-1) {
             content.style.display = "none";
-            replace.style.display = "flex";
+            replace.forEach(item => {
+                item.style.display = "flex";
+            });
         }
         
         // Finds project with same id as id clicked
         const project = graphics.find(project => project.id === id);
+
+        // Makes <li> list of services
+        const services = project.services.map(service => `<p class="txt-white mb-0">${service}</p>`).join('');
+
+        const media = project.media.map(row => {
+
+            const colSize = 12 / row.length;
         
-        // Assigns previous and next buttons with id
-        let projectIndex = graphics.findIndex(project => project.id === id);
-        let prevId = graphics[(projectIndex === 0 ? graphics.length : projectIndex) - 1].id;
-        let nextId = graphics[(projectIndex + 1) % graphics.length].id;
+            return row.map(item => {
+        
+                // IMAGE
+                if (item.type === "image") {
+                    return `
+                        <div class="col col-12 col-md-${colSize}">
+                            <img src="${item.src}" class="${item.class} page-media" loading="lazy">
+                        </div>
+                    `;
+                }
+                // IMAGE 2 COL - MUST BE EVEN NUMBER OF ITEMS
+                if (item.type === "image-col") {
+                    return `
+                        <div class="col col-6 col-md-${colSize}">
+                            <img src="${item.src}" class="${item.class} page-media" loading="lazy">
+                        </div>
+                    `;
+                }
+        
+                // VIDEO
+                if (item.type === "video") {
+                    return `
+                        <div class="col col-12 col-md-${colSize}">
+                            <video class="project-media page-media" autoplay muted loop playsinline>
+                                <source src="${item.src}" type="video/mp4">
+                            </video>
+                        </div>
+                    `;
+                }
+
+                //COPY TEXT LIGHT TITLE WHITE TEXT
+                if (item.type === "copy"){
+                    return `
+                        <div class="col col-12 col-lg-6">
+                            <div class="col"><p class="txt-light">${item.text}</p></div>
+                        </div>
+                        <div class="col col-12 col-lg-6"></div>
+                    `
+                }
+                // TEXT + IMG (TEXT LIGHT)
+                if (item.type === "text-img") {
+                    return `
+                        <div class="col col-12 col-lg-6">
+                            <div class="col"><p class="txt-light">${item.text}</p></div>
+                            <div class="col"><img src="${item.src}" class="${item.class} page-media" loading="lazy"></div>
+                        </div>
+                    `
+                }
+        
+            }).join('');
+        
+        }).join('');
         
         if (project) {
-            replace.innerHTML = `
-                <div id="project-div">
-                    <div id="project-info">
-                        <h1>${project.title}</h1>
-                        <hr/>
-                        <p>${project.type}</p>
-                        <hr/>
-                        <p>${project.text}</p>
-                        <hr/>
-                    </div>
-                    <div class="mediaDiv">
-                    </div>
+            infoReplace.classList.add("row");
+            mainReplace.classList.add("row");
+            replaceTitle.innerHTML = `${project.title}`;
+            infoReplace.innerHTML = `
+                <div class="col col-12 col-lg-6">
+                    <p class="txt-light">About</p>
+                    <p class="txt-white">${project.text}</p>
                 </div>
-                <div id="project-nav">
-                    <a class="nav" href="#${prevId}" id="${prevId}">⇽ Previous</a>
-                    <a class="nav" href="#${nextId}" id="${nextId}">Next ⇾</a>
+                <div class="col col-3"></div>
+                <div class="col col-12 col-lg-3">
+                    <p class="txt-light">Services</p>
+                    <p class="txt-white mb-0">${services}</p>
                 </div>
             `;
-            console.log("test");
-            const mediaDiv = document.querySelector('.mediaDiv');
-
-            // if (project.vid){
-            //     mediaDiv.innerHTML = `
-            //     <video class="media pageVid" controls loop>
-            //         <source src="${project.vid}" type="video/mp4" alt="${project.alt}"> 
-            //         Your browser does not support this video.
-            //     </video>
-            //     `
-            //     ;
-            // } else if (project.image){
-            //     const imageArray=project.image;
-            //     if (Array.isArray(imageArray) === true){
-            //         imageArray.forEach((image) => {
-            //             mediaDiv.innerHTML += `<img class="media" src="${image}"></img>`;
-            //         });
-            //     } else {
-            //         mediaDiv.innerHTML += `<img class="media" src="${project.image}"></img>`;
-            //     }
-            // }
-            if (project.media && Array.isArray(project.media)) {
-                mediaDiv.innerHTML = project.media.map(item => renderCustomMediaBlock(item)).join('');
-            } else if (project.vid) {
-                mediaDiv.innerHTML = `
-                    <video class="media pageVid" controls loop>
-                        <source src="${project.vid}" type="video/mp4" alt="${project.alt || ''}">
-                        Your browser does not support this video.
-                    </video>
-                `;
-            } else if (project.image) {
-                const imageArray = Array.isArray(project.image) ? project.image : [project.image];
-                mediaDiv.innerHTML = imageArray.map(image => `<img class="media" src="${image}">`).join('');
+            mainReplace.innerHTML = `
+                ${media}
+            `;
+            if (window.instgrm?.Embeds) {
+                window.instgrm.Embeds.process();
             }
+            
         }
         console.log("DONE");
         return;
     }
 
-    function handleClick2(id) {
-        const idExists = idArray.includes(id);
-        if (!id || !idExists) {
-            content.style.display = "flex";
-            replace.style.display = "none";
-            return;
-        }
+    // for misc
+    
+    const container = document.querySelector(".gallery");
 
-        content.style.display = "none";
-        replace.style.display = "flex";
+    for (let i = 1; i <= misc.length; i++) {
+        const file = misc[i];
+
+        if (file.endsWith(".webp")) {
+            const img = document.createElement("img");
+            img.src = `/Portfolio-Content/misc/2/${misc[i]}`;
+            img.classList.add('gallery-img');
+            container.appendChild(img);
+        } else if (file.endsWith(".mp4")) {
+            const vid = document.createElement("video");
+            vid.src = `/Portfolio-Content/misc/2/${misc[i]}`;
+            vid.classList.add('gallery-img');
+            vid.autoplay = true;
+            vid.muted = true;
+            vid.loop = true;
+            vid.playsInline = true;
+            container.appendChild(vid);
+        }
         
-
-        // Finds project in illus data
-        // const project = illus.find(project => project.id === id);
-
-        const projectIndex = illus.findIndex(project => project.id === id);
-
-        if (projectIndex === -1) return;
-
-        const project = illus[projectIndex];
-
-        // Assigns previous and next navigation
-        let prevId = illus[(projectIndex === 0 ? illus.length : projectIndex) - 1].id;
-        let nextId = illus[(projectIndex + 1) % illus.length].id;
-        console.log(projectIndex, prevId, nextId);
-
-        replace.innerHTML = `
-        <div id="project-info">
-            <h1>${project.title}</h1>
-        </div>
-        <div id="illus-image-div">
-            <img src="${project.image}" id="illus-image">
-        </div>
-        <div id="project-nav">
-            <a class="nav" href="#${prevId}" id="${prevId}">⇽</a>
-            <a class="nav" href="#${nextId}" id="${nextId}">⇾</a>
-        </div>
-        `;
-
-        let image = document.querySelector('#illus-image');
-        let div = document.querySelector('#illus-image-div');
-
-        function adjustDivSize() {
-            
-            let divAspect = div.clientWidth / div.clientHeight;
-            let imgAspect = image.naturalWidth / image.naturalHeight;
-            console.log(imgAspect, divAspect);
-    
-            if (imgAspect > divAspect) {
-                // Image is wider than the modal -> fit by width
-                image.style.width = "100%";
-                image.style.height = "auto";
-            } else {
-                // Image is taller than the modal -> fit by height
-                image.style.width = "auto";
-                image.style.height = "100%";
-            }
-        }
-    
-        // Ensure the image is fully loaded before adjusting size
-        image.onload = function () {
-            div.style.display = "flex";
-            adjustDivSize();
-        };
-    
-        // Adjust on window resize
-        window.addEventListener("resize", adjustDivSize);
     }
-
-    function handleClick3(id) {
-        // If no id is passed, content appears. Should probably make an error page for this.
-        if (id==='' || idArray.indexOf(id)===-1) {
-            content.style.display = "flex";
-            replace.style.display = "none";
-            //Checks article with class "replace" for video, then pauses it if article is hidden
-            const vidEl = document.querySelector('.pageVid');
-            if (vidEl) {
-                vidEl.pause();
-            }
-            return;
-
-        // If id exists in idArray, show replace(page)
-        } else if (idArray.indexOf(id)!=-1) {
-            content.style.display = "none";
-            replace.style.display = "flex";
-        }
-
-        const project = photos.find(project => project.id === id);
-        const images = project.image;
-
-        // Assigns previous and next buttons with id
-        let projectIndex = photos.findIndex(project => project.id === id);
-        let prevId = photos[(projectIndex === 0 ? photos.length : projectIndex) - 1].id;
-        let nextId = photos[(projectIndex + 1) % photos.length].id;
-
-        // Splits image array into 2 arrays
-        const blockSize = Math.ceil(images.length / 2);
-        const block1 = images.slice(0, blockSize);
-        const block2 = images.slice(blockSize);
-
-        const blockImages = (block) => {
-            return block.map(image => `<img src="/Portfolio-Content/Photography/${id}/${image}" alt="${id} Image" class="image">`
-            ).join('');
-        };
-
-        replace.innerHTML = `
-        <div id="project-info">
-            <h1>${project.title}</h1>
-            <hr>
-            <p>${project.text}</p>
-            <hr>
-        </div>
-        <div id="photography-blocks">
-            <div class="block">
-                ${blockImages(block1)}
-            </div>
-            <div class="block">
-                ${blockImages(block2)}
-            </div>
-        </div>
-        <div id="project-nav">
-            <a class="nav" href="#${prevId}" id="${prevId}">⇽ Previous</a>
-            <a class="nav" href="#${nextId}" id="${nextId}">Next ⇾</a>
-        </div>
-        `;
-        return;
-
-    }
-
-    // Toggle mobileDropDown visibility and scroll on click
-    hamburger.addEventListener('click', function() {
-        bar.forEach(x => x.classList.toggle("change"));
-        mobileMenu.classList.toggle("change");
-        const mobileMenuStyle = window.getComputedStyle(mobileMenu);
-        if (mobileMenuStyle.opacity === "0") {
-            body.style.overflowY = "hidden";
-        } else {
-            body.style.overflowY = "auto";
-            mobileMenu.disabled = true;
-            console.log("test");
-        }
-    });
 
     //If page has been preloaded, url hash passed through handleClick()
     const path = window.location.pathname;
     const hash = window.location.hash;
     if (path === "/graphics/") {
         handleClick(hash.substring(1));
-    } else if (path === "/illustration/") {
-        handleClick2(hash.substring(1));
-    } else {
-        handleClick3(hash.substring(1));
     }
 
     window.onpopstate = function() {
@@ -338,10 +184,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const hash = window.location.hash;
         if (path === "/graphics/") {
             handleClick(hash.substring(1));
-        } else if (path === "/illustration/") {
-            handleClick2(hash.substring(1));
-        } else {
-            handleClick3(hash.substring(1));
         }
     }
 });

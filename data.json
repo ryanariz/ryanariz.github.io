@@ -2,102 +2,415 @@
     "graphics":
     [   
         {
-            "id":"Sonic-Sessions",
-            "title":"SONIC SESSIONS - INTER",
-            "type":"2D Animation & Graphic Design - Illustrator, AfterEffects",
-            "date":"2024",
-            "text": "INTER's live performance series, Sonic Sessions invited local and emerging artists to perform in their immersive 360° dome. I created the visual identity for the program, including the logo, promotional flyers, exterior signage, and dome projection animations, ensuring a cohesive look across all elements.",
+            "id":"primero-latino",
+            "title":"Primero Latino — La Salita de Washington Heights",
+            "services":["Spatial Previsualization","Experiential Design","3D Rendering"],
+            "date":"2025",
+            "text": "For the 25th NYLFF Closing Block Party, and in collaboration with event planner Sovereign Bee, I developed the previsualization renders for Primero Latino's La Salita de Washington Heights. The nostalgic installation was inspired by Bad Bunny's La Casita Pop Up and designed to celebrate the culture and presence of the Latino community.</p><p>In addition to creating the renderings, I assisted with on-site installation and event setup, helping translate the visual concept into the final physical experience for the festival’s closing celebration.</p><p>Click <a href=\"https://www.instagram.com/p/DPvvPxoEdwx/\" class=\"lnk-copy\">here</a> to see a glimpse of the event.",
+            "main":"/Portfolio-Content/primero-latino/main.webp",
             "media": [
-                {
-                    "type":"text",
-                    "content": "<b>TEST ANIMS</b>"
-                },
-                {
-                    "type": "two-gif",
-                    "src": ["/Portfolio-Content/SonicSessions/try/Dome2.mp4", "/Portfolio-Content/SonicSessions/try/Globe.mp4"]
-                },
-                {
-                    "type":"text",
-                    "content": "<b>360 ANIM</b>"
-                },
-                {
-                    "type": "one-gif",
-                    "src": "/Portfolio-Content/SonicSessions/try/Dome-Anim2.mp4"
-                },
-                {
-                    "type":"text",
-                    "content": "<b>FLYER & ARTIST POST</b>"
-                },
-                {
-                    "type": "two-image",
-                    "src": ["/Portfolio-Content/SonicSessions/flyer.jpg", "/Portfolio-Content/SonicSessions/artist.jpg"]
-                },
-                {
-                    "type":"text",
-                    "content": "<b>WEB TICKET</b>"
-                },
-                {
-                    "type": "one-image",
-                    "src": "/Portfolio-Content/SonicSessions/ticket.jpg"
-                },
-                {
-                    "type":"text",
-                    "content": "<b>EXTERIOR SCREEN ANIMATIONS</b>"
-                },
-                {
-                    "type": "two-gif",
-                    "src": ["/Portfolio-Content/SonicSessions/SSExterior.mp4", "/Portfolio-Content/SonicSessions/SSExterior2.mp4"]
-                }
+                [
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/primero-latino/one.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/primero-latino/side.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/primero-latino/side2.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/primero-latino/overhead.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "text-img",
+                        "class": "original",
+                        "text": "RENDER DRAFT",
+                        "src": "/Portfolio-Content/primero-latino/sketch-render.webp"
+                    },
+                    {
+                        "type": "text-img",
+                        "class": "original",
+                        "text": "SKETCH DRAFT",
+                        "src": "/Portfolio-Content/primero-latino/sketch-original.webp"
+                    }
+                ]
             ]
         },
         {
-            "id":"YouTube-Latin-Grammy",
-            "title":"YouTube Latin Grammys",
-            "type":"Graphic Design - Illustrator, Indesign",
-            "date":"2024",
-            "text": "Working with agency ObsidianWorks' team, I designed the event menus and banners for YouTube's 2024 Latin Grammy Music & Culture Celebration.",
+            "id":"instagram",
+            "title":"Instagram x Camp Flog Gnaw Festival",
+            "services":["Illustration","Merchandise Design"],
+            "date":"2025",
+            "text": "Through agency Obsidian Works, I developed this patch series for an Instagram activation at Tyler, the Creator's annual music festival. Referencing the festival's custom sneaker installation and influenced by carnival iconography, each patch was designed to feel distinct while still contributing to the visuals of the activation.",
+            "main":"/Portfolio-Content/instagram/main.webp",
             "media": [
-                {
-                    "type": "two-image",
-                    "src": ["/Portfolio-Content/OW/YT/menu1.jpg", "/Portfolio-Content/OW/YT/menu2.jpg"]
-                },
-                {
-                    "type":"text",
-                    "content": "<b>ITERATIONS</b>"
-                },
-                {
-                    "type": "three-image",
-                    "src": ["/Portfolio-Content/OW/YT/menu-flat1.jpg", "/Portfolio-Content/OW/YT/menu-flat2.jpg", "/Portfolio-Content/OW/YT/menu-flat3.jpg"]
-                },
-                {
-                    "type":"text",
-                    "content": "<b>DJ BOOTH BANNER</b>"
-                },
-                {
-                    "type": "one-image",
-                    "src": "/Portfolio-Content/OW/YT/YTBanner.jpg"
-                }
+                [
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-shoe.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-tent.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-dome.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-purple.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-wheel.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-pink.webp"
+                    }
+                ]
             ]
         },
         {
-            "id": "Lewis-Black",
-            "title":"Lewis Black",
-            "type":"Graphic Design - Illustrator, Photoshop",
-            "date":2023,
-            "text":"Lewis Black is an American stand-up comic known for his comical frustrations and takes on 'the absurdities of life.' As an intern at the Syndicate, I created concept YouTube video thumbnails for his page. Lewis and his team requested pops of vibrant color, big and blocky text, and the inclusion of his signature middle finger.",
+            "id":"inter",
+            "title":"INTER NYC",
+            "services":["Illustration"],
+            "date":"2025",
+            "text": "Through agency Obsidian Works, I developed this patch series for an Instagram activation at Tyler, the Creator's annual music festival. Referencing the festival's custom sneaker installation and influenced by carnival iconography, each patch was designed to feel distinct while still contributing to the visuals of the activation.",
+            "main":"/Portfolio-Content/instagram/main.webp",
             "media": [
-                {
-                    "type": "one-image",
-                    "src": "/Portfolio-Content/Syn/LewisBlack/LewisBlack1.jpg"
-                },
-                {
-                    "type":"text",
-                    "content": "<b>ITERATIONS</b>"
-                },
-                {
-                    "type": "two-image",
-                    "src": ["/Portfolio-Content/Syn/LewisBlack/LewisBlack2.jpg","/Portfolio-Content/Syn/LewisBlack/LewisBlack3.jpg"]
-                }
+                [
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-shoe.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-tent.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-dome.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-purple.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-wheel.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/instagram/patch-pink.webp"
+                    }
+                ]
+            ]
+        },
+        {
+            "id":"good-company",
+            "title":"Good Company",
+            "services":["Brand Identity Design","Interior Design"],
+            "date":"2025",
+            "text": "Good Company has spent over a decade bringing ideas to fruition through fabrication. Their work spans scenic structures for weddings at the Plaza Hotel, set build-outs for brand activations in House of Blues, and most recently, a custom metal helix installation for the St. Louis Art Museum.</p><p>When they approached me, they were operating under an outdated visual identity and an unfinished studio space. While they had built a reputation for expert draping and seamless installs, Fabian, the owner, wanted the brand to better reflect the creativity and innovation behind their work.</p><p>The result was a brand and studio refresh that positioned Good Company for the artists, institutions and concept-driven clients it hopes to attract in the future.",
+            "main":"/Portfolio-Content/instagram/main.webp",
+            "media": [
+                [
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/good-company/render1.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/good-company/render2.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/good-company/render3.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "wide",
+                        "src": "/Portfolio-Content/good-company/tshirt-1.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "wide",
+                        "src": "/Portfolio-Content/good-company/tshirt-2.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "wide",
+                        "src": "/Portfolio-Content/good-company/tshirt-3.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "wide",
+                        "src": "/Portfolio-Content/good-company/truck.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/good-company/pen.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/good-company/card.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/good-company/keychain.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "text-img",
+                        "class": "original",
+                        "text": "Prior Logo",
+                        "src": "/Portfolio-Content/good-company/old-logo.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "text-img",
+                        "class": "original",
+                        "text": "New Logo",
+                        "src": "/Portfolio-Content/good-company/new-logo.webp"
+                    }
+                ]
+            ]
+        },
+        {
+            "id":"migssolis",
+            "title":"MIGSSOLIS",
+            "services":["Merch Design", "Flyer Design", "Album Cover Design"],
+            "date":"2025",
+            "text": "Creator of Soleanna Run Club and ShopSoleanna, Migssolis has established a community around movement and wellness. The run club consistently collaborates with local businesses and groups such as Running Latte Club and A7SC, as well as brands like Nike Running and Adidas Running.</p><p>I've worked with Migssolis on assets for his shop's physical products, the club's digital flyers, and, previously, his celebratory tenth DJ mix.",
+            "main":"/Portfolio-Content/instagram/main.webp",
+            "media": [
+                [
+                    {
+                        "type": "copy",
+                        "text": "Cherri Baby Tee - Y2K inspired T-Shirt design for ShopSoleanna's first drop"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/migssolis/cherri1.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/migssolis/cherri3.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/migssolis/cherri2.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "copy",
+                        "text": "Track Star Crewneck Sweatshirt - Assisted with alignment and print-ready production"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/migssolis/crew1.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/migssolis/crew2.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/migssolis/crew3.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "copy",
+                        "text": "SOLEANNA RUN CLUB - FLYER DESIGNS"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/migssolis/flyer1.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/migssolis/flyer2.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "square",
+                        "src": "/Portfolio-Content/migssolis/flyer4.webp"
+                    }
+                ],
+                [
+                    {
+                        "type":"copy",
+                        "text":"SOUNDS FROM SOLEANNA - album cover & t-shirt<br>inspired by retro comic villains and lucha mask iconography"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/migssolis/x-cd.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/migssolis/x-shirt.webp"
+                    }
+                ]
+            ]
+        },
+        {
+            "id":"trip-hop-beer-series",
+            "title":"Trip-Hop Beer Series — Coming Soon",
+            "services":["Package Design"],
+            "date":"2025",
+            "text": "A conceptual packaging project reimagining trip-hop albums as craft beer brands.</p><p>Inspired by Jesse Nyberg's <a href=\"https://jessenyberg.design/hardcore-alphabet\" class=\"txt-white\"><i>Hardcore Alphabet Album Art Series.</i></a></p>",
+            "main":"/Portfolio-Content/instagram/main.webp",
+            "media": [
+                [
+                    {
+                        "type": "copy",
+                        "text": "NOCTURNE PORTER BY DUMMY BREWERY — PORTISHEAD'S DUMMY — PREVIEW"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/trip-hop/dummy-can.webp"
+                    }
+                ]
+            ]
+        },
+        {
+            "id":"dignitary",
+            "title":"Dignitary — Under the Throggs Neck",
+            "services":["Album Design", "Merch Design"],
+            "date":"2025",
+            "text": "Gnarly-yet-clean album cover design for agressive-punk band Dignitary's 2024 album <i>Underneath the Throggs Neck</i>. ",
+            "main":"/Portfolio-Content/instagram/main.webp",
+            "media": [
+                [
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/dignitary/cd.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/dignitary/tshirt.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "copy",
+                        "text": "ALBUM MOODBOARD"
+                    }
+                ],
+                [
+                    {
+                        "type": "image-col",
+                        "class": "original",
+                        "src": "/Portfolio-Content/dignitary/inspo1.webp"
+                    },
+                    {
+                        "type": "image-col",
+                        "class": "original",
+                        "src": "/Portfolio-Content/dignitary/inspo2.webp"
+                    },
+                    {
+                        "type": "image-col",
+                        "class": "original",
+                        "src": "/Portfolio-Content/dignitary/inspo3.webp"
+                    },
+                    {
+                        "type": "image-col",
+                        "class": "original",
+                        "src": "/Portfolio-Content/dignitary/inspo4.webp"
+                    }
+                ],
+                [
+                    {
+                        "type": "copy",
+                        "text": "ALBUM DRAFTS"
+                    }
+                ],
+                [
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/dignitary/draft1.webp"
+                    },
+                    {
+                        "type": "image",
+                        "class": "original",
+                        "src": "/Portfolio-Content/dignitary/draft2.webp"
+                    }
+                ]
             ]
         },
         {
@@ -674,5 +987,29 @@
             "title":"Droop",
             "image":"/Portfolio-Content/Illustrations/Droop.jpg"
         }
+    ],
+    "misc":
+    [
+        "0.webp",
+        "1.webp",
+        "2.mp4",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp",
+        "7.webp",
+        "8.mp4",
+        "9.webp",
+        "10.webp",
+        "11.webp",
+        "12.webp",
+        "13.webp",
+        "14.webp",
+        "15.mp4",
+        "16.webp",
+        "17.webp",
+        "18.webp",
+        "19.webp",
+        "20.mp4"
     ]   
 }

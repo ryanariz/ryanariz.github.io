@@ -1,11 +1,17 @@
+*{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif !important;
+    font-size: 13.5px;
+}
 html{
-    font-size: 1rem;
-    font-family: "Inter", san-serif;
     color: white;
 }
 body{
-    background: black;
+    margin: 0;
     padding: 0 0.8rem;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;
@@ -15,30 +21,35 @@ body::-webkit-scrollbar{
 }
 a{
     text-decoration: none !important;
-    color: white;
+    color: white !important;
 }
 a:focus{
     text-decoration: none;
-    color: rgb(134, 134, 134);
+    color: rgb(255, 255, 255) !important;
 }
 a:hover{
     text-decoration: none;
-    color: rgb(134, 134, 134);
+    color: rgb(184, 184, 184) !important;
 }
 #index-menu{
+    z-index: 100;
+    font-size: 0.8rem;
     font-weight: 300;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    font-size: 0.8rem;
-    padding: 0.8rem 0;
-    position: sticky;
+    padding-top: 0.8rem;
     top: 0;
 }
 #index-links{
     display: flex;
     gap: 1rem;
+}
+.lnk-white{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 #butterfly-box {
     position: fixed;
