@@ -38,8 +38,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     
     function handleClick(id) {
         console.log('text');
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
+        });
 
         // If no id is passed, content appears. Should probably make an error page for this.
         if (id==='' || idArray.indexOf(id)===-1) {
@@ -179,7 +181,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     //If page has been preloaded, url hash passed through handleClick()
     const path = window.location.pathname;
     const hash = window.location.hash;
-    if (path === "/graphics/") {
+    if (path === "/work/") {
         handleClick(hash.substring(1));
     } else if (path === "/misc/") {
         handleClickMisc();
@@ -188,7 +190,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     window.onpopstate = function() {
         const path = window.location.pathname;
         const hash = window.location.hash;
-        if (path === "/graphics/") {
+        if (path === "/work/") {
             handleClick(hash.substring(1));
         } else if (path === "/misc/") {
             handleClickMisc();
