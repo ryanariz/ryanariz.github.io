@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const replaceTitle = document.querySelector('#replace-title');
     
     function handleClick(id) {
+        console.log('text');
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
 
@@ -148,35 +149,40 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // for misc
-    
-    const container = document.querySelector(".gallery");
+    function handleClickMisc(){
+        const container = document.querySelector(".gallery");
 
-    for (let i = 1; i <= misc.length; i++) {
-        const file = misc[i];
+        for (let i = 0; i <= misc.length; i++) {
+            const file = misc[i];
 
-        if (file.endsWith(".webp")) {
-            const img = document.createElement("img");
-            img.src = `/Portfolio-Content/misc/2/${misc[i]}`;
-            img.classList.add('gallery-img');
-            container.appendChild(img);
-        } else if (file.endsWith(".mp4")) {
-            const vid = document.createElement("video");
-            vid.src = `/Portfolio-Content/misc/2/${misc[i]}`;
-            vid.classList.add('gallery-img');
-            vid.autoplay = true;
-            vid.muted = true;
-            vid.loop = true;
-            vid.playsInline = true;
-            container.appendChild(vid);
+            if (file.endsWith(".webp")) {
+                const img = document.createElement("img");
+                img.src = `/Portfolio-Content/misc/2/${file}`;
+                img.classList.add('gallery-img');
+                img.loading = "lazy";
+                container.appendChild(img);
+                console.log('test');
+            } else if (file.endsWith(".mp4")) {
+                const vid = document.createElement("video");
+                vid.src = `/Portfolio-Content/misc/2/${file}`;
+                vid.classList.add('gallery-img');
+                vid.autoplay = true;
+                vid.muted = true;
+                vid.loop = true;
+                vid.playsInline = true;
+                container.appendChild(vid);
+            }
         }
-        
     }
+    
 
     //If page has been preloaded, url hash passed through handleClick()
     const path = window.location.pathname;
     const hash = window.location.hash;
     if (path === "/graphics/") {
         handleClick(hash.substring(1));
+    } else if (path === "/misc/") {
+        handleClickMisc();
     }
 
     window.onpopstate = function() {
@@ -184,6 +190,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         const hash = window.location.hash;
         if (path === "/graphics/") {
             handleClick(hash.substring(1));
+        } else if (path === "/misc/") {
+            handleClickMisc();
         }
     }
 });

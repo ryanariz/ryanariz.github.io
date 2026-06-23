@@ -150,7 +150,7 @@ li{
     padding: 0;
 }
 .gallery-img{
-    height: fit-content;
+    /* height: fit-content; */
     margin-bottom: 1rem;
 }
 
