@@ -154,19 +154,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     function handleClickMisc(){
         const container = document.querySelector(".gallery");
 
-        for (let i = 0; i <= misc.length; i++) {
-            const file = misc[i];
+        misc.forEach(file => {
 
             if (file.endsWith(".webp")) {
                 const img = document.createElement("img");
-                img.src = `/Portfolio-Content/misc/2/${file}`;
+                img.src = `/Portfolio-Content/misc/1/${file}`;
                 img.classList.add('gallery-img');
                 img.loading = "lazy";
                 container.appendChild(img);
                 console.log('test');
             } else if (file.endsWith(".mp4")) {
                 const vid = document.createElement("video");
-                vid.src = `/Portfolio-Content/misc/2/${file}`;
+                vid.src = `/Portfolio-Content/misc/1/${file}`;
                 vid.classList.add('gallery-img');
                 vid.autoplay = true;
                 vid.muted = true;
@@ -174,7 +173,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 vid.playsInline = true;
                 container.appendChild(vid);
             }
-        }
+        });
     }
     
 
